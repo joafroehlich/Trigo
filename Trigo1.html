@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flächenberechnungen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Trigonometrie</p> 
+        
+<!--//Aufgabe 1-->
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 1
+
+α = 40° und a = 2,5 cm. Wie groß ist c? </strong></p>
+<img src="Aufgabe1.jpg" align="middle" >  <button  onclick="window.open('Trigo_Aufgabe1.html');" >Lösung</button></pre>
+
+<!--//Aufgabe 2-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 2
+
+α = 55° und c = 7 cm. Wie groß ist a?      </strong>
+
+<img src="Aufgabe1.jpg" align="middle"> a = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe2() { 
+                                                
+                          if (Eintrag2.value=="5,7") {alert("Richtig"); document.getElementById("Pruef2").disabled= true;
+                          }  
+                           
+                          else if (Eintrag2.value!=="5,7" && Eintrag2.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag2").value="5,7"; window.open('Trigo_Aufgabe2.html');           
+                          document.getElementById("Pruef2").disabled= true;}
+                               
+                          else if (Eintrag2.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+
+        <!--//Aufgabe 3-->                  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 3
+
+β = 44° und a = 3,5 cm. Wie groß ist c?  </strong></p>
+<img src="Aufgabe1.jpg" align="middle" >  <button  onclick="window.open('Trigo_Aufgabe1.html');" >Lösung</button></pre>
+
+
+<!--//Aufgabe 4-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 4
+
+Wie groß ist α, wenn c = 7 cm und b = 4,2 cm?     </strong>
+
+<img src="Aufgabe1.jpg" align="middle"> α = <input type="text" id="Eintrag4" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe4() { 
+                                                
+                          if (Eintrag4.value=="53,1") {alert("Richtig"); document.getElementById("Pruef4").disabled= true;
+                          }  
+                           
+                          else if (Eintrag4.value!=="53,1" && Eintrag4.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag4").value="53,1"; window.open('Trigo_Aufgabe4.html');           
+                          document.getElementById("Pruef4").disabled= true;}
+                               
+                          else if (Eintrag4.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 5-->  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 5
+
+Wie groß sind die restlichen Seiten, 
+wenn α = 35° und c = 7 cm?   </strong></p>  
+<img src="Aufgabe1.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe5.html');">Lösung</button></pre>
+
+<!--//Aufgabe 6-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 6
+
+Wie groß sind die restlichen Seiten, 
+wenn β = 78° und b = 17 cm? </strong>  
+
+<img src="Aufgabe1.jpg" align="middle"> c = <input type="text" id="Eintrag6" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button>    </p></pre>
+ 
+                      <script>
+                        function Aufgabe6() { 
+                                                
+                          if (Eintrag6.value=="17,4") {alert("Richtig"); document.getElementById("Pruef6").disabled= true;
+                          }  
+                           
+                          else if (Eintrag6.value!=="17,4" && Eintrag6.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag6").value="17,4"; window.open('Trigo_Aufgabe6.html');           
+                          document.getElementById("Pruef6").disabled= true;}
+                               
+                          else if (Eintrag6.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+  <!--//Aufgabe 7-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 7
+
+Wie groß sind β und b, 
+wenn a = 6,7 cm und c = 8,3 cm?  </strong>
+
+ <img src="Aufgabe1.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe7.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 8-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 8
+
+Wie groß sind die Ankathete von α und die Hypotenuse, 
+wenn α = 75° und seine Gegenkathete 9 cm lang ist?  </strong>
+
+<img src="Aufgabe1.jpg" align="middle"> Hypotenuse = <input type="text" id="Eintrag8" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p></pre>
+     
+                      <script>
+                        function Aufgabe8() { 
+                                                
+                          if (Eintrag8.value=="9,3") {alert("Richtig"); document.getElementById("Pruef8").disabled= true;
+                          }  
+                           
+                          else if (Eintrag8.value!=="9,3" && Eintrag8.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag8").value="9,3"; window.open('Trigo_Aufgabe8.html');           
+                          document.getElementById("Pruef8").disabled= true;}
+                               
+                          else if (Eintrag8.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+  <!--//Aufgabe 9-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 9
+
+Die Gegenkathete des Winkels α ist 5 cm lang, 
+seine Ankathete 8,5 cm. Wie groß ist α?  
+
+<img src="Aufgabe1.jpg" align="middle"></strong> <button  onclick="window.open('Trigo_Aufgabe9.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 10-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 10
+
+Wie groß sind die restlichen Seiten und Winkel, 
+wenn β = 30° und c = 83 cm?   </strong>
+
+<img src="Aufgabe1.jpg" align="middle"> b = <input type="text" id="Eintrag10" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe10() { 
+                                                
+                          if (Eintrag10.value=="41,5") {alert("Richtig"); document.getElementById("Pruef10").disabled= true;
+                          }  
+                           
+                          else if (Eintrag10.value!=="41,5" && Eintrag10.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag10").value="41,5"; window.open('Trigo_Aufgabe10.html');           
+                          document.getElementById("Pruef10").disabled= true;}
+                               
+                          else if (Eintrag10.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                                   
+
+ <!--//Aufgabe 11-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 11
+
+Wie groß ist die Strecke AB? </strong> 
+
+<img src="Aufgabe11.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe11.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 12-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 12
+
+Wie groß ist der Winkel α?     </strong>
+
+<img src="Aufgabe12.jpg" align="middle"> α = <input type="text" id="Eintrag12" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p></pre><nobr>
+
+ 
+                      <script>
+                        function Aufgabe12() { 
+                                                
+                          if (Eintrag12.value=="21,2") {alert("Richtig"); document.getElementById("Pruef12").disabled= true;
+                          }  
+                           
+                          else if (Eintrag12.value!=="21,2" && Eintrag12.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag12").value="21,2"; window.open('Trigo_Aufgabe12.html');           
+                          document.getElementById("Pruef12").disabled= true;}
+                               
+                          else if (Eintrag12.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+              
+    <!--//Aufgabe 13--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 13
+
+Wie groß sind die restlichen Seiten? </strong> 
+
+<img src="Aufgabe13.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe13.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 14-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 14
+
+Wie groß sind AB und der Winkel α? </strong>
+
+<img src="Aufgabe14.jpg" align="middle"> α = <input type="text" id="Eintrag14" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe14() { 
+                                                
+                          if (Eintrag14.value=="21,8") {alert("Richtig"); document.getElementById("Pruef14").disabled= true;
+                          }  
+                           
+                          else if (Eintrag14.value!=="21,8" && Eintrag14.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag14").value="21,8"; window.open('Trigo_Aufgabe14.html');           
+                          document.getElementById("Pruef14").disabled= true;}
+                               
+                          else if (Eintrag14.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 15--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 15
+
+Wie groß sind AB und der Winkel α?  </strong> 
+
+<img src="Aufgabe15.jpg" align="middle">  <button  onclick="window.open('Trigo_Aufgabe15.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 16-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 16
+
+Wie groß ist AB in dem gleichschenkligen Dreieck?   </strong>
+
+<img src="Aufgabe16.jpg" align="middle"> AB = <input type="text" id="Eintrag16" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe16() { 
+                                                
+                          if (Eintrag16.value=="4,5") {alert("Richtig"); document.getElementById("Pruef16").disabled= true;
+                          }  
+                           
+                          else if (Eintrag16.value!=="4,5" && Eintrag16.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag16").value="4,5"; window.open('Trigo_Aufgabe16.html');           
+                          document.getElementById("Pruef16").disabled= true;}
+                               
+                          else if (Eintrag16.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 17--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 17
+
+Ein Quadrat hat eine Seitenlänge von 5,8 cm. 
+Wie groß ist seine Diagonale d? </strong>  
+
+<img src="Aufgabe17.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe17.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 18-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 18
+
+Die Seiten eines Dreiecks sind 5,4 cm, 7,2 cm und 9 cm lang. 
+Wie groß sind seine Winkel?   </strong>
+
+<img src="Aufgabe18.jpg" align="middle"> β = <input type="text" id="Eintrag18" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p></pre>
+    
+ 
+                      <script>
+                        function Aufgabe18() { 
+                                                
+                          if (Eintrag18.value=="90") {alert("Richtig"); document.getElementById("Pruef18").disabled= true;
+                          }  
+                           
+                          else if (Eintrag18.value!=="90" && Eintrag18.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag18").value="90"; window.open('Trigo_Aufgabe18.html');           
+                          document.getElementById("Pruef18").disabled= true;}
+                               
+                          else if (Eintrag18.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 19--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 19
+
+Wandeln Sie um in Grad: 
+5° 36' 12'' 
+41° 38' 3''    </strong> 
+
+<button  onclick="window.open('Trigo_Aufgabe19.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 20-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 20
+
+32,28° = 32°        '        ''  
+4,83° = 4° <input type="text" id="Eintrag20" maxlength="2" size="1" style= background-color:yellow ></input> '        ''    </strong>
+
+<button id="Pruef20" onclick="Aufgabe20()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe20() { 
+                                                
+                          if (Eintrag20.value=="49") {alert("Richtig"); document.getElementById("Pruef20").disabled= true;
+                          }  
+                           
+                          else if (Eintrag20.value!=="49" && Eintrag20.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag20").value="49"; window.open('Trigo_Aufgabe20.html');           
+                          document.getElementById("Pruef20").disabled= true;}
+                               
+                          else if (Eintrag20.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+         <!--//Aufgabe 21--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 21
+
+Rechnen Sie um in das Bogenmaß: 
+301° 17' ; 212° 39' ; 120°.  </strong> 
+
+<button  onclick="window.open('Trigo_Aufgabe21.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 22-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 22
+
+Wie groß sind c und b, 
+wenn α = 36°27' und a = 29,63 cm?     </strong>
+
+<img src="Aufgabe1.jpg" align="middle"> b = <input type="text" id="Eintrag22" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe22() { 
+                                                
+                          if (Eintrag22.value=="49,9") {alert("Richtig"); document.getElementById("Pruef22").disabled= true;
+                          }  
+                           
+                          else if (Eintrag22.value!=="49,9" && Eintrag22.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag22").value="49,9"; window.open('Trigo_Aufgabe22.html');           
+                          document.getElementById("Pruef22").disabled= true;}
+                               
+                          else if (Eintrag22.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+             <!--//Aufgabe 23--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 23
+
+Wie groß sind a und c, 
+wenn α = 67°38' und b = 25,42 cm?    </strong> 
+
+<img src="Aufgabe1.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe23.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 24-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 24
+
+Wie groß sind a und b, 
+wenn α = 48°12'15'' und c = 31,2 cm? </strong>
+
+<img src="Aufgabe1.jpg" align="middle"> a = <input type="text" id="Eintrag24" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button></p></pre>
+    
+ 
+                      <script>
+                        function Aufgabe24() { 
+                                                
+                          if (Eintrag24.value=="23,3") {alert("Richtig"); document.getElementById("Pruef24").disabled= true;
+                          }  
+                           
+                          else if (Eintrag24.value!=="23,3" && Eintrag24.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag24").value="23,3"; window.open('Trigo_Aufgabe24.html');           
+                          document.getElementById("Pruef24").disabled= true;}
+                               
+                          else if (Eintrag24.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+   <!--//Aufgabe 25--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 25
+
+Berechnen Sie die Fläche A des gleichschenkligen Dreiecks. </strong> 
+
+<img src="Aufgabe25.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe25.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 26-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 26
+
+Berechnen Sie die Fläche A des regelmäßigen Neunecks. </strong>
+
+<img src="Aufgabe26.jpg" align="middle"> A = <input type="text" id="Eintrag26" maxlength="7" size="2" style= background-color:yellow ></input> mm² <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p></pre>
+     
+                      <script>
+                        function Aufgabe26() { 
+                                                
+                          if (Eintrag26.value=="28933,2") {alert("Richtig"); document.getElementById("Pruef26").disabled= true;
+                          }  
+                           
+                          else if (Eintrag26.value!=="28933,2" && Eintrag26.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag26").value="28933,2"; window.open('Trigo_Aufgabe26.html');           
+                          document.getElementById("Pruef26").disabled= true;}
+                               
+                          else if (Eintrag26.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                   
+                      
+     <!--//Aufgabe 27--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 27
+
+Ein regelmäßiges 36-Eck hat eine Fläche von 7875 cm².
+Wie groß ist der Radius r seines Umkreises?  </strong> 
+
+<button  onclick="window.open('Trigo_Aufgabe27.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 28-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 28
+
+Berechnen Sie p, wenn r = 20 m und α = 20°.  </strong>
+
+<img src="Aufgabe28.jpg" align="middle"> p = <input type="text" id="Eintrag28" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe28() { 
+                                                
+                          if (Eintrag28.value=="0,3") {alert("Richtig"); document.getElementById("Pruef28").disabled= true;
+                          }  
+                           
+                          else if (Eintrag28.value!=="0,3" && Eintrag28.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag28").value="0,3"; window.open('Trigo_Aufgabe28.html');           
+                          document.getElementById("Pruef28").disabled= true;}
+                               
+                          else if (Eintrag28.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 29--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 29
+
+Berechnen Sie p. wenn r = 20 m und s = 15 m.   </strong> 
+
+<img src="Aufgabe28.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe29.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 30-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 30
+
+Berechnen Sie p, wenn r = 20 m und b = 40 m.  </strong>
+
+<img src="Aufgabe28.jpg" align="middle"> p = <input type="text" id="Eintrag30" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef30" onclick="Aufgabe30()">Prüfen</button></p></pre>
+     
+                      <script>
+                        function Aufgabe30() { 
+                                                
+                          if (Eintrag30.value=="9,2") {alert("Richtig"); document.getElementById("Pruef30").disabled= true;
+                          }  
+                           
+                          else if (Eintrag30.value!=="9,2" && Eintrag30.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag30").value="9,2"; window.open('Trigo_Aufgabe30.html');           
+                          document.getElementById("Pruef30").disabled= true;}
+                               
+                          else if (Eintrag30.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                      
+                      
+       <!--//Aufgabe 31--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 31
+
+Um wie viel cm ist der Bogen b länger als die Sehne s? </strong>
+
+<img src="Aufgabe31.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe31.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 32-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 32
+
+Wie groß ist das schraffierte Kreissegment A? </strong>
+
+<img src="Aufgabe32.jpg" align="middle"> A = <input type="text" id="Eintrag32" maxlength="4" size="1" style= background-color:yellow ></input> m² <button id="Pruef32" onclick="Aufgabe32()">Prüfen</button></p></pre>
+    
+ 
+                      <script>
+                        function Aufgabe32() { 
+                                                
+                          if (Eintrag32.value=="25,6") {alert("Richtig"); document.getElementById("Pruef32").disabled= true;
+                          }  
+                           
+                          else if (Eintrag32.value!=="25,6" && Eintrag32.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag32").value="25,6"; window.open('Trigo_Aufgabe32.html');           
+                          document.getElementById("Pruef32").disabled= true;}
+                               
+                          else if (Eintrag32.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+                      
+       <!--//Aufgabe 33--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 33
+
+Wie groß sind der Inkreisradius r<sub>i</sub> und der 
+Umkreisradius r<sub>u</sub> des gleichschenkligen Dreiecks?     </strong> 
+
+<img src="Aufgabe33.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe33.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 34-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 34
+
+Berechnen Sie a, b und c. </strong>
+
+<img src="Aufgabe34.jpg" align="middle"> b = <input type="text" id="Eintrag34" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef34" onclick="Aufgabe34()">Prüfen</button></p></pre>
+     
+                      <script>
+                        function Aufgabe34() { 
+                                                
+                          if (Eintrag34.value=="96,6") {alert("Richtig"); document.getElementById("Pruef34").disabled= true;
+                          }  
+                           
+                          else if (Eintrag34.value!=="96,6" && Eintrag34.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag34").value="96,6"; window.open('Trigo_Aufgabe34.html');           
+                          document.getElementById("Pruef34").disabled= true;}
+                               
+                          else if (Eintrag34.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 35--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 35
+
+Berechnen Sie a, b und c.    </strong> 
+
+<img src="Aufgabe35.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe35.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 36-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 36
+
+Berechnen Sie a, b und c. </strong>
+
+<img src="Aufgabe36.jpg" align="middle"> a = <input type="text" id="Eintrag36" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef36" onclick="Aufgabe36()">Prüfen</button></p></pre>
+    
+ 
+                      <script>
+                        function Aufgabe36() { 
+                                                
+                          if (Eintrag36.value=="68,7") {alert("Richtig"); document.getElementById("Pruef36").disabled= true;
+                          }  
+                           
+                          else if (Eintrag36.value!=="68,7" && Eintrag36.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag36").value="68,7"; window.open('Trigo_Aufgabe36.html');           
+                          document.getElementById("Pruef36").disabled= true;}
+                               
+                          else if (Eintrag36.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 37--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 37
+
+Berechnen Sie β, b und c.   </strong> 
+
+<img src="Aufgabe37.jpg" align="middle">  <button  onclick="window.open('Trigo_Aufgabe37.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 38-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 38
+
+Berechnen Sie α, a und b.   </strong>
+
+<img src="Aufgabe38.jpg" align="middle"> b = <input type="text" id="Eintrag38" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef38" onclick="Aufgabe38()">Prüfen</button></p></pre>
+    
+ 
+                      <script>
+                        function Aufgabe38() { 
+                                                
+                          if (Eintrag38.value=="8,2") {alert("Richtig"); document.getElementById("Pruef38").disabled= true;
+                          }  
+                           
+                          else if (Eintrag38.value!=="8,2" && Eintrag38.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag38").value="8,2"; window.open('Trigo_Aufgabe38.html');           
+                          document.getElementById("Pruef38").disabled= true;}
+                               
+                          else if (Eintrag38.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+                      
+       <!--//Aufgabe 39--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 39
+
+Berechnen Sie α, a und c.     </strong>
+
+<img src="Aufgabe39.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe39.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 40-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 40
+
+Wie groß ist α in dem gleichschenkligen Dreieck?    </strong>
+
+<img src="Aufgabe40.jpg" align="middle"> α = <input type="text" id="Eintrag40" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef40" onclick="Aufgabe40()">Prüfen</button></p></pre>
+     
+                      <script>
+                        function Aufgabe40() { 
+                                                
+                          if (Eintrag40.value=="69,6") {alert("Richtig"); document.getElementById("Pruef40").disabled= true;
+                          }  
+                           
+                          else if (Eintrag40.value!=="69,6" && Eintrag40.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag40").value="69,6"; window.open('Trigo_Aufgabe40.html');           
+                          document.getElementById("Pruef40").disabled= true;}
+                               
+                          else if (Eintrag40.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 41--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 41
+
+Berechnen Sie den Schnittwinkel ε der beiden Diagonalen.  </strong> 
+
+<img src="Aufgabe41.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe41.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 42-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 42
+
+Berechnen Sie den Schnittwinkel ε der beiden Diagonalen.   </strong>
+
+<img src="Aufgabe42.jpg" align="middle"> ε = <input type="text" id="Eintrag42" maxlength="4" size="1" style= background-color:yellow > ° <button id="Pruef42" onclick="Aufgabe42()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe42() { 
+                                                
+                          if (Eintrag42.value=="71,2") {alert("Richtig"); document.getElementById("Pruef42").disabled= true;
+                          }  
+                           
+                          else if (Eintrag42.value!=="71,2" && Eintrag42.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag42").value="71,2"; window.open('Trigo_Aufgabe42.html');           
+                          document.getElementById("Pruef42").disabled= true;}
+                               
+                          else if (Eintrag42.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 43--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 43
+
+Wie groß sind die Seiten a und b des Rechtecks?
+
+<img src="Aufgabe43.jpg" align="middle"> </strong> <button  onclick="window.open('Trigo_Aufgabe43.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 44-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 44
+
+Wie groß sind die Seiten a und b des Rechtecks? </strong>
+
+<img src="Aufgabe44.jpg" align="middle"> a = <input type="text" id="Eintrag44" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef44" onclick="Aufgabe44()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe44() { 
+                                                
+                          if (Eintrag44.value=="6,1") {alert("Richtig"); document.getElementById("Pruef44").disabled= true;
+                          }  
+                           
+                          else if (Eintrag44.value!=="6,1" && Eintrag44.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag44").value="6,1"; window.open('Trigo_Aufgabe44.html');           
+                          document.getElementById("Pruef44").disabled= true;}
+                               
+                          else if (Eintrag44.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 45--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 45
+
+Wie groß sind die Seiten a und b des Rechtecks? </strong>
+
+<img src="Aufgabe45.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe45.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 46-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 46
+
+Wie groß sind die Diagonalen e und f der Raute?  </strong>
+
+<img src="Aufgabe46.jpg" align="middle"> e = <input type="text" id="Eintrag46" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef46" onclick="Aufgabe46()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe46() { 
+                                                
+                          if (Eintrag46.value=="28,1") {alert("Richtig"); document.getElementById("Pruef46").disabled= true;
+                          }  
+                           
+                          else if (Eintrag46.value!=="28,1" && Eintrag46.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag46").value="28,1"; window.open('Trigo_Aufgabe46.html');           
+                          document.getElementById("Pruef46").disabled= true;}
+                               
+                          else if (Eintrag46.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 47--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 47
+
+Wie groß ist die Diagonale e der Raute?   </strong> 
+
+<img src="Aufgabe47.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe47.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 48-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 48
+
+Wie groß ist die Diagonale e der Raute?   </strong>
+
+<img src="Aufgabe48.jpg" align="middle"> e = <input type="text" id="Eintrag48" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef48" onclick="Aufgabe48()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe48() { 
+                                                
+                          if (Eintrag48.value=="30") {alert("Richtig"); document.getElementById("Pruef48").disabled= true;
+                          }  
+                           
+                          else if (Eintrag48.value!=="30" && Eintrag48.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag48").value="30"; window.open('Trigo_Aufgabe48.html');           
+                          document.getElementById("Pruef48").disabled= true;}
+                               
+                          else if (Eintrag48.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 49--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 49
+
+Wie groß sind die Diagonale f 
+und die Seite a der Raute? </strong>
+
+<img src="Aufgabe49.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe49.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 50-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 50
+
+Wie groß ist die Seite a der Raute?    </strong>
+
+<img src="Aufgabe50.jpg" align="middle"> a = <input type="text" id="Eintrag50" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef50" onclick="Aufgabe50()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe50() { 
+                                                
+                          if (Eintrag50.value=="5,4") {alert("Richtig"); document.getElementById("Pruef50").disabled= true;
+                          }  
+                           
+                          else if (Eintrag50.value!=="5,4" && Eintrag50.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag50").value="5,4"; window.open('Trigo_Aufgabe50.html');           
+                          document.getElementById("Pruef50").disabled= true;}
+                               
+                          else if (Eintrag50.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 51--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 51
+
+Wie groß ist die Diagonale f der Raute?  </strong> 
+
+<img src="Aufgabe51.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe51.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 52-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 52
+
+Wie groß sind die Diagonalen e, f 
+und der Winkel β des Drachens?   </strong>
+
+<img src="Aufgabe52.jpg" align="middle"> β = <input type="text" id="Eintrag52" maxlength="5" size="2" style= background-color:yellow ></input> ° <button id="Pruef52" onclick="Aufgabe52()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe52() { 
+                                                
+                          if (Eintrag52.value=="113,9") {alert("Richtig"); document.getElementById("Pruef52").disabled= true;
+                          }  
+                           
+                          else if (Eintrag52.value!=="113,9" && Eintrag52.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag52").value="113,9"; window.open('Trigo_Aufgabe52.html');           
+                          document.getElementById("Pruef52").disabled= true;}
+                               
+                          else if (Eintrag52.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 53--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 53
+
+Berechnen Sie die Länge der Seite b des 
+gleichschenkligen Trapezes. </strong> 
+
+<img src="Aufgabe53.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe53.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 54-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 54
+
+Wie groß sind die Länge s der Sehne 
+und deren Abstand d vom Mittelpunkt.   </strong>
+
+<img src="Aufgabe54.jpg" align="middle"> s = <input type="text" id="Eintrag54" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef54" onclick="Aufgabe54()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe54() { 
+                                                
+                          if (Eintrag54.value=="7") {alert("Richtig"); document.getElementById("Pruef54").disabled= true;
+                          }  
+                           
+                          else if (Eintrag54.value!=="7" && Eintrag54.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag54").value="7"; window.open('Trigo_Aufgabe54.html');           
+                          document.getElementById("Pruef54").disabled= true;}
+                               
+                          else if (Eintrag54.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 55--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 55
+
+Wie groß sind der Mittelpunktswinkel ε und der 
+Abstand d der Sehne s vom Mittelpunkt?   </strong> 
+
+<img src="Aufgabe55.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe55.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 56-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 56
+
+Wie groß sind der Mittelpunktswinkel ε und der Radius r?    </strong>
+
+<img src="Aufgabe56.jpg" align="middle"> ε = <input type="text" id="Eintrag56" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef56" onclick="Aufgabe56()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe56() { 
+                                                
+                          if (Eintrag56.value=="83,6") {alert("Richtig"); document.getElementById("Pruef56").disabled= true;
+                          }  
+                           
+                          else if (Eintrag56.value!=="83,6" && Eintrag56.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag56").value="83,6"; window.open('Trigo_Aufgabe56.html');           
+                          document.getElementById("Pruef56").disabled= true;}
+                               
+                          else if (Eintrag56.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 57-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 57
+
+Wie groß sind die Winkel α und β in dem Würfel?    </strong> 
+
+<img src="Aufgabe57.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe57.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 58-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 58
+
+Wie groß sind die Winkel α, β und γ?   </strong>
+
+<img src="Aufgabe58.jpg" align="middle"> γ = <input type="text" id="Eintrag58" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef58" onclick="Aufgabe58()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe58() { 
+                                                
+                          if (Eintrag58.value=="69,4") {alert("Richtig"); document.getElementById("Pruef58").disabled= true;
+                          }  
+                           
+                          else if (Eintrag58.value!=="69,4" && Eintrag58.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag58").value="69,4"; window.open('Trigo_Aufgabe58.html');           
+                          document.getElementById("Pruef58").disabled= true;}
+                               
+                          else if (Eintrag58.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 59-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 59
+
+Wie groß sind s und α?  </strong> 
+
+<img src="Aufgabe59.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe59.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 60-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 60
+
+Wie groß sind s und γ?     </strong>
+
+<img src="Aufgabe60.jpg" align="middle"> γ = <input type="text" id="Eintrag60" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef60" onclick="Aufgabe60()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe60() { 
+                                                
+                          if (Eintrag60.value=="30") {alert("Richtig"); document.getElementById("Pruef60").disabled= true;
+                          }  
+                           
+                          else if (Eintrag60.value!=="30" && Eintrag60.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag60").value="30"; window.open('Trigo_Aufgabe60.html');           
+                          document.getElementById("Pruef60").disabled= true;}
+                               
+                          else if (Eintrag60.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 61-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 61
+
+Wie groß sind von einer regelmäßigen sechsseitigen Pyramide 
+mit einer Grundseite a von 14 cm und einer Höhe h von 24 cm 
+der Neigungswinkel α der Seitenflächen, der Neigungswinkel β
+der Seitenkanten gegen die Grundfläche und der Winkel γ an der
+Spitze eines Manteldreiecks?   </strong> 
+
+<button  onclick="window.open('Trigo_Aufgabe61.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 62-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 62
+
+Wie groß sind h, β und γ? </strong>
+
+<img src="Aufgabe62.jpg" align="middle"> h = <input type="text" id="Eintrag62" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef62" onclick="Aufgabe62()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe62() { 
+                                                
+                          if (Eintrag62.value=="3.5") {alert("Richtig"); document.getElementById("Pruef62").disabled= true;
+                          }  
+                           
+                          else if (Eintrag62.value!=="3,5" && Eintrag62.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag62").value="3,5"; window.open('Trigo_Aufgabe62.html');           
+                          document.getElementById("Pruef62").disabled= true;}
+                               
+                          else if (Eintrag62.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 63-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 63
+
+Wie groß ist der Winkel γ zwischen den 
+an den Kreis gelegten Tangenten?   </strong> 
+
+<img src="Aufgabe63.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe63.html');" >Lösung</button></p></pre>
+
+
+
+
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      
+                    
