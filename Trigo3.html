@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flächenberechnungen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Trigonometrie</p> 
+
+<!--//Aufgabe 133-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 133
+
+Berechnen Sie die Seite b, wenn a = 7,8 cm, 
+c = 9,6 cm und γ = 68°.   </strong> 
+
+ <img src="Aufgabe133.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe133.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 134-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 134
+
+Berechnen Sie die Seite c, wenn b = 2,4 m, α = 43° und β = 64°. </strong> 
+
+<img src="Aufgabe133.jpg" align="middle"> c = <input type="text" id="Eintrag134" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef134" onclick="Aufgabe134()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe134() { 
+                                                
+                          if (Eintrag134.value=="2,6") {alert("Richtig"); document.getElementById("Pruef134").disabled= true;
+                          }  
+                           
+                          else if (Eintrag134.value!=="2,6" && Eintrag134.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag134").value="2,6"; window.open('Trigo_Aufgabe134.html');           
+                          document.getElementById("Pruef134").disabled= true;}
+                               
+                          else if (Eintrag134.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 135-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 135
+
+Berechnen Sie die Seite a, wenn b = 62,8 cm, 
+α = 65° und γ = 48°.   </strong>   
+
+<img src="Aufgabe133.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe135.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 136-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 136
+
+Berechnen Sie die Seite b, wenn c = 322,6 m, 
+a = 283,7 m und γ = 48,7°.    </strong> 
+
+<img src="Aufgabe136.jpg" > 
+
+kürzere Seite = <input type="text" id="Eintrag136" maxlength="4" size="1" style= background-color:yellow ></input> m <button id="Pruef136" onclick="Aufgabe136()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe136() { 
+                                                
+                          if (Eintrag136.value=="44,7") {alert("Richtig"); document.getElementById("Pruef136").disabled= true;
+                          }  
+                           
+                          else if (Eintrag136.value!=="44,7" && Eintrag136.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag136").value="44,7"; window.open('Trigo_Aufgabe136.html');           
+                          document.getElementById("Pruef136").disabled= true;}
+                               
+                          else if (Eintrag136.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 137-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 137
+
+Berechnen Sie den Winkel α, wenn a = 14,3 m, 
+b = 26 m und γ = 82,1°.  </strong>   
+
+<img src="Aufgabe133.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe137.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 138-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 138
+
+Berechnen Sie die Fläche A des Parallelogramms. </strong> 
+
+<img src="Aufgabe138.jpg" > 
+
+A = <input type="text" id="Eintrag138" maxlength="5" size="2" style= background-color:yellow ></input> cm² <button id="Pruef138" onclick="Aufgabe138()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe138() { 
+                                                
+                          if (Eintrag138.value=="231,6") {alert("Richtig"); document.getElementById("Pruef138").disabled= true;
+                          }  
+                           
+                          else if (Eintrag138.value!=="231,6" && Eintrag138.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag138").value="231,6"; window.open('Trigo_Aufgabe138.html');           
+                          document.getElementById("Pruef138").disabled= true;}
+                               
+                          else if (Eintrag138.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 139-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 139
+
+Berechnen Sie den Winkel α, wenn a = 27 m, 
+c = 38 m und β = 124°.    </strong>  
+
+<img src="Aufgabe133.jpg" align="middle"> <button  onclick="window.open('Trigo_Aufgabe139.html');" >Lösung</button></p></pre>   
+
+ <!--//Aufgabe 140-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 140
+
+Berechnen Sie die Fläche A eines Dreiecks, 
+wenn a = 45 m, b = 296 m und c = 325 m.   </strong> 
+
+A = <input type="text" id="Eintrag140" maxlength="6" size="2" style= background-color:yellow ></input> m² <button id="Pruef140" onclick="Aufgabe140()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe140() { 
+                                                
+                          if (Eintrag140.value=="5362,5") {alert("Richtig"); document.getElementById("Pruef140").disabled= true;
+                          }  
+                           
+                          else if (Eintrag140.value!=="5362,5" && Eintrag140.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag140").value="5362,5"; window.open('Trigo_Aufgabe140.html');
+                                            document.getElementById("Pruef140").disabled= true;}
+                               
+                          else if (Eintrag140.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>     
+                      
+<!--//Aufgabe 141-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 141
+
+Berechnen Sie den Umkreisradius r<sub>a</sub> und den 
+Inkreisradius r<sub>i</sub> eines Dreiecks, wenn a = 32,1 m, 
+b = 13,2 m und c = 39,4 m.    </strong>   
+
+<button  onclick="window.open('Trigo_Aufgabe141.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 142-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 142
+
+Berechnen Sie die Länge der Diagonalen f, 
+wenn a = 3,9 cm, b = 2,1 cm und α = 47°.  </strong> 
+
+<img src="Aufgabe142.jpg" align="middle"> 
+
+f = <input type="text" id="Eintrag142" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef142" onclick="Aufgabe142()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe142() { 
+                                                
+                          if (Eintrag142.value=="2,9") {alert("Richtig"); document.getElementById("Pruef142").disabled= true;
+                          }  
+                           
+                          else if (Eintrag142.value!=="2,9" && Eintrag142.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag142").value="2,9"; window.open('Trigo_Aufgabe142.html');           
+                          document.getElementById("Pruef142").disabled= true;}
+                               
+                          else if (Eintrag142.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 143-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 143
+
+Berechnen Sie den Winkel γ, wenn b = 4,5 cm, 
+c = 5 cmund h<sub>c</sub> = 3 cm.    </strong>   
+
+<img src="Aufgabe143.jpg" > 
+
+<button  onclick="window.open('Trigo_Aufgabe143.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 144-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 144
+
+Berechnen Sie die Seite a, wenn ha = 25,3 m, 
+α = 98,8° und β = 34,2°.  </strong> 
+
+<img src="Aufgabe144.jpg" > 
+
+a = <input type="text" id="Eintrag144" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef144" onclick="Aufgabe144()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe144() { 
+                                                
+                          if (Eintrag144.value=="60,8") {alert("Richtig"); document.getElementById("Pruef144").disabled= true;
+                          }  
+                           
+                          else if (Eintrag144.value!=="60,8" && Eintrag144.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag144").value="60,8"; window.open('Trigo_Aufgabe144.html');           
+                          document.getElementById("Pruef144").disabled= true;}
+                               
+                          else if (Eintrag144.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 145-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 145
+
+Berechnen Sie den Winkel α, wenn a = 55,6 m, 
+c = 66 m und die Seitenhalbierende s<sub>c</sub> = 32,7 m.  </strong> 
+
+<img src="Aufgabe145.jpg" > 
+
+<button  onclick="window.open('Trigo_Aufgabe145.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 146-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 146
+
+Wie lang ist die kleinere der fehlenden Dreieckseiten, 
+wenn b = 6,25 m, hb = 5,12 m und sb = 5,57 m.   </strong> 
+
+<img src="Aufgabe146.jpg" > 
+
+Sie ist <input type="text" id="Eintrag146" maxlength="3" size="1" style= background-color:yellow ></input> m lang. <button id="Pruef146" onclick="Aufgabe146()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe146() { 
+                                                
+                          if (Eintrag146.value=="5,2") {alert("Richtig"); document.getElementById("Pruef146").disabled= true;
+                          }  
+                           
+                          else if (Eintrag146.value!=="5,2" && Eintrag146.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag146").value="5,2"; window.open('Trigo_Aufgabe146.html');           
+                          document.getElementById("Pruef146").disabled= true;}
+                               
+                          else if (Eintrag146.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 147-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 147
+
+Berechnen Sie die Seite b, wenn c = 160 m, 
+h<sub>a</sub> = 91 m und die Winkelhalbierende w<sub>β</sub> = 97 m.  </strong>  
+
+<img src="Aufgabe147.jpg" > 
+
+<button  onclick="window.open('Trigo_Aufgabe147.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 148-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 148
+
+Berechnen Sie die Seite b, wenn h<sub>c</sub> = 4 cm, 
+w<sub>γ</sub> = 4,4 cm und s<sub>c</sub> = 5,3 cm.   </strong> 
+
+<img src="Aufgabe148.jpg" align="middle"> 
+
+b = <input type="text" id="Eintrag148" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef148" onclick="Aufgabe148()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe148() { 
+                                                
+                          if (Eintrag148.value=="3,9") {alert("Richtig"); document.getElementById("Pruef148").disabled= true;
+                          }  
+                           
+                          else if (Eintrag148.value!=="3,7" && Eintrag148.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag148").value="3,9"; window.open('Trigo_Aufgabe148.html');           
+                          document.getElementById("Pruef148").disabled= true;}
+                               
+                          else if (Eintrag148.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                        
+                      
+
+<!--//Aufgabe 149-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 149
+
+Berechnen Sie den Winkel α, wenn sich die 
+Seiten a, b und c wie 3 : 5 : 7 verhalten.  </strong> 
+
+<img src="Aufgabe133.jpg" align="middle"> 
+
+<button  onclick="window.open('Trigo_Aufgabe149.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 150-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 150
+
+Berechnen Sie den Winkel β, wenn b = 42,5 m, 
+γ = 85°40' und a und c sich wie 5 : 8 verhalten.  </strong> 
+
+<img src="Aufgabe133.jpg" align="middle"> 
+
+β = <input type="text" id="Eintrag150" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef150" onclick="Aufgabe150()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe150() { 
+                                                
+                          if (Eintrag150.value=="55,9") {alert("Richtig"); document.getElementById("Pruef150").disabled= true;
+                          }  
+                           
+                          else if (Eintrag150.value!=="55,9" && Eintrag150.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag150").value="55,9"; window.open('Trigo_Aufgabe150.html');           
+                          document.getElementById("Pruef150").disabled= true;}
+                               
+                          else if (Eintrag150.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 151-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 151
+
+Wie groß ist die Fläche A des Parallelogramms?    </strong>   
+
+<img src="Aufgabe151.jpg" > 
+
+<button  onclick="window.open('Trigo_Aufgabe151.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 152-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 152
+
+Wie groß sind die Fläche A und die Seite b des 
+gleichschenkligen Trapezes? </strong> 
+
+<img src="Aufgabe152.jpg" align="middle"> 
+
+A = <input type="text" id="Eintrag152" maxlength="4" size="1" style= background-color:yellow ></input> m² <button id="Pruef152" onclick="Aufgabe152()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe152() { 
+                                                
+                          if (Eintrag152.value=="92,4") {alert("Richtig"); document.getElementById("Pruef152").disabled= true;
+                          }  
+                           
+                          else if (Eintrag152.value!=="92,4" && Eintrag152.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag152").value="92,4"; window.open('Trigo_Aufgabe152.html');           
+                          document.getElementById("Pruef152").disabled= true;}
+                               
+                          else if (Eintrag152.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 153-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 153
+
+Wie groß sind die Diagonalen e und f des Trapezes?  </strong>   
+
+<img src="Aufgabe153.jpg" > 
+
+<button  onclick="window.open('Trigo_Aufgabe153.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 154-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 154
+
+Wie groß sind die Seite c und die Diagonale f des Trapezes?    </strong> 
+
+<img src="Aufgabe154.jpg" > 
+
+c = <input type="text" id="Eintrag154" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef154" onclick="Aufgabe154()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe154() { 
+                                                
+                          if (Eintrag154.value=="127") {alert("Richtig"); document.getElementById("Pruef154").disabled= true;
+                          }  
+                           
+                          else if (Eintrag154.value!=="127" && Eintrag154.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag154").value="127"; window.open('Trigo_Aufgabe154.html');           
+                          document.getElementById("Pruef154").disabled= true;}
+                               
+                          else if (Eintrag154.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 155-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 155
+
+Wie groß ist die Seite c des Sehnenvierecks?   </strong>
+
+<img src="Aufgabe155.jpg" >
+
+<button  onclick="window.open('Trigo_Aufgabe155.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 156-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 156
+
+Wie groß ist die Seite d des Sehnenvierecks?  </strong> 
+
+<img src="Aufgabe156.jpg" > 
+
+d = <input type="text" id="Eintrag156" maxlength="5" size="2" style= background-color:yellow ></input> mm <button id="Pruef156" onclick="Aufgabe156()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe156() { 
+                                                
+                          if (Eintrag156.value=="422,2") {alert("Richtig"); document.getElementById("Pruef156").disabled= true;
+                          }  
+                           
+                          else if (Eintrag156.value!=="422,2" && Eintrag156.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag156").value="422,2"; window.open('Trigo_Aufgabe156.html');           
+                          document.getElementById("Pruef156").disabled= true;}
+                               
+                          else if (Eintrag156.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 157-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 157
+
+Wie groß ist der Winkel δ des Vierecks?</strong>
+
+<img src="Aufgabe157.jpg" >
+
+<button  onclick="window.open('Trigo_Aufgabe157.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 158-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 158
+
+Wie groß ist die Diagonale e des Drachenvierecks?  </strong> 
+
+<img src="Aufgabe158.jpg" align="middle"> 
+
+e = <input type="text" id="Eintrag158" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef158" onclick="Aufgabe158()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe158() { 
+                                                
+                          if (Eintrag158.value=="9,1") {alert("Richtig"); document.getElementById("Pruef158").disabled= true;
+                          }  
+                           
+                          else if (Eintrag158.value!=="9,1" && Eintrag158.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag158").value="9,1"; window.open('Trigo_Aufgabe158.html');           
+                          document.getElementById("Pruef158").disabled= true;}
+                               
+                          else if (Eintrag158.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 159-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 159
+
+Wie groß ist die Diagonale f des Drachenvierecks? </strong>
+
+<img src="Aufgabe159.jpg" >   
+
+<button  onclick="window.open('Trigo_Aufgabe159.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 160-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 160
+
+Wie groß ist die Diagonale f des Drachenvierecks?   </strong> 
+
+<img src="Aufgabe160.jpg" >
+
+f = <input type="text" id="Eintrag160" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef160" onclick="Aufgabe160()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe160() { 
+                                                
+                          if (Eintrag160.value=="3,9") {alert("Richtig"); document.getElementById("Pruef160").disabled= true;
+                          }  
+                           
+                          else if (Eintrag160.value!=="3,9" && Eintrag160.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag160").value="3,9"; window.open('Trigo_Aufgabe160.html');           
+                          document.getElementById("Pruef160").disabled= true;}
+                               
+                          else if (Eintrag160.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 161-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 161
+
+Wie groß ist die Seite b des Drachenvierecks?   </strong> 
+
+<img src="Aufgabe161.jpg" > 
+
+<button  onclick="window.open('Trigo_Aufgabe161.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 162-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 162
+
+Wie groß ist die Diagonale f des Sehnenvierecks?  </strong> 
+
+<img src="Aufgabe162.jpg" > 
+
+f = <input type="text" id="Eintrag162" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef162" onclick="Aufgabe162()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe162() { 
+                                                
+                          if (Eintrag162.value=="23,3") {alert("Richtig"); document.getElementById("Pruef162").disabled= true;
+                          }  
+                           
+                          else if (Eintrag162.value!=="23,3" && Eintrag162.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag162").value="23,3"; window.open('Trigo_Aufgabe162.html');           
+                          document.getElementById("Pruef162").disabled= true;}
+                               
+                          else if (Eintrag162.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 163-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 163
+
+Wie groß ist die Diagonale f des Sehnenvierecks?   </strong> 
+
+<img src="Aufgabe163.jpg" >
+
+<button  onclick="window.open('Trigo_Aufgabe163.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 164-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 164
+
+Die Mittelpunkte zweier Kreise mit den Radien 
+r₁ = 6 cm und r₂ = 4 cm liegen 8 cm auseinander. 
+Wie groß ist die gemeinsame Sehne s?   </strong> 
+
+s = <input type="text" id="Eintrag164" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef164" onclick="Aufgabe164()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe164() { 
+                                                
+                          if (Eintrag164.value=="5,8") {alert("Richtig"); document.getElementById("Pruef164").disabled= true;
+                          }  
+                           
+                          else if (Eintrag164.value!=="5,8" && Eintrag164.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag164").value="5,8"; window.open('Trigo_Aufgabe164.html');           
+                          document.getElementById("Pruef164").disabled= true;}
+                               
+                          else if (Eintrag164.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 165-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 165
+
+Wie groß ist die Seite c des gleichschenkligen Trapezes?    </strong> 
+
+<img src="Aufgabe165.jpg" > 
+
+<button  onclick="window.open('Trigo_Aufgabe165.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 166-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 166
+
+Wie groß ist die Seite a des gleichschenkligen Trapezes?  </strong> 
+
+<img src="Aufgabe166.jpg" >
+
+a = <input type="text" id="Eintrag166" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef166" onclick="Aufgabe166()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe166() { 
+                                                
+                          if (Eintrag166.value=="5,3") {alert("Richtig"); document.getElementById("Pruef166").disabled= true;
+                          }  
+                           
+                          else if (Eintrag166.value!=="5,3" && Eintrag166.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag166").value="5,3"; window.open('Trigo_Aufgabe166.html');           
+                          document.getElementById("Pruef166").disabled= true;}
+                               
+                          else if (Eintrag166.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 167-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 167
+
+Wie groß ist die Seite a des gleichschenkligen Trapezes?   </strong> 
+
+<img src="Aufgabe167.jpg" > 
+
+<button  onclick="window.open('Trigo_Aufgabe167.html');" >Lösung</button></p></pre>   
+                      
+<!--//Aufgabe 168-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 168
+
+Wie groß ist die Diagonale e des gleichschenkligen Trapezes? </strong>
+
+<img src="Aufgabe168.jpg" > 
+
+e = <input type="text" id="Eintrag168" maxlength="3" size="1" style= background-color:yellow ></input> km <button id="Pruef168" onclick="Aufgabe168()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe168() { 
+                                                
+                          if (Eintrag168.value=="6,1") {alert("Richtig"); document.getElementById("Pruef168").disabled= true;
+                          }  
+                           
+                          else if (Eintrag168.value!=="6,1" && Eintrag168.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag168").value="6,1"; window.open('Trigo_Aufgabe168.html');
+                                            document.getElementById("Pruef168").disabled= true;}
+                               
+                          else if (Eintrag168.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>     
+                      
+<!--//Aufgabe 169-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 169
+
+Wie groß sind die Oberfläche O und das Volumen V einer 
+Dreieckspyramide mit 10 cm langen Seitenkanten, 
+wenn die Seiten der Grundfläche a = 5 cm, b = 7 cm und 
+c = 8 cm lang sind? 
+Wie groß ist der Winkel α, den die Seitenkanten mit der 
+Grundfläche bilden? 
+Wie groß ist der Winkel β, den die Grundfläche mit der 
+Seitenfläche über a bildet?   </strong>  
+
+<button  onclick="window.open('Trigo_Aufgabe169.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 170-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 170
+
+Aus einem Kreisausschnitt mit dem Radius r = 15 cm 
+und dem Mittelpunktswinkel α = 105° ist ein Kegel 
+gebogen worden. 
+Wie groß ist dessen Volumen V?  </strong> 
+
+V = <input type="text" id="Eintrag170" maxlength="5" size="2" style= background-color:yellow ></input> cm³ <button id="Pruef170" onclick="Aufgabe170()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe170() { 
+                                                
+                          if (Eintrag170.value=="289,8") {alert("Richtig"); document.getElementById("Pruef170").disabled= true;
+                          }  
+                           
+                          else if (Eintrag170.value!=="289,8" && Eintrag170.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag170").value="289,8"; window.open('Trigo_Aufgabe170.html');           
+                          document.getElementById("Pruef170").disabled= true;}
+                               
+                          else if (Eintrag170.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 171-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 171
+
+Wie groß sind die Seite c und der Winkel α, 
+wenn a + b = 52 cm, γ = 60° , A = 160 * √3 cm³ 
+und a > b sein soll?  </strong>   
+
+<img src="Aufgabe171.jpg" > 
+
+<button  onclick="window.open('Trigo_Aufgabe171.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 172-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 172
+
+Die Seitenfläche und die Grundfläche einer regelmäßigen 
+geraden dreiseitigen Pyramide verhalten sich wie 2 : 1. 
+Berechnen Sie den Neigungswinkel α einer Seitenfläche 
+gegen die Grundfläche. </strong> 
+
+α = <input type="text" id="Eintrag172" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef172" onclick="Aufgabe172()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe172() { 
+                                                
+                          if (Eintrag172.value=="80,4") {alert("Richtig"); document.getElementById("Pruef172").disabled= true;
+                          }  
+                           
+                          else if (Eintrag172.value!=="80,4" && Eintrag172.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag172").value="80,4"; window.open('Trigo_Aufgabe172.html');           
+                          document.getElementById("Pruef172").disabled= true;}
+                               
+                          else if (Eintrag172.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 173-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 173
+
+Durch die Grundseite a = 4 cm eines geraden 
+regelmäßigen dreiseitigen Prismas verläuft 
+eine Ebene, die um 50,7° geneigt ist.
+Wie groß ist das Volumen V der abgeschnittenen Pyramide?
+
+</strong> <button  onclick="window.open('Trigo_Aufgabe173.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 174-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 174
+
+Eine gerade regelmäßige fünfseitige Pyramide hat 
+die Grundseite a = 10 cm und Seitenkanten s = 13 cm. 
+Wie groß sind der Winkel α zwischen Grundseite und 
+Seitenkante und der Winkel δ zwischen zwei Seitenflächen?  </strong>
+
+α = <input type="text" id="Eintrag174" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef174" onclick="Aufgabe174()">Prüfen</button></p></pre>
+
+                      <script>
+                        function Aufgabe174() { 
+                                                
+                          if (Eintrag174.value=="67,4") {alert("Richtig"); document.getElementById("Pruef174").disabled= true;
+                          }  
+                           
+                          else if (Eintrag174.value!=="67,4" && Eintrag174.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag174").value="67,4"; window.open('Trigo_Aufgabe174.html');           
+                          document.getElementById("Pruef174").disabled= true;}
+                               
+                          else if (Eintrag174.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 175-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 175
+
+Ein gerades dreiseitiges Prisma, dessen Höhe > 56 cm ist, 
+hat als Grundfläche ein Dreieck mit den Seiten a = 33 cm, 
+b = 21 cm und c = 45 cm. Eine Ebene, die durch C geht, 
+schneidet die Seitenkante über A in einer Höhe von 28 cm, 
+die über B in einer Höhe von 56 cm.
+Wie groß sind die größte Seite s dieses Schnittdreiecks 
+und seine Fläche A?   
+
+</strong> <button  onclick="window.open('Trigo_Aufgabe175.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 176-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 176
+
+Ein gerades dreiseitiges Prisma hat ein Volumen 
+von 400 cm³. Seine Grundfläche hat die Winkel 
+α = 42,5° und β = 71,3°. 
+Wie groß ist das Volumen V des umschriebenen Zylinders?   </strong> 
+
+V = <input type="text" id="Eintrag176" maxlength="6" size="2" style= background-color:yellow ></input> cm³ <button id="Pruef176" onclick="Aufgabe176()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe176() { 
+                                                
+                          if (Eintrag176.value=="1072,5") {alert("Richtig"); document.getElementById("Pruef176").disabled= true;
+                          }  
+                           
+                          else if (Eintrag176.value!=="1072,5" && Eintrag176.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag176").value="1072,5"; window.open('Trigo_Aufgabe176.html');           
+                          document.getElementById("Pruef176").disabled= true;}
+                               
+                          else if (Eintrag176.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                        
+                      
+
+<!--//Aufgabe 177-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 177
+
+Ein schiefer Kegel hat eine längste Mantellinie 
+von 30 cm, mit einem Neigungswinkel von 31,2°. 
+Seine kürzeste hat einen Neigungswinkel von 82,4°. 
+Wie groß ist das Volumen V des Kegels? </strong> 
+
+<button  onclick="window.open('Trigo_Aufgabe177.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 178-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 178
+
+Einem geraden Kegel mit dem Öffnungswinkel α = 31,6° 
+ist eine Kugel mit dem Durchmesser d = 55,4 cm einbeschrieben. 
+Wie groß ist das Volumen V des Kegels?   </strong> 
+
+V = <input type="text" id="Eintrag178" maxlength="5" size="2" style= background-color:yellow ></input> dm³ <button id="Pruef178" onclick="Aufgabe178()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe178() { 
+                                                
+                          if (Eintrag178.value=="181,4") {alert("Richtig"); document.getElementById("Pruef178").disabled= true;
+                          }  
+                           
+                          else if (Eintrag178.value!=="181,4" && Eintrag178.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag178").value="181,4"; window.open('Trigo_Aufgabe178.html');           
+                          document.getElementById("Pruef178").disabled= true;}
+                               
+                          else if (Eintrag178.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 179-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 179
+
+Berechnen Sie den Winkel α, den eine Raumdiagonale 
+des Quaders mit einer Flächendiagonale und den 
+Schnittwinkel β, den zwei Raumdiagonalen miteinander bilden. </strong>   
+
+<img src="Aufgabe179.jpg" > 
+
+<button  onclick="window.open('Trigo_Aufgabe179.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 180-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 180
+
+Wie groß ist die Seite d?  </strong>
+
+<img src="Aufgabe180.jpg" >
+
+d = <input type="text" id="Eintrag180" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef180" onclick="Aufgabe180()">Prüfen</button></p></pre>  
+    
+ 
+                      <script>
+                        function Aufgabe180() { 
+                                                
+                          if (Eintrag180.value=="8") {alert("Richtig"); document.getElementById("Pruef180").disabled= true;
+                          }  
+                           
+                          else if (Eintrag180.value!=="8" && Eintrag180.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag180").value="8"; window.open('Trigo_Aufgabe180.html');           
+                          document.getElementById("Pruef180").disabled= true;}
+                               
+                          else if (Eintrag180.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+                
+
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+          
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
