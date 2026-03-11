@@ -13,13 +13,80 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 147
 
-<img src="Aufgabe147a.jpg" >
-<img src="Aufgabe147b.jpg" >
+Berechnen Sie die Seite b, wenn c = 160 m, 
+h<sub>a</sub> = 91 m unddie Winkelhalbierende w<sub>β</sub> = 97 m. 
+ 
+<img src="Aufgabe147.jpg" >
 
-</pre>
+Im Dreieck ABD:
+
+         hβ       91 m
+sin β = ----- = ------- = 0,5688 --> β = 34,7°
+          c      160 m  
+
+Im Dreieck ABE:
+
+Fall SWS:
+
+Cosinussatz:
+
+AE<sup>2</sup> = c<sup>2</sup> + w<sub>β</sub><sup>2</sup> - 2 * c * w<sub>β</sub> * cos β/2
+
+AE<sup>2</sup> = 160<sup>2</sup> m<sup>2</sup> + 97<sup>2</sup> m<sup>2</sup> - 2*160 m*97 m*cos(34,7/2)°
+
+AE<sup>2</sup> = 160<sup>2</sup> m<sup>2</sup> + 97<sup>2</sup> m<sup>2</sup> - 2 * 160 m * 97 m * 0,9545
+
+AE<sup>2</sup> = 5 381,3 |√
+
+AE = 73,4 m
+
+Fall SSW:
+
+Sinussatz:
+
+  w<sub>β</sub>         AE   
+------- = --------- |*sin α 
+ sin α     sin β/2
+
+       AE * sin α   
+w<sub>β</sub> = ------------- |*sin β/2 
+        sin β/2
+
+w<sub>β</sub>  * sin β/2 = AE * sin α |:AE
+
+         w<sub>β</sub> * sin β/2
+sin α = -------------- = 
+              AE 
+              
+   97 m * sin (34,7/2)°      97 m * 0,2982
+= ---------------------- =  --------------- =
+           73,4 m                 73,4 m
+
+sin α = 0,3941 --> α = 23,2°
+
+γ = 180° - α – β = 180° - 23,2° - 34,7° = 122,1°
+
+Im Dreieck ABC:
+
+Fall SSW:
+
+  b        c     
+----- = ------ |*sin β
+sin β    sin γ     
+
+     c * sin β     160 m * sin 34,7°
+<span style="color:red;">b</span> = ----------- = ------------------- = 
+       sin γ           sin 122,1°
+       
+   160 m * 0,5693    
+= ---------------- <span style="color:red;">= 107,5 m</span>
+       0,8471       
+
+
+ </p></b></pre>

@@ -13,13 +13,78 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 145
 
-<img src="Aufgabe145a.jpg" >
-<img src="Aufgabe145b.jpg" >
+Berechnen Sie den Winkel α, wenn a = 55,6 m, 
+c = 66 m und die Seitenhalbierende s<sub>c</sub> = 32,7 m.
+ 
+<img src="Aufgabe145.jpg" >
 
-</pre>
+DB = c/2 m = 66/2 m = 33 m
+
+Fall SSS im Dreieck DBC: 
+
+Cosinussatz:
+
+s<sub>c</sub><sup>2</sup> = a<sup>2</sup> + (c/2)<sup>2</sup> - 2*a*(c/2)*cosβ |+2*a*(c/2)*cosβ
+
+s<sub>c</sub><sup>2</sup> + 2 * a * (c/2) * cos β = a<sup>2</sup> + (c/2)<sup>2</sup> |-s<sub>c</sub><sup>2</sup>
+
+2 * a * (c/2) * cos β = 
+
+= a<sup>2</sup> + (c/2)<sup>2</sup> - s<sub>c</sub><sup>2</sup> |:2 * a * (c/2)
+
+         a<sup>2</sup> + (c/2)<sup>2</sup> - s<sub>c</sub><sup>2</sup>       
+cos β = ------------------- = 
+           2 * a * (c/2)                  
+           
+    55,6<sup>2</sup> m<sup>2</sup> + 33<sup>2</sup> m<sup>2</sup> - 32,7<sup>2</sup> m<sup>2</sup>         
+= -------------------------------- = 0,8478            
+           2 * 55,6 m * 33 m       
+
+β = 32°
+
+Im Dreieck ABC:
+
+Fall SWS:
+
+Cosinussatz:
+
+AC<sup>2</sup> = a<sup>2</sup> + c<sup>2</sup> - 2 * a* c * cos α
+
+AC<sup>2</sup> = 55,6<sup>2</sup> m<sup>2</sup> + 66<sup>2</sup> m<sup>2</sup> - 2*55,6 m*66 m*cos 32°
+
+AC<sup>2</sup> = 55,6<sup>2</sup> m<sup>2</sup> + 66<sup>2</sup> m<sup>2</sup> - 2 * 55,6m * 66m * 0,848
+
+AC<sup>2</sup> = 1 223,7 m<sup>2</sup> | √
+
+AC = 35 m
+
+Fall SSW:
+
+  a        AC   
+------ = ------- |*sin α
+sin α     sin β   
+
+      AC * sin α   
+a = -------------- |*sin β
+         sin β 
+
+a * sin β = AC * sin α |:b
+
+         a * sin β      
+sin α = ----------- = 
+             AC                   
+             
+   55,6 m * sin 32°     55,6 m * 0,5299          
+= ------------------ = ----------------- = 0,8418
+          35 m                 35 m    
+
+-->  <span style="color:red;">α = 57,3°</span>
+
+
+ </p></b></pre>

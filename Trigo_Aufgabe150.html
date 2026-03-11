@@ -13,14 +13,118 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 150
 
-<img src="Aufgabe150.jpg" >
+Berechnen Sie den Winkel β, wenn b = 42,5 m, 
+γ = 85°40' und a und c sich wie 5 : 8 verhalten. 
+
+<img src="Aufgabe133.jpg" > 
+
+a : c = 5 : 8
+
+ a     5  
+--- = --- |*c
+ c     8
+
+     5     
+a = --- * c
+     8     
+
+Fall SWS:
+
+       40     
+40’ = ----° = 0,6667
+       60
+
+Cosinussatz:
+
+c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> - 2 * a * b * cos γ
+
+Eingesetzt:
+
+c<sup>2</sup> = (5/8 * c)<sup>2</sup> + b<sup>2</sup> - 2*5/8*c * b * cos 85,6667°
+
+c<sup>2</sup> = 25/64 * c<sup>2</sup> + b<sup>2</sup> - 10/8 * c * b * 0,0756
+
+c<sup>2</sup> = 25/64 * c<sup>2</sup> + 42,5<sup>2</sup> - 4 * c | -25/64 * c<sup>2</sup>
+
+64/64 * c<sup>2</sup> - 25/64 * c<sup>2</sup> = 1 806,25 – 4*c |+4*c
+
+39/64 * c<sup>2</sup> + 4 * c = 1 806,25 |-1806,25
+
+39/64 * c<sup>2</sup> + 4 * c – 1 806,25 = 0 |:39/64
+
+c<sup>2</sup> + 6,6 * c – 2 964,1 = 0
+
+p, q – Formel:
+
+p = 6,6 ; q = - 2964,1
+
 <img src="Aufgabe150a.jpg" >
-<img src="Aufgabe150b.jpg" >
 
-</pre>
+c<sub>1,2</sub> = -3,3 ± 54,5
+
+c<sub>1</sub> = -3,3 + 54,5 = 51,2 m
+
+c<sub>2</sub> = -3,3 – 54,5 = -57,8 
+
+keine Lösung, negative Länge
+
+     5         5 
+a = --- * c = --- * 51,2 m = 32 m
+     8         8  
+
+Fall SSW:
+
+   a        c  
+------ = ------- |*sin α
+sin α     sin γ    
+
+     c * sin α   
+a = ----------- |*sin γ
+       sin γ  
+
+a * sin γ = c * sin α | :c
+
+          a * sin γ     
+sin α = ------------ = 
+               c               
+               
+   32 m * sin 85,6667°     32 m * 0,9971
+= --------------------- = --------------- =
+           51,2 m              51,2 m  
+
+= 0,6232  --> α = 38,6°
+
+β = 180° - α – γ = 
+
+= 180° - 38,6° - 85,6667° = 55,7333°
+
+Fall SSW:
+
+   b          c    
+------- = ------- |*sin β
+ sin β     sin γ   
+
+     c * sin β   
+b = ----------- |*sin γ
+       sin γ  
+
+b * sin γ = c * sin β | :c
+
+         b * sin γ     
+sin β = ----------- = 
+             c                   
+             
+   42,5 m * sin 85,6667°     42,5 m * 0,9971 
+= ----------------------- = ----------------- =
+            51,2 m                51,2 m 
+
+= 0,8277 --> <span style="color:red;">β = 55,9°</span>
+
+
+ </p></b></pre>
