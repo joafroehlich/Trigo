@@ -13,15 +13,173 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 169
 
-<img src="Aufgabe169.jpg" >
-<img src="Aufgabe169a.jpg" >
-<img src="Aufgabe169b.jpg" >
-<img src="Aufgabe169c.jpg" >
+Wie groß sind die Oberfläche O und das Volumen V 
+einer Dreieckspyramide mit 10 cm langen Seiten-
+kanten, wenn die Seiten der Grundfläche a = 5 cm, 
+b = 7 cm und c = 8 cm lang sind? 
+Wie groß ist der Winkel α, den die Seitenkanten 
+mit der Grundfläche bilden? 
+Wie groß ist der Winkel β, den die Grundfläche 
+mit der Seitenfläche über a bildet? 
 
-</pre>
+Grundfläche der Pyramide:
+
+<img src="Aufgabe169.jpg" > 
+
+Die Projektionen der Seitenkanten auf die 
+Grundfläche müssen gleich lang sein, da auch 
+die Seitenkanten s gleich lang sind. Dies ist 
+dann der Fall, wenn die Spitze S der Pyramide 
+über dem Mittelpunkt des Umkreises liegt. 
+Die Projektionen sind dann gleich dem 
+Umkreisradius r.
+
+Im Dreieck ABC:
+
+Fall SSS:
+
+Cosinussatz:
+
+a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup> - 2 * b * c * cos γ |+2*b*c*cos γ
+
+a<sup>2</sup> + 2 * b * c * cos γ = b<sup>2</sup> + c<sup>2</sup> |-a<sup>2</sup>
+
+2 * b * c * cos γ = b<sup>2</sup> + c<sup>2</sup> - a<sup>2</sup> |:2 * b * c
+ 
+         b<sup>2</sup> + c<sup>2</sup> - a<sup>2</sup>        
+cos γ = -------------- = 
+           2 * b * c       
+           
+   7<sup>2</sup> cm<sup>2</sup> + 8<sup>2</sup> cm<sup>2</sup> - 5<sup>2</sup> cm<sup>2</sup>        
+= -------------------------- =            
+           2 * 7 cm * 8 cm
+
+= 0,7857 --> γ = 38,2°
+
+Der Umfangswinkel γ über der Sehne AB = a ist 
+gleich dem halben Mittelpunktswinkel bei S.
+
+Im Dreieck AES:
+
+         a/2      
+sin γ = ----- |*r
+          r  
+
+r * sin γ = a/2 |*2
+
+2 * r * sin γ = a |:2 * sin γ
+
+         a                   
+r = ----------- = 
+     2 * sin γ     
+     
+         5 cm             5 cm
+= ----------------- = ------------- = 4 cm     
+    2  * sin 38,2°     2 * 0,6184 
+       
+<img src="Aufgabe169a.jpg" >   
+
+Höhe der Pyramide: 
+
+(Schnitt entlang der Strecke AS)
+
+Satz von Pythagoras:
+
+s<sup>2</sup> = r<sup>2</sup> + h<sup>2</sup> | -r<sup>2</sup>
+
+h<sup>2</sup> = s<sup>2</sup> - r<sup>2</sup> 
+
+h<sup>2</sup> = 10<sup>2</sup> cm<sup>2</sup> - 4<sup>2</sup> cm<sup>2</sup> = 84 cm<sup>2</sup>|√
+
+h = 9,2 cm
+
+Neigungswinkel α der Seitenkante S zur 
+Grundfläche:
+
+          h        9,2 cm    
+sin α = ----- = --------- = 0,92 --> <span style="color:red;">α = 66,9°</span>
+          s         10 cm  
+          
+<img src="Aufgabe169b.jpg" >          
+
+Höhen der Seitenflächen:
+
+Höhe über AB:
+
+Im Dreieck DBS:
+
+Satz von Pythagoras:
+
+s<sup>2</sup> = h1<sup>2</sup> + (a/2)<sup>2</sup> | -(a/2)<sup>2</sup>
+
+h<sub>1</sub><sup>2</sup> = s<sup>2</sup> - (a/2)<sup>2</sup>
+
+h<sub>1</sub><sup>2</sup> = 10<sup>2</sup> cm<sup>2</sup> - (5/2)<sup>2</sup> cm<sup>2</sup> = 93,75 cm<sup>2</sup> |√
+
+h<sub>1</sub> = 9,7 cm
+
+Höhe über AC:
+
+h<sub>2</sub><sup>2</sup> = 100<sup>2</sup> cm<sup>2</sup> - (7/2)<sup>2</sup> cm<sup>2</sup> = 87,75 cm<sup>2</sup> |√
+
+h<sub>2</sub> = 9,4 cm
+
+Höhe über BC:
+
+h<sub>3</sub><sup>2</sup> = 100<sup>2</sup> cm<sup>2</sup> - (8/2)<sup>2</sup> cm<sup>2</sup> = 84 cm<sup>2</sup> |√
+
+h<sub>3</sub> = 9,2 cm
+
+O = Seitenfläche 1 + Seitenfläche 2 + 
+
++ Seitenfläche 3 + Grundfläche
+
+     a * h<sub>1</sub>     b * h<sub>2</sub>      c * h<sub>3</sub>           
+O = -------- + --------- + --------- + 
+        2         2            2                   
+        
+   b * c * sin γ      
++ ----------------        
+        2  
+
+     5 cm * 9,7 cm      7 cm * 9,4 cm           
+O = ---------------- + --------------- +  
+           2                   2                 2                              
+           
+   8 cm * 9,2 cm        7 cm * 8 cm * sin γ        
++ --------------- + + -----------------------           
+          2                      2 
+                                                                            
+O = 24,25 cm<sup>2</sup> + 32,9 cm<sup>2</sup> + 36,8 cm<sup>2</sup> + 
+
++ 28 cm<sup>2</sup> * sin 38,2°
+
+O = 24,25 cm<sup>2</sup> + 32,9 cm<sup>2</sup> + 36,8 cm<sup>2</sup> + 
+
++ 28 cm<sup>2</sup> * 0,6184
+
+<span style="color:red;">O = 111,3 cm<sup>2</sup></span>
+
+     b * c * sin γ * h      
+<span style="color:red;">V</span> = -------------------- = 
+           2 * 3                                    
+           
+   7 cm * 8 cm * 0,6184 * 9,2 cm        
+= ------------------------------- <span style="color:red;">= 53,1 cm<sup>3</sup> </span>          
+           6 
+
+Neigungswinkel β der Seitenfläche über a zur 
+Grundfläche:
+
+         h      9,2 cm
+sin β = ---- = -------- = 0,9485 --> <span style="color:red;">β = 71,5°</span>
+         h<sub>1</sub>     9,7 cm
+
+
+ </p></b></pre>

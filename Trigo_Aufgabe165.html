@@ -13,13 +13,84 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 165
 
-<img src="Aufgabe165a.jpg" >
-<img src="Aufgabe165b.jpg" >
+Wie groß ist die Seite c des gleichschenkligen 
+Trapezes? 
 
-</pre>
+<img src="Aufgabe165a.jpg" > 
+ 
+α = β wegen gleichschenkligem Trapez
+
+     360° - 2 * β     360° - 2 * 64,5°
+γ = -------------- = ------------------ = 115,5°
+           2                  2  
+
+Im Dreieck ABC:
+
+Fall SWS:
+
+Cosinussatz:
+
+f<sup>2</sup> = a<sup>2</sup> + d<sup>2</sup> - 2 * a * d * cos α 
+
+f<sup>2</sup> = 5,4<sup>2</sup> + 3,1<sup>2</sup> - 2 * 5,4 * 3,1 * cos 64,5°
+
+f<sup>2</sup> = 5,4<sup>2</sup> + 3,1<sup>2</sup> - 2 * 5,4 * 3,1 * 0,4305 =
+
+f<sup>2</sup> = 24,4 |√
+
+f = 4,9 cm 
+
+Im Dreieck CBD:
+
+b = d = 3,1 cm
+
+Fall SSW:
+
+Sinussatz:
+
+   f         b  
+------- = -------- |*sin δ’
+ sin γ     sin δ’   
+
+   f * sin δ’
+--------------- = b |*sin γ
+       sin γ          
+
+f * sin δ’ = b * sin γ | :f
+
+          b * sin γ        
+sin δ’ = ----------- = 
+              f
+              
+   3,1 cm * sin 115,5°     3,1 cm * 0,9026
+= --------------------- = ----------------- =
+          4,9 cm                4,9 cm  
+
+= 0,571 --> δ’ = 34,8°
+
+β’ = 180° - γ – δ’ = 180° - 115,5° - 34,8° = 29,7°
+
+Fall SWW:
+
+   c         f   
+------- = ------- |*sin β’
+ sin β’    sin γ       
+
+     f * sin β’            
+<span style="color:red;">c</span> = ------------ = 
+        sin γ                
+        
+   4,9 cm * sin 29,7°      4,9 cm * 0,4955
+= -------------------- = ------------------ =
+        sin 115,5°              0,9026
+
+<span style="color:red;">= 2,7 cm </span>
+
+
+ </p></b></pre>
