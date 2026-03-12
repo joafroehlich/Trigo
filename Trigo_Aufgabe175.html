@@ -13,13 +13,87 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
-    
-<pre>
+     
+<pre><b><p class ="Aufgabe">Aufgabe 175
 
-<img src="Aufgabe175.jpg" >
-<img src="Aufgabe175a.jpg" >
+Ein gerades dreiseitiges Prisma, dessen Höhe 
+> 56 cm ist, hat alsGrundfläche ein Dreieck mit 
+den Seiten a = 33 cm, b = 21 cm und c = 45 cm. 
+Eine Ebene, die durch C geht, schneidet die 
+Seitenkante über A in einer Höhe von 28 cm, die 
+über B in einer Höhe von 56 cm. Wie groß sind die 
+größte Seite s dieses Schnittdreiecks und seine 
+Fläche A? 
 
-</pre>
+ <img src="Aufgabe175.jpg" > 
+
+Im Dreieck CBH: (Rechter Winkel bei B)
+
+BH = 56 cm
+
+Satz von Pythagoras:
+
+a’<sup>2</sup> = BH<sup>2</sup> + a<sup>2</sup> = 56<sup>2</sup> cm<sup>2</sup> + 33<sup>2</sup> cm<sup>2</sup> = 4 225 cm<sup>2</sup>
+
+a’<sup>2</sup> = 4 225 cm<sup>2</sup> |√
+      
+a’ = <span style="color:red;">65 cm = s</span>
+
+Im Dreieck ACG: (Rechter Winkel bei A)
+
+AG = 28 cm
+
+Satz von Pythagoras:
+
+b’<sup>2</sup> = AG<sup>2</sup> + b<sup>2</sup> = 28<sup>2</sup> cm<sup>2</sup> + 21<sup>2</sup> cm<sup>2</sup> = 1 225 cm<sup>2</sup>
+
+b’<sup>2</sup> = 1 225 cm<sup>2</sup> |√
+      
+b’= 35 cm
+
+Im Dreieck GJH: 
+
+JH = 56 cm – 28 cm = 28 cm
+
+Satz von Pythagoras:
+
+c’<sup>2</sup> = JH<sup>2</sup> + c<sup>2</sup> = 28<sup>2</sup> cm<sup>2</sup> + 45<sup>2</sup> cm<sup>2</sup> = 2 809 cm<sup>2</sup>
+
+c’<sup>2</sup> = 2 809 cm<sup>2</sup> |√
+      
+c’= 53 cm
+
+Im Dreieck GCH:
+
+Fall SSS:
+
+Cosinussatz:
+
+a’<sup>2</sup> = b’<sup>2</sup> + c’<sup>2</sup> - 2*b’*c’*cos α |+2*b’*c’*cos α
+
+a’<sup>2</sup> + 2 * b’ * c’ * cos α = b’<sup>2</sup> + c’<sup>2</sup> | -a’<sup>2</sup>
+
+2 * b’ * c’ * cos α = b’<sup>2</sup> + c’<sup>2</sup> - a’<sup>2</sup> |:2*b’*c’
+ 
+         b’<sup>2</sup> + c’<sup>2</sup> - a’<sup>2</sup>
+cos α = ----------------- = 
+           2 * b’ * c’
+           
+   35<sup>2</sup> cm<sup>2</sup> + 53<sup>2</sup> cm<sup>2</sup> - 65<sup>2</sup> cm<sup>2</sup>
+= ----------------------------- = 
+        2 * 35 cm * 53 cm
+
+= - 0,0515 --> α = 93°
+
+    b’ * c’             35 cm * 53 cm 
+<span style="color:red;">A</span> = -------- * sin α = --------------- * sin 93° = 
+        2                     2
+               
+   35 cm * 53 cm  
+= --------------- * 0,9986 <span style="color:red;">= 926,2 cm<sup>2</sup></span>
+         2 
+
+ </p></b></pre>

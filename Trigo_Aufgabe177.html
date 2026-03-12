@@ -13,13 +13,71 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 177
 
+Ein schiefer Kegel hat eine längste Mantellinie 
+von 30 cm, mit einemNeigungswinkel von 31,2°. 
+Seine kürzeste hat einen Neigungswinkel von 82,4°. 
+Wie groß ist das Volumen V des Kegels? 
+ 
 <img src="Aufgabe177.jpg" >
-<img src="Aufgabe177a.jpg" >
 
-</pre>
+Im Dreieck ABC:
+
+             h       
+sin 31,2° = --- | *a
+             a         
+
+h = a * sin 31,2° = 30 cm * 0,518 = 15,5 cm
+
+Im Dreieck ADC:
+
+             h    
+sin 82,4° = --- | *b   
+             b  
+
+b * sin 82,4° = h | :sin 82,4°
+
+         h          15,5 cm   
+b = ----------- = ---------- = 15,6 cm
+     sin 82,4°      0,9912
+
+α’ = 180° - β = 180° - 82,4° = 97,6°
+
+γ = 180° - α’ – α = 180° - 97,6° - 31,2° = 51,2°
+
+Fall SWW:
+
+Sinussatz:
+
+  2 * r       a       
+-------- = -------- | *sin γ
+  sin γ     sin α’   
+
+          a * sin γ    
+2 * r = ----------- | *2
+           sin α’   
+
+       a * sin γ         
+r = -------------- = 
+      2 * sin α’           
+      
+   30 cm * sin 51,2°     30 cm * 0,7783   
+= ------------------- = ---------------- =
+      2 * sin 97,6°        2 * 0,9912
+      
+= 11,8 cm      
+
+     r<sup>2</sup> * π * h       
+<span style="color:red;">V</span> = ------------- = 
+          3                 
+          
+   11,8<sup>2</sup> cm<sup>2</sup> * π * 15,5 cm
+= ------------------------- <span style="color:red;">= 2 258,9 cm<sup>3</sup></span>
+                3    
+
+ </p></b></pre>

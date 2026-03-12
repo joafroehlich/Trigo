@@ -13,15 +13,160 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 176
 
-<img src="Aufgabe176.jpg" >
+Ein gerades dreiseitiges Prisma hat ein Volumen 
+von 400 cm³. Seine Grundfläche hat die Winkel 
+α = 42,5° und β = 71,3°. Wie groß ist das 
+Volumen V des umschriebenen Zylinders? 
+ 
+<img src="Aufgabe176.jpg" > 
+
+γ = 180° - α – β = 180° - 42,5° – 71,3° = 66,2°
+                    
+V<sub>Prisma</sub> = AD * h
+
+V<sub>Zylinder</sub> = AK * h = r<sup>2</sup> * π * h
+
+Zur Herleitung:
+
 <img src="Aufgabe176a.jpg" >
-<img src="Aufgabe176b.jpg" >
-<img src="Aufgabe176c.jpg" >
 
-</pre>
+Im Dreieck ABC:   
+
+      c * h<sub>c</sub>     
+AD = --------
+        2  
+
+         h<sub>c</sub> 
+sin α = ---- |*b
+          b        
+
+hc = b * sin α
+
+Eingesetzt:
+
+      b * c  
+AD = -------- * sin α   (1)
+        2         
+
+Im Dreieck AFC:
+
+         h<sub>a</sub>   
+sin γ = ----- | *b
+          b  
+
+ha = b * sin γ
+
+Im Dreieck ABE:
+
+         h<sub>a</sub>  
+sin β = ---- | *c
+          c  
+
+ha = c * sin β
+
+Gleichgesetzt:
+
+b * sin γ = c * sin β |:sin γ
+
+     c * sin β  
+b = -----------
+       sin γ  
+
+In (1) eingesetzt:
+
+      c * sin β * c * sin α      c<sup>2</sup>*sin β*sin α
+AD = ------------------------ = -----------------
+             2 * sin γ             2 * sin γ
+
+Im Dreieck AGM:
+
+Der Umfangswinkel γ über der Sehne AB = 
+halber Mittelpunktswinkel 
+           
+         c/2 
+sin γ = ------ |*r
+           r  
+
+r * sin γ = c/2 |*2
+
+2 * r * sin γ = c |:2 * sin γ
+
+         c    
+r = -----------
+      2 * sin γ
+
+          c<sup>2</sup>  
+r<sup>2</sup> = ------------   
+      4 * sin<sup>2</sup> γ
+
+                             
+V<sub>Prisma</sub> = AD * h = 
+
+   c<sup>2</sup> * sin α * sin β
+= -------------------- * h | * 2 * sin γ
+          2 * sin γ   
+
+V<sub>Prisma</sub> * 2 * sin γ = 
+
+= c<sup>2</sup> * sin α * sin β * h | :c<sup>2</sup> * sin α * sin β
+
+     V<sub>Prisma</sub> * 2 * sin γ  
+h = ----------------------  (2)
+      c<sup>2</sup> * sin α * sin β  
+
+V<sub>Zylinder</sub> = r<sup>2</sup> * π * h |:r<sup>2</sup> * π
+
+r<sup>2</sup> eingesetzt:
+
+                  c<sup>2</sup>       
+V<sub>Zylinder</sub> = ------------- * π * h | *4 * sin<sup>2</sup> γ  
+             4 * sin<sup>2</sup> γ
+
+V<sub>Zylinder</sub> * 4 * sin<sup>2</sup> γ = c<sup>2</sup> * π * h |:c<sup>2</sup> * π
+
+     V<sub>Zylinder</sub> * 4 * sin<sup>2</sup> γ  
+h = ------------------------   (3)
+              c<sup>2</sup> * π  
+
+Zylinderhöhe (2) = Prismahöhe (3)
+
+  V<sub>Prisma</sub> * 2 * sin γ 
+----------------------- = 
+   c<sup>2</sup> * sin α * sin β
+   
+    V<sub>Zylinder</sub> * 4 * sin<sup>2</sup> γ
+= ------------------------ | *c<sup>2</sup> * π   
+             c<sup>2</sup> * π
+  
+ V<sub>Prisma</sub> * 2 * sin γ * π
+-------------------------- = 
+        sin α * sin β 
+        
+= V<sub>Zylinder</sub> * 4 * sin<sup>2</sup> γ |: 4 * sin<sup>2</sup> γ
+
+              V<sub>Prisma</sub> * 2 * sin γ * π
+V<sub>Zylinder</sub> = ---------------------------- = 
+             4 * sin α * sin β * sin<sup>2</sup> γ 
+             
+                   V<sub>Prisma</sub> * π 
+= gekürzt = --------------------------
+             2 * sin α * sin β * sin γ 
+ 
+                       400 cm³ * π   
+V<sub>Zylinder</sub> = --------------------------------- = 
+             2*sin 42,5°*sin 71,3°*sin 66,2°
+
+                     400 cm³ * π      
+<span style="color:red;">V<sub>Zylinder</sub></span> = ------------------------------- = 
+              2 * 0,6756 * 0,9472 * 0,915  
+
+<span style="color:red;">= 1 072,5 cm<sup>3</sup></span>
+
+
+ </p></b></pre>

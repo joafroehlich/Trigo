@@ -13,13 +13,87 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 179
 
+Berechnen Sie den Winkel α, den eine Raumdiagonale 
+des Quadersmit einer Flächendiagonale und den 
+Schnittwinkel β, den zwei Raumdiagonalen 
+miteinander bilden. 
+ 
 <img src="Aufgabe179a.jpg" >
-<img src="Aufgabe179b.jpg" >
 
-</pre>
+Im Dreieck ABD:
+
+Satz von Pythagoras:
+
+e<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> = 8,5<sup>2</sup> cm<sup>2</sup> + 4,2<sup>2</sup> cm<sup>2</sup> = 89,9 cm<sup>2</sup>
+
+e<sup>2</sup> = 89,9 cm<sup>2</sup> |√
+      
+e = 9,5 cm 
+
+Im Dreieck ADH:
+
+Satz von Pythagoras:
+
+d<sup>2</sup> = e<sup>2</sup> + c<sup>2</sup> = 9,5<sup>2</sup> cm<sup>2</sup> + 5,9<sup>2</sup> cm<sup>2</sup> = 125,1 cm<sup>2</sup>
+
+d<sup>2</sup> = 125,1 cm<sup>2</sup> |√
+      
+d = 11,2 cm 
+
+Fall SSS:
+
+Cosinussatz:
+
+c<sup>2</sup> = e<sup>2</sup> + d<sup>2</sup> - 2 * e * d * cos α |+2*e*d*cos α
+
+c<sup>2</sup> + 2 * e * d * cos α = e<sup>2</sup> + d<sup>2</sup> | -c<sup>2</sup>
+
+2 * e * d * cos α = e<sup>2</sup> + d<sup>2</sup> - c<sup>2</sup> |:2 * e * d
+ 
+          e<sup>2</sup> + d<sup>2</sup> - c<sup>2</sup>
+cos α = --------------- = 
+            2 * e * d                 
+            
+    9,5<sup>2</sup> cm<sup>2</sup> + 11,2<sup>2</sup> cm<sup>2</sup> - 5.9<sup>2</sup> cm<sup>2</sup>        
+= ---------------------------------- =
+            2 * 9,5 cm * 11,2 cm
+
+= 0,85  --> <span style="color:red;">α = 31,8°</span>
+
+Die beiden Raumdiagonalen schneiden sich im 
+Punkt M und halbieren sich.
+
+Im Dreieck ABM:
+
+Fall SSS:
+
+Cosinussatz:
+
+e<sup>2</sup> = (d/2)<sup>2</sup> + (d/2)<sup>2</sup> - 
+
+- 2 * d/2 * d/2 * cos β |+2 * d/2 * d/2 * cos β
+
+e<sup>2</sup> + 2 * d/2 * d/2 * cos β = (d/2)<sup>2</sup> + (d/2)<sup>2</sup> |-e<sup>2</sup>
+
+2 * d/2 * d/2 * cos β = 
+
+= (d/2)<sup>2</sup> + (d/2)<sup>2</sup> - e<sup>2</sup> |:2 * d/2 * d/2
+ 
+         (d/2)<sup>2</sup> + (d/2)<sup>2</sup> - e<sup>2</sup>
+cos β = ----------------------- = 
+              2 * d/2 * d/2
+              
+   5,6<sup>2</sup> cm<sup>2</sup> + 5,6<sup>2</sup> cm<sup>2</sup> - 9,5<sup>2</sup> cm<sup>2</sup>
+= -------------------------------- =
+         2 * 5,6 cm * 5,6 cm
+
+= -0,4389 --> <span style="color:red;">β = 116°</span>
+
+
+ </p></b></pre>

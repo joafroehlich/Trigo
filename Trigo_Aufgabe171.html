@@ -13,14 +13,96 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 171
 
-<img src="Aufgabe171a.jpg" >
-<img src="Aufgabe171b.jpg" >
-<img src="Aufgabe171c.jpg" >
+Wie groß sind die Seite c und der Winkel α, 
+wenn a + b = 52 cm, γ = 60° , A = 160 * √3 cm<sup>2</sup> 
+und a > b sein soll? 
 
-</pre>
+<img src="Aufgabe171.jpg" > 
+
+a + b = 52 cm | -b
+
+a = 52 – b
+
+sin 60° = ½ * √3
+
+      a  * b * sin γ     (52 – b) * b * sin γ  
+A =  ---------------- = -----------------------
+             2                    2
+
+            (52 * b – b<sup>2</sup>) * ½ * √3
+160 * √3 = ------------------------ |: √3
+                        2 
+
+       52 * b – b<sup>2</sup>
+160 = --------------- |*4
+              4  
+
+640 = 52 * b – b<sup>2</sup> |+b<sup>2</sup>
+
+b<sup>2</sup> + 640 = 52 * b | -52 * b
+
+b<sup>2</sup> - 52b + 640 = 0
+
+p = -52 ; q = 640
+
+<img src="Aufgabe171a.jpg" > 
+
+b1,2 = 26 ± 6
+
+b1 = 26 + 6  = 32 cm
+
+b2 = 26 – 6  = 20 cm
+
+a1 = 52 – b1 = 52 cm – 32 cm = 20 cm
+
+a2 = 52 – b2 = 52 cm – 20 cm = 32 cm
+
+Wegen a > b ist a = 32 cm und b = 20 cm
+
+Fall SWS:
+
+Cosinussatz:
+
+c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> - 2 * a * b * cos γ 
+
+c<sup>2</sup> = 32<sup>2</sup> + 20<sup>2</sup> - 2 * 32 * 20 * cos 60°
+
+c<sup>2</sup> = 32<sup>2</sup> + 20<sup>2</sup> - 2 * 32 * 20 * 0,5 = 784
+
+c<sup>2</sup> = 784 |√
+
+<span style="color:red;">c = 28 cm</span>
+
+Fall SSW:
+
+Sinussatz:
+
+   a         c  
+------- = -------- |*sin γ
+ sin α     sin γ   
+
+   
+   a * sin γ
+------------- = c | *sin α
+     sin α          
+
+a * sin γ = c * sin α | :c
+
+         a * sin γ        
+sin α = ------------ = 
+              c
+              
+   32 cm * sin 60°     32 cm * 0,866
+= ----------------- = ---------------- =
+         28 cm              28 cm  
+
+= 0,9897 --> <span style="color:red;"α = 81,8°></span>
+
+
+ </p></b></pre>
