@@ -13,13 +13,79 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 189
 
-<img src="Aufgabe189.jpg" >
+Eine Brücke führt von A nach B über ein Tal. Von 
+einem Punkt C im Tal aus erscheinen A und B unter 
+den Höhenwinkeln α = 10,4° und β = 13,1° und die 
+Strecke AB unter dem Horizontalwinkel γ = 78,8°. 
+Berechnen Sie die Länge l der Brücke, wenn 
+A 53,6 m und B 88,7 m höher liegt als C. 
+
+<img src="Aufgabe189.jpg" > 
+
+A’ und B’ sind die Projektionspunkte von A und B 
+auf die Horizontalebene.
+
+Im Dreieck BB’C:
+
+          88,7 m    
+tan β = --------- | *B’C’
+           B’C      
+
+tan β * B’C = 88,7 m |:tan β
+
+        88,7 m        88,7 m 
+B’C = ----------- = --------- = 381,2 m
+       tan 13,1°     0,2327    
+
+Im Dreieck AA’C:
+
+          53,6 m    
+tan α = --------- | *A’C
+            A’C      
+
+tan α * A’C = 53,6 m |:tan α
+
+         53,6 m       53,6 m 
+A’C = ----------- = --------- = 292,1 m
+       tan 10,4°      0,1835    
+
+In der Horizontalebene gilt:
+
 <img src="Aufgabe189a.jpg" >
 
-</pre>
+Fall SWS:
+
+Cosinussatz:
+
+A’B’<sup>2</sup> = A’C<sup>2</sup> + B’C<sup>2</sup> - 2 * A’C * B’C * cos γ 
+
+A’B’<sup>2</sup> = 292,1<sup>2</sup> + 381,2<sup>2</sup> - 2*292,1*381,2*cos 78,8°
+
+A’B’<sup>2</sup> = 292,1<sup>2</sup> + 381,2<sup>2</sup> - 2*292,1*381,2*0,1942°
+
+A’B’<sup>2</sup> = 187 388,1 |√
+
+A’B’ = 432,9 m 
+
+Im Dreieck ADB:
+
+Satz von Pythagoras:
+
+AD = A’B’
+
+AB<sup>2</sup> = AD<sup>2</sup> + (88,7 m – 53,6 m)<sup>2</sup>
+
+AB<sup>2</sup> = 432,9<sup>2</sup> m<sup>2</sup> + 35,1<sup>2</sup> m<sup>2</sup>
+
+AB<sup>2</sup> = 188 634,4 m<sup>2</sup> |√
+
+AB = <span style="color:red;">434,3 m = l</span>
+
+
+ </p></b></pre>

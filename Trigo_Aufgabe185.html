@@ -13,15 +13,147 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 185
 
-<img src="Aufgabe185.jpg" >
+2 Punkte A und B sind durch ein Hindernis 
+getrennt. Zur Bestimmung ihrer Entfernung hat der 
+Vermesser 2 Punkte C und D gewählt, die 287,3 m 
+auseinander liegen. Weiterhin ist A von C 345,7 m 
+und B von D 264,9 m entfernt. Die Peilwinkel sind 
+ACD = 102,6° und BDC = 97,4°. 
+
+Wie groß ist AB, wenn C und D auf derselben Seite 
+von AB liegen? 
+
+Wie groß ist AB, wenn C und D auf verschiedenen 
+Seiten von AB liegen?
+
+<img src="Aufgabe185.jpg" > 
+
+1. Fall: C und D auf derselben Seite von AB.
+
+Im Dreieck CDB:
+
+Fall SWS:
+
+Cosinussatz:
+
+e<sup>2</sup> = 287,3<sup>2</sup> + 264,9<sup>2</sup> - 2*287,3*264,9*cos 97,4° 
+
+e<sup>2</sup> = 287,3<sup>2</sup> + 264,9<sup>2</sup> - 2*287,3*264,9*(-0,1288)
+
+e<sup>2</sup> = 172 318,1 |√
+
+e = 415,1 m 
+
+Fall SSW:
+
+Sinussatz:
+
+     e         264,9 m  
+----------- = ---------- |*sin α’
+ sin 97,4°      sin α’   
+
+   
+   e * sin α’
+-------------- = 264,9 m |*sin 97,4°
+   sin 97,4°         
+
+e * sin α’ = 264,9 m * sin 97,4° |:e
+
+          264,9 m * sin 97,4°
+sin α’ = --------------------- =
+                   e
+                   
+   264,9 m * 0,9917
+= ------------------- = 0,6329
+         415,1 m
+
+α’ = 39,3°
+
+ε = 102,6° - 39,3° = 63,3°
+
+Im Dreieck ACB:
+
+Fall SWS:
+
+Cosinussatz:
+
+AB<sup>2</sup> = 345,7<sup>2</sup> + 415,1<sup>2</sup> - 2*345,7*415,1*cos 63,3° 
+
+AB<sup>2</sup> = 345,7<sup>2</sup> + 415,1<sup>2</sup> - 2*345,7*415,1*0,4493
+
+AB<sup>2</sup> = 162 867,3 |√
+
+<span style="color:red;">AB = 403,6 m</span>
+
+2. Fall: C und D liegen auf verschiedenen Seiten 
+von AB:
+
 <img src="Aufgabe185a.jpg" >
-<img src="Aufgabe185b.jpg" >
-<img src="Aufgabe185c.jpg" >
 
-</pre>
+Im Dreieck ADC:
+
+Fall SWS:
+
+Cosinussatz:
+
+e<sup>2</sup> = 287,3<sup>2</sup> + 345,7<sup>2</sup> - 2*287,3*345,7*cos 102,6° 
+
+e<sup>2</sup> = 287,3<sup>2</sup> + 345,7<sup>2</sup> - 2*287,3*345,7*(-0,2181)
+
+e<sup>2</sup> = 245 373 |√
+
+e = 495,4 m 
+
+Fall SSW:
+
+Sinussatz:
+
+     e          345,7 m  
+------------ = --------- |*sin γ
+ sin 102,6°      sin γ   
+
+   
+  e * sin γ
+------------- = 345,7 m |*sin 102,6°
+  sin 102,6°         
+
+e * sin γ = 345,7 m * sin 102,6° |:e
+
+         345,7 m * sin 102,6°
+sin γ = ---------------------- = 
+                   e
+
+   345,7 m * 0,9759 
+= ------------------- = 
+         495,4 m 
+
+= 0,681 --> γ = 42,9°
+
+Im Dreieck ABD:
+
+Fall SWS:
+
+Cosinussatz:
+
+AB<sup>2</sup> = 264,9<sup>2</sup> + 495,4<sup>2</sup> - 
+
+- 2 * 264,9 * 495,4 * cos (97,4° + 42,9°) 
+
+AB<sup>2</sup> = 264,9<sup>2</sup> + 495,4<sup>2</sup> - 2*264,9*495,4*cos 140,3° 
+
+AB<sup>2</sup> = 264,9<sup>2</sup> + 495,4<sup>2</sup> - 
+
+- 2 * 264,9 * 495,4 * cos (-0,7694) 
+
+AB<sup>2</sup> = 517 532,1 |√
+
+<span style="color:red;">AB = 719,4 m</span>
+
+             
+</p></b></pre>
