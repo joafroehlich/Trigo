@@ -13,13 +13,64 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 196
 
+Von einem Aussichtspunkt aus sieht man 500 m 
+einer waagerechtenStraße unter einem Sehwinkel 
+von 54,5°. Die Endpunkte sieht man unter den 
+Tiefenwinkeln 26,7° und 18,2°. Berechnen Sie die 
+Höhe h, die der Aussichtspunkt über den 
+Endpunkten liegt. 
+ 
 <img src="Aufgabe196.jpg" >
-<img src="Aufgabe196a.jpg" >
 
-</pre>
+Im Dreieck ADC:
+
+              h     
+sin 18,2° = ---- |*AC 
+             AC  
+
+AC * sin 18,2° = h | :sin 18,2°
+
+          h            h   
+AC = ----------- = --------- = 3,2 * h
+      sin 18,2°     0,3123         
+
+Im Dreieck BDC:
+
+             h     
+sin 26,7° = ---- |*BC 
+             BC  
+
+BC * sin 26,7° = h |:sin 26,7°
+
+          h           h   
+BC = ----------- = --------- = 2,2 * h
+      sin 26,7°     0,4493         
+
+Im Dreieck ABC:
+
+Fall SWS:
+
+Cosinussatz:
+
+AB<sup>2</sup> = AC<sup>2</sup> + BC<sup>2</sup> - 2 * AC * BC * cos 54,5° 
+
+500<sup>2</sup> = (3,2 * h)<sup>2</sup> + (2,2 * h)<sup>2</sup> - 
+
+- 2 * 3,2 * h * 2,2 * h * 0,5807
+
+250 000 = 10,24h<sup>2</sup> + 4,84h<sup>2</sup> - 8,2h<sup>2</sup>
+
+250 000 = 6,9h<sup>2</sup> | :6,9
+
+h<sup>2</sup> = 36 231,9 |√
+
+<span style="color:red;">h = 190,3 m</span>
+
+
+</p></b></pre>>
