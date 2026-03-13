@@ -13,13 +13,74 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 204
 
+Eine Eisenbahnbrücke soll über ein Tal von A nach 
+B verlaufen. A liegt 61,3 m und B 52,3 m über 
+einem Talpunkt C. Der Horizontalwinkel bei 
+C = 53,3°, der Höhenwinkel von C zu A = 10,8°, 
+der zu B = 8,4°. 
+Wie groß ist die Länge l der Bahnstrecke? 
+ 
 <img src="Aufgabe204.jpg" >
-<img src="Aufgabe204a.jpg" >
 
-</pre>
+Im Dreieck AA’C: (rechter Winkel bei A’)
+
+              61,3 m   
+tan 10,8° = ---------- |*A’C
+                A’C
+
+A’C * tan 10,8° = 61,3 m |:tan 10,8°
+
+        61,3 m        61,3 m  
+A’C = ----------- = ---------- = 321,3 m
+       tan 10,8°      0,1908
+
+Im Dreieck BB’C: (rechter Winkel bei B’)
+
+             52,3 m   
+tan 8,4° = ---------- |*B’C
+               B’C
+
+B’C * tan 8,4° = 52,3 m |:tan 8,4°
+
+
+        52,3 m       52,3 m  
+B’C = ----------- = --------- = 354,1 m
+        tan 8,4°     0,1477
+
+IM Dreieck A’B’C :
+
+Fall SWS:
+
+Cosinussatz:
+
+A’B’<sup>2</sup> = A’C<sup>2</sup> + B’C<sup>2</sup> - 2 * A’C * B’C * cos 53,3° 
+
+A’B’<sup>2</sup> = 321,3<sup>2</sup> + 354,1<sup>2</sup> - 2*321,3 * 354,1 * 0,5976
+
+A’B’<sup>2</sup> = 92 639,8 |√
+
+A’B’ = 304,4 m 
+
+A’B’ = DB
+
+Im Dreieck ADB:
+
+Satz von Pythagoras:
+
+AB<sup>2</sup> = (61,3 m – 52,3 m)<sup>2</sup> + DB<sup>2</sup>
+
+AB<sup>2</sup> = 9<sup>2</sup> m<sup>2</sup> + 304,4<sup>2</sup> m<sup>2</sup>
+
+AB<sup>2</sup> = 92 740,4 |√
+
+AB = <span style="color:red;">304,5 m = l</span>
+
+          
+
+ </p></b></pre>
