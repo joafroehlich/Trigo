@@ -13,15 +13,180 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 227
 
-<img src="Aufgabe227a.jpg" >
-<img src="Aufgabe227b.jpg" >
-<img src="Aufgabe227c.jpg" >
-<img src="Aufgabe227d.jpg" >
+Um die Höhe h eines Berges zu bestimmen, peilt 
+man sie von drei Punkten A, B und C einer geraden 
+Straße aus unter den Winkeln α = 9,3°,β = 14,4° 
+und γ = 11,8° an. A und B liegen 687 m und B und 
+C 458 m auseinander. Wie groß ist h? 
+ 
+<img src="Aufgabe227a.jpg" > 
 
-</pre>
+Im Dreieck CDE:
+
+              h
+tan 11,8° = ---- |*CD
+             CD  
+
+CD * tan 11,8° = h |:tan 11,8°
+
+          h      
+CD = -----------
+      tan 11,8°
+
+Im Dreieck BDE:
+
+              h
+tan 14,4° = ---- |*BD
+             BD  
+
+BD * tan 14,4° = h |:tan 14,4°
+
+          h      
+BD = ------------
+       tan 14,4°
+  
+Im Dreieck ADE:
+
+             h
+tan 9,3° = ---- |*AD
+            AD  
+
+AD * tan 9,3° = h |:tan 9,3°
+
+         h      
+AD = ----------
+      tan 9,3°
+
+            h 
+       -----------    
+ CD      tan 11.8°     
+---- = ------------
+ BD          h
+       -----------
+        tan 14,4°
+
+ CD     tan 14,4°   
+---- = ----------- |*BD
+ BD     tan 11,8°  
+
+      0,2568   
+CD = --------- * BD = 1,2293 * BD
+      0,2089     
+
+             h 
+       --------------    
+ BD       tan 14,4°     
+---- = --------------
+ AD           h
+       -------------
+          tan 9,3°
+
+ BD      tan 9,3°   
+---- = ------------  *AD
+ AD      tan 14,4°  
+
+      0,1638   
+BD = --------- * AD = 0,6379 * AD |:0,6379
+      0,2568     
+
+         BD    
+AD = ---------- = 1,5674 * BD
+       0,6379  
+
+Im Dreieck ABD:
+
+cos (180° - φ) = - cos φ
+
+Cosinussatz:
+
+AD<sup>2</sup> = (687 m)<sup>2</sup> + BD<sup>2</sup> - 2*687 m*BD*cos (180° - φ)    
+
+(1,5674 * BD)<sup>2</sup> = 
+
+471 969 m<sup>2</sup> + BD<sup>2</sup> - 1 374 * BD * (- cos  φ )
+
+2,4567 * BD<sup>2</sup> = 
+
+471 969 m<sup>2</sup> + BD<sup>2</sup> + 1374 * BD * cos φ |-471 969 m<sup>2</sup>
+
+2,4567 * BD<sup>2</sup> - 471 969 m<sup>2</sup> = 
+
+= BD<sup>2</sup> + 1 374 * BD * cos  φ |- BD<sup>2</sup>
+
+1,4567 * BD<sup>2</sup> - 471 969 m<sup>2</sup> = 
+
+= 1 374 * BD * cos  φ | : 1 374 * BD
+
+         1,4567 * BD<sup>2</sup> - 471 969 m<sup>2</sup>
+cos φ = ----------------------------
+                1 374 * BD
+
+Im Dreieck BCD:
+
+Cosinussatz:
+
+CD<sup>2</sup> = (458 m)<sup>2</sup> + BD<sup>2</sup> - 2 * 458 m * BD * cos  φ    
+
+(1,2293 * BD)<sup>2</sup> = 209 764 m<sup>2</sup> + BD<sup>2</sup> - 916*BD*cos φ 
+
+1,5112 * BD<sup>2</sup> = 209 764 m<sup>2</sup> + BD<sup>2</sup> - 
+
+- 916 * BD * cos  φ |-1,5112 * BD<sup>2</sup>
+
+0 = 209 764 m<sup>2</sup> - 0,5112 * BD<sup>2</sup> - 
+
+- 916 * BD * cos  φ | + 916 * BD * cos φ
+
+916 * BD * cos = 209 764 m<sup>2</sup> - 0,5112*BD<sup>2</sup> |:916*BD
+
+
+         209 764 m<sup>2</sup> - 0,5112 * BD<sup>2</sup> 
+cos φ = ----------------------------
+                 916 * BD
+
+Gleichgesetzt:
+
+ 209 764 m<sup>2</sup> - 0,5112 * BD<sup>2</sup>
+--------------------------- = 
+          916 * BD
+               
+   1,4567 * BD<sup>2</sup> - 471 969 m<sup>2</sup>
+= ---------------------------- |*916*BD
+            1 374 * BD
+
+ 209 764 - 0,5112 * BD<sup>2</sup> = 
+
+   (1,4567 * BD<sup>2</sup> - 471 969 m<sup>2</sup>) * 916 * BD
+= ---------------------------------------- 
+                1 374 * BD
+
+209 764 m<sup>2</sup> - 0,5112 * BD<sup>2</sup> = 
+
+= (1,4567 * BD<sup>2</sup> - 471 969 m<sup>2</sup>) * 0,6667
+
+209 764 - 0,5112 * BD<sup>2</sup> = 
+
+= 0,9712 * BD<sup>2</sup> - 314 661,7 m<sup>2</sup> | +0,5112 * BD<sup>2</sup>
+ 
+209764 m<sup>2</sup> = 1,4824 * BD<sup>2</sup> - 314661,7 m<sup>2</sup> |-209764 m<sup>2</sup>
+
+1,4824 * BD<sup>2</sup> = 524 425,7 m<sup>2</sup> |:,4824
+
+BD<sup>2</sup> = 352 768 m<sup>2</sup>|√
+
+BD = 593,9 m
+
+          h      
+BD = ----------- |*tan 14,4°
+      tan 14,4°
+
+<span style="color:red;">h</span> = BD * tan 14,4° = 593,9 m * 0,2568 <span style="color:red;">= 152,5 m</span>
+  
+
+ </p></b></pre>
