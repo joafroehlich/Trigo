@@ -13,14 +13,107 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 219
 
-<img src="Aufgabe219.jpg" >
-<img src="Aufgabe219a.jpg" >
-<img src="Aufgabe219b.jpg" >
+In einem Punkt greifen die Kräfte F<sub>1</sub> = 145 N, 
+F<sub>2</sub> = 230 N und F<sub>3</sub> = 204 N an. Wie groß ist die 
+Größe R der resultierenden Kraft und deren 
+Richtung γ zu F<sub>3</sub>, wenn F<sub>1</sub>F<sub>2</sub> = 98° und 
+F<sub>2</sub>F<sub>3</sub> = 147°? 
+ 
+<img src="Aufgabe219.jpg" > 
 
-</pre>
+Im Dreieck ADB:
+
+δ = 180° - 98° = 82°
+
+Fall SWS:
+
+Cosinussatz:
+
+R<sub>1</sub><sup>2</sup> = F<sub>1</sub><sup>2</sup> + F<sub>2</sub><sup>2</sup> - 2 * F<sub>1</sub> * F<sub>2</sub> * cos δ
+
+R<sub>1</sub><sup>2</sup> = F<sub>1</sub><sup>2</sup> + F<sub>2</sub><sup>2</sup> - 2 * F<sub>1</sub> * F<sub>2</sub> * cos 82°
+
+R<sub>1</sub><sup>2</sup> = (145 N)<sup>2</sup> + (230 N)<sup>2</sup> - 2*145 N*230 N*0,1392°
+
+R<sub>1</sub><sup>2</sup> = 64 640,4 N<sup>2</sup> |√
+
+R<sub>1</sub> = 254,2 N 
+
+Fall SSW:
+
+Sinussatz:
+
+   R<sub>1</sub>       F<sub>1</sub>
+------- = ------- |*sin α
+ sin δ     sin α     
+
+
+ R<sub>1</sub> * sin α
+------------ = F<sub>1</sub> |*sin δ
+   sin δ
+
+R<sub>1</sub> * sin α = F<sub>1</sub> * sin δ |:R1
+
+         F<sub>1</sub> * sin δ     145 N * sin 82°
+sin α = ------------ = ----------------- = 
+             R<sub>1</sub>              254,2 N
+             
+   145  N * 0,9903           
+= ------------------ = 0,5649
+        254,2 N   
+
+α = 34,4°
+
+ε = 180° - 147° - α = 180° - 147° - 34,4° = -1,4°
+
+Im Dreieck AEF:
+
+Fall SWS:
+
+Cosinussatz:
+
+R<sup>2</sup> = F<sub>3</sub><sup>2</sup> + R<sub>1</sub><sup>2</sup> - 2 * F<sub>3</sub> * R<sub>1</sub> * cos ε
+
+R<sup>2</sup> = F<sub>3</sub><sup>2</sup> + R<sub>1</sub><sup>2</sup> - 2 * F<sub>3</sub> * R<sub>1</sub> * cos 1,4°
+
+R<sup>2</sup> = (204 N)<sup>2</sup> + (254,2 N)<sup>2</sup> - 
+
+- 2 * 204 N * 254,2 N * 0,9997°
+
+R<sup>2</sup> = 2 551,2 N<sup>2</sup> |√
+
+<span style="color:red;"></span>R = 50,5 N 
+
+Fall SSW:
+
+Sinussatz:
+
+   R         R<sub>1</sub>     
+------- = ------- |*sin γ
+ sin ε     sin γ     
+
+ R * sin γ
+----------- = R<sub>1</sub> |*sin ε
+   sin ε
+
+R * sin γ = R<sub>1</sub> * sin ε |:R
+
+         R<sub>1</sub> * sin ε     254,2 N * sin 1,4°
+sin γ = ------------ = -------------------- = 
+             R                50,5 N
+             
+   254,2  N * 0,0244         
+= -------------------- = = 0,1227
+           50,5 N   
+
+--> <span style="color:red;"></span>γ = 7° oder (180° - 7°) <span style="color:red;"></span>= 173° gewählt 173° 
+
+(siehe Skizze)
+
+ </p></b></pre>

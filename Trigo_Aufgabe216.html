@@ -13,13 +13,65 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 216
 
+Wie groß sind die Winkel α und β, die entstehen, 
+wenn eine Kraft R = 235 N in die zwei Teilkräfte 
+F<sub>1</sub> = 160 N und F<sub>2</sub> = 135 N zerlegt wird?
+ 
 <img src="Aufgabe216.jpg" >
-<img src="Aufgabe216a.jpg" >
 
-</pre>
+Im Dreieck ADB:
+
+Fall SSS:
+
+Cosinussatz:
+
+F<sub>2</sub><sup>2</sup> = F<sub>1</sub><sup>2</sup> + R<sup>2</sup> - 2 * F<sub>1</sub> * R * cosβ |+2*F1*R*cos β
+
+F<sub>2</sub><sup>2</sup> + 2 * F<sub>1</sub> * R * cos β = F<sub>1</sub><sup>2</sup> + R<sup>2</sup>  |-F<sub>2</sub><sup>2</sup>
+
+2 * F1 * R * cos β = F1<sup>2</sup> + R<sup>2</sup> - F2<sup>2</sup> |:2 * F1 * R
+ 
+         F<sub>1</sub><sup>2</sup> + R<sup>2</sup> - F<sub>2</sub><sup>2</sup>
+cos β = ---------------- = 
+           2 * F<sub>1</sub> * R<sub>2</sub>
+           
+   (160 N)<sup>2</sup> + (235 N)<sup>2</sup> - (135 N)<sup>2</sup>
+= --------------------------------- = 0,8324
+           2 * 160 N * 235 N
+
+--> <span style="color:red;">β = 33,7°</span>
+
+Im Dreieck ACD:
+
+Fall SSW:
+
+Sinussatz:
+
+   F<sub>2</sub>         F<sub>1</sub>
+-------- = ------- |*sin α
+ sin β      sin α     
+
+ F<sub>2</sub> * sin α
+------------ = F<sub>1</sub> |*sin β
+    sin β
+
+F<sub>2</sub> * sin α = F<sub>1</sub> * sin β |:F<sub>2</sub>
+
+         F<sub>1</sub> * sin β       160 N * sin 33,7°
+sin α = ------------- = -------------------- = 
+              F<sub>2</sub>                 135 N
+              
+   160  N * 0,5548           
+= ----------------- = 0,6575
+         135 N   
+
+--> <span style="color:red;">α = 41,1°</span>
+
+
+ </p></b></pre>

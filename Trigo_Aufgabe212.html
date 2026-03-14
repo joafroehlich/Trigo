@@ -13,14 +13,177 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre>
+<pre><b><p class ="Aufgabe">Aufgabe 212
 
-<img src="Aufgabe212a.jpg" >
-<img src="Aufgabe212b.jpg" >
-<img src="Aufgabe212c.jpg" >
-<img src="Aufgabe212d.jpg" >
-</pre>
+Ein Flugzeug startet um 10.20 Uhr in A mit einem 
+Kurs N 42,5° O, um das 600 km entfernte C um 
+11.50 Uhr zu erreichen. Um 10.36 Uhr startet vom 
+400 km südlich von C liegenden B aus ein Flugzeug, 
+das sich mit dem ersten zum Weiterflug nach C 
+treffen will. Welchen Kurs K muss das zweite 
+fliegen, wenn es mit einer Geschwindigkeit von 
+450 km/h unterwegs ist? Zu welchem Zeitpunkt z 
+treffen sie sich, und wie groß ist die 
+Entfernung e dieses Treffpunktes von C? 
+ 
+<img src="Aufgabe212a.jpg" > 
+
+Das erste Flugzeug F1 braucht für die 600 km 
+von A nach C:
+
+Abfahrtszeit 10.20 Uhr
+
+Ankunftszeit: 11.50 Uhr 
+
+Das sind 11.50 – 10.20 = 1 h 30 min = 1,5 h
+
+Somit ist seine Geschwindigkeit v1:
+
+      s      600 km          
+v<sub>1</sub> = --- = ---------- = 400 km/h 
+      t      1,5 h 
+      
+= Geschwindigkeitsvektor AC      
+
+Bis F<sub>2</sub> startet, hat F<sub>1</sub> den Weg s1 = AE 
+zurückgelegt.
+
+Zeit t<sub>1</sub> bis zum Start von F2:
+
+10.36 Uhr – 10.20 Uhr = 16 Minuten = 16/60 h = 
+
+= 0,267 h
+
+Somit beträgt die Strecke AE:
+
+s<sub>1</sub> = v<sub>1</sub> * t<sub>1</sub> = 400 km/h * 0,267 h = 106,8 km 
+
+Im Dreieck EBC:
+
+EC = 600 km – 106,8 km = 493,2 km
+
+Fall SWS:
+
+Cosinussatz:
+
+Winkel bei C = Winkel bei A (Z-Winkel)
+
+EB<sup>2</sup> = 493,2<sup>2</sup> km<sup>2</sup> + 400<sup>2</sup> km<sup>2</sup> - 
+
+- 2 * 493,2 km * 400 km * cos 42,5°
+
+EB<sup>2</sup> = 493,2<sup>2</sup> km<sup>2</sup> + 400<sup>2</sup> km<sup>2</sup> - 
+
+- 2 * 493,2 km * 400 km * 0,7373
+
+EB<sup>2</sup> = 112 337,2 km<sup>2</sup> | √
+
+EB = 335,2 km
+
+Wenn F<sub>2</sub> gestartet ist, braucht F<sub>1</sub> von E nach T so 
+lange wie F<sub>2</sub> von B nach T, nämlich t Stunden.
+
+F<sub>1</sub> legt in dieser Zeit die Strecke 
+
+ET = v<sub>1</sub> * t = 400 km/h * t h zurück.
+
+F<sub>2</sub> legt in dieser Zeit die Strecke 
+
+BT = v<sub>2</sub> * t = 450 km/h * t h zurück.
+
+Im Dreieck EBC:
+
+Sinussatz:
+
+  ET        BT          
+------- = ------- | *sin γ
+ sin γ     sin β  
+
+       BT * sin γ   
+ET = -------------- | :BT
+          sin β     
+
+ ET      sin γ  
+----- = --------  
+ BT      sin β    
+
+ sin γ      400 km/h * t       8
+------- = ---------------- = ---- |*sin β
+ sin β      450 km/h * t       9
+
+         8  
+sin γ = --- * sin β
+         9     
+
+Im Dreieck EBC:
+
+Fall SWS:
+
+Sinussatz:
+
+   BC          BE     
+-------- = ----------- |*sin β
+  sin β     sin 42,5°  
+
+      BE * sin β      
+BC = ------------- |*sin 42,5°
+       sin 42,5°  
+
+BC * sin 42,5° = BE * sin β | :BE
+
+         BC * sin 42,5°        
+sin β = ---------------- =  
+                BE
+                
+    400 km * 0,6756
+= ------------------- = 0,8062 --> β = 53,7°
+         335,2 km  
+
+         8              
+sin γ = --- * sin β = 
+         9             
+         
+   8      
+= --- * 0,8062 = 0,7166 --> γ = 45,8°
+   9  
+
+Kurs von F<sub>2</sub> ermittelt man über den Winkel α:
+
+α = 180° - 42,5° - β – γ = 180° - 42,5° 
+
+- 53,7° - 45,8° = 38° --> <span style="color:red;">Kurs N 38° W</span>
+
+δ = 180° - β – γ = 180° - 53,7° - 45,8° = 80,5°
+
+Im Dreieck ETB:
+
+  ET        EB    
+------- = ------- |*sin γ
+ sin γ     sin δ    
+
+      EB * sin γ     335,2 km * sin 45,8°
+ET = ------------ = ---------------------- = 
+         sin δ            sin 80,5°
+         
+   335,2 km * 0,7169      
+= ------------------- = 243,6 km
+         0,9863        
+
+TC = EC – ET = 493,2 km - 243,6 km = <span style="color:red;">249,6 km = e</span>
+
+Für die 243,6 km von E nach T braucht F1:
+
+     s     243,6 km 
+t = --- = ---------- = 0,6 h = 0,6*60 min = 36min 
+     v     400 km/h   
+
+F<sub>1</sub> ist um 10.36 in E und um
+
+10.36 Uhr + 36 min = <span style="color:red;">11.12 Uhr am Treffpunkt T</span>.
+
+
+ </p></b></pre>
