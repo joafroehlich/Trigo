@@ -6,41 +6,103 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trigonometrie</title>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
   
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Trigonometrie</p> 
 
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
-        
+
+<div class="check">
+
 <!--//Aufgabe 1-->
 
-  <pre><b><p class="Aufgabe">Aufgabe 1
+  <h2>Aufgabe 1</h2><p>
 
-α = 40° und a = 2,5 cm. Wie groß ist c? 
-<img src="Aufgabe1.jpg" >  
-<button  onclick="window.open('Trigo_Aufgabe1.html');" >Lösung</button></p></pre>
+α = 40° und a = 2,5 cm. Wie groß ist c?</p>
+
+<img src="Aufgabe1.jpg" ></p>  
+
+<button  onclick="window.open('Trigo_Aufgabe1.html');" >Lösung</button></p>
 
 <!--//Aufgabe 2-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 2
+  <h2>Aufgabe 2</h2><p>
 
-α = 55° und c = 7 cm. Wie groß ist a?      
-<img src="Aufgabe1.jpg" > 
-a = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+α = 55° und c = 7 cm. Wie groß ist a?</p>
+
+<img src="Aufgabe1.jpg" ></p>
+
+a = <input type="text" id="Eintrag2" maxlength="3"  ></input> cm <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe2() { 
@@ -58,20 +120,24 @@ a = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-co
 
         <!--//Aufgabe 3-->                  
 
-  <pre><p class="Aufgabe">Aufgabe 3
+  <h2>Aufgabe 3</h2><p>
 
-β = 44° und a = 3,5 cm. Wie groß ist c?  
-<img src="Aufgabe1.jpg"  >  
-<button  onclick="window.open('Trigo_Aufgabe3.html');" >Lösung</button></p></pre>
+β = 44° und a = 3,5 cm. Wie groß ist c?</p>
+
+<img src="Aufgabe1.jpg"  ></p>
+
+<button  onclick="window.open('Trigo_Aufgabe3.html');" >Lösung</button></p>
 
 
 <!--//Aufgabe 4-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 4
+  <h2>Aufgabe 4</h2><p>
 
-Wie groß ist α, wenn c = 7 cm und b = 4,2 cm?     
-<img src="Aufgabe1.jpg" > 
-α = <input type="text" id="Eintrag4" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p></pre>
+Wie groß ist α, wenn c = 7 cm und b = 4,2 cm?</p>
+
+<img src="Aufgabe1.jpg" ></p>
+
+α = <input type="text" id="Eintrag4" maxlength="4" ></input> ° <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe4() { 
@@ -88,21 +154,25 @@ Wie groß ist α, wenn c = 7 cm und b = 4,2 cm?
 
  <!--//Aufgabe 5-->  
 
-  <pre><p class="Aufgabe">Aufgabe 5
+  <h2>Aufgabe 5</h2><p>
 
 Wie groß sind die restlichen Seiten, 
-wenn α = 35° und c = 7 cm?   
-<img src="Aufgabe1.jpg" > 
-<button  onclick="window.open('Trigo_Aufgabe5.html');">Lösung</button></p></pre>
+wenn α = 35° und c = 7 cm?</p>
+
+<img src="Aufgabe1.jpg" ></p>
+
+<button  onclick="window.open('Trigo_Aufgabe5.html');">Lösung</button></p>
 
 <!--//Aufgabe 6-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 6
+  <h2>Aufgabe 6</h2><p>
 
 Wie groß sind die restlichen Seiten, 
-wenn β = 78° und b = 17 cm?   
-<img src="Aufgabe1.jpg" > 
-c = <input type="text" id="Eintrag6" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button>    </p></pre>
+wenn β = 78° und b = 17 cm?</p>
+
+<img src="Aufgabe1.jpg" ></p>
+
+c = <input type="text" id="Eintrag6" maxlength="4" ></input> cm <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button>    </p>
  
                       <script>
                         function Aufgabe6() { 
@@ -119,22 +189,26 @@ c = <input type="text" id="Eintrag6" maxlength="4" size="1" style= background-co
                       
   <!--//Aufgabe 7-->   
 
-  <pre><p class="Aufgabe">Aufgabe 7
+  <h2>Aufgabe 7</h2><p>
 
 Wie groß sind β und b, 
-wenn a = 6,7 cm und c = 8,3 cm?  
-<img src="Aufgabe1.jpg" > 
-<button  onclick="window.open('Trigo_Aufgabe7.html');" >Lösung</button></p></pre>
+wenn a = 6,7 cm und c = 8,3 cm?</p>
+
+<img src="Aufgabe1.jpg" ></p>
+
+<button  onclick="window.open('Trigo_Aufgabe7.html');" >Lösung</button></p>
 
 <!--//Aufgabe 8-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 8
+  <h2>Aufgabe 8</h2><p>
 
 Wie groß sind die Ankathete von α und die 
 Hypotenuse, wenn α = 75° und seine Gegenkathete 
-9 cm lang ist?  
-<img src="Aufgabe1.jpg" > 
-Hypotenuse = <input type="text" id="Eintrag8" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p></pre>
+9 cm lang ist?</p>
+
+<img src="Aufgabe1.jpg" ></p>
+
+Hypotenuse = <input type="text" id="Eintrag8" maxlength="3" ></input> cm <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p>
      
                       <script>
                         function Aufgabe8() { 
@@ -151,21 +225,25 @@ Hypotenuse = <input type="text" id="Eintrag8" maxlength="3" size="1" style= back
                       
   <!--//Aufgabe 9-->   
 
-  <pre><p class="Aufgabe">Aufgabe 9
+  <h2>Aufgabe 9</h2><p>
 
 Die Gegenkathete des Winkels α ist 5 cm lang, 
-seine Ankathete 8,5 cm. Wie groß ist α?  
-<img src="Aufgabe1.jpg" > 
-<button  onclick="window.open('Trigo_Aufgabe9.html');" >Lösung</button></p></pre>
+seine Ankathete 8,5 cm. Wie groß ist α?</p>
+
+<img src="Aufgabe1.jpg" ></p>
+
+<button  onclick="window.open('Trigo_Aufgabe9.html');" >Lösung</button></p>
 
 <!--//Aufgabe 10-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 10
+  <h2>Aufgabe 10</h2><p>
 
 Wie groß sind die restlichen Seiten und Winkel, 
-wenn β = 30° und c = 83 cm?   
-<img src="Aufgabe1.jpg" > 
-b = <input type="text" id="Eintrag10" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p></pre>
+wenn β = 30° und <br class="br-desk">c = 83 cm?</p>
+
+<img src="Aufgabe1.jpg" ></p>
+
+b = <input type="text" id="Eintrag10" maxlength="4"  ></input> cm <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe10() { 
@@ -182,19 +260,23 @@ b = <input type="text" id="Eintrag10" maxlength="4" size="1" style= background-c
 
  <!--//Aufgabe 11-->   
 
-  <pre><p class="Aufgabe">Aufgabe 11
+  <h2>Aufgabe 11</h2><p>
 
-Wie groß ist die Strecke AB?  
-<img src="Aufgabe11.jpg" > 
-<button  onclick="window.open('Trigo_Aufgabe11.html');" >Lösung</button></p></pre>
+Wie groß ist die Strecke AB?</p>
+
+<img src="Aufgabe11.jpg" ></p>
+
+<button  onclick="window.open('Trigo_Aufgabe11.html');" >Lösung</button></p>
 
 <!--//Aufgabe 12-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 12
+  <h2>Aufgabe 12</h2><p>
 
-Wie groß ist der Winkel α?     
-<img src="Aufgabe12.jpg" > 
-α = <input type="text" id="Eintrag12" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p></pre><nobr>
+Wie groß ist der Winkel α?</p>
+
+<img src="Aufgabe12.jpg" ></p>
+
+α = <input type="text" id="Eintrag12" maxlength="4"  ></input> ° <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p>
 
  
                       <script>
@@ -212,19 +294,23 @@ Wie groß ist der Winkel α?
               
     <!--//Aufgabe 13--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 13
+    <h2>Aufgabe 13</h2><p>
 
-Wie groß sind die restlichen Seiten?  
-<img src="Aufgabe13.jpg" > 
-<button  onclick="window.open('Trigo_Aufgabe13.html');" >Lösung</button></p></pre>
+Wie groß sind die restlichen Seiten?</p>
+
+<img src="Aufgabe13.jpg" ></p>
+
+<button  onclick="window.open('Trigo_Aufgabe13.html');" >Lösung</button></p>
 
 <!--//Aufgabe 14-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 14
+  <h2>Aufgabe 14</h2><p>
 
-Wie groß sind AB und der Winkel α? 
-<img src="Aufgabe14.jpg" > 
-α = <input type="text" id="Eintrag14" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p></pre>
+Wie groß sind AB und der Winkel α?</p>
+
+<img src="Aufgabe14.jpg" ></p>
+
+α = <input type="text" id="Eintrag14" maxlength="4" ></input> ° <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe14() { 
@@ -241,19 +327,23 @@ Wie groß sind AB und der Winkel α?
                       
      <!--//Aufgabe 15--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 15
+    <h2>Aufgabe 15</h2><p>
 
-Wie groß sind AB und der Winkel α?   
-<img src="Aufgabe15.jpg" >  
-<button  onclick="window.open('Trigo_Aufgabe15.html');" >Lösung</button></p></pre>
+Wie groß sind AB und der Winkel α?</p>
+
+<img src="Aufgabe15.jpg" ></p>
+
+<button  onclick="window.open('Trigo_Aufgabe15.html');" >Lösung</button></p>
 
 <!--//Aufgabe 16-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 16
+  <h2>Aufgabe 16</h2><p>
 
-Wie groß ist AB in dem gleichschenkligen Dreieck?   
-<img src="Aufgabe16.jpg" > 
-AB = <input type="text" id="Eintrag16" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p></pre>
+Wie groß ist AB in dem gleichschenkligen Dreieck?</p>
+
+<img src="Aufgabe16.jpg" ></p>
+
+AB = <input type="text" id="Eintrag16" maxlength="3" ></input> cm <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe16() { 
@@ -270,21 +360,25 @@ AB = <input type="text" id="Eintrag16" maxlength="3" size="1" style= background-
                       
        <!--//Aufgabe 17--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 17
+    <h2>Aufgabe 17</h2><p>
 
 Ein Quadrat hat eine Seitenlänge von 5,8 cm. 
-Wie groß ist seine Diagonale d?   
-<img src="Aufgabe17.jpg" > 
-<button  onclick="window.open('Trigo_Aufgabe17.html');" >Lösung</button></p></pre>
+Wie groß ist seine Diagonale d?</p>
+
+<img src="Aufgabe17.jpg" ></p>
+
+<button  onclick="window.open('Trigo_Aufgabe17.html');" >Lösung</button></p>
 
 <!--//Aufgabe 18-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 18
+  <h2>Aufgabe 18</h2><p>
 
 Die Seiten eines Dreiecks sind 5,4 cm, 7,2 cm und 
-9 cm lang. Wie groß sind seine Winkel?   
-<img src="Aufgabe18.jpg" > 
-β = <input type="text" id="Eintrag18" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p></pre>
+9 cm lang. Wie groß sind seine Winkel? </p>
+
+<img src="Aufgabe18.jpg" ></p>
+
+β = <input type="text" id="Eintrag18" maxlength="2"  ></input> ° <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p>
     
  
                       <script>
@@ -302,22 +396,24 @@ Die Seiten eines Dreiecks sind 5,4 cm, 7,2 cm und
                       
        <!--//Aufgabe 19--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 19
+    <h2>Aufgabe 19</h2><p>
 
-Wandeln Sie um in Grad: 
-5° 36' 12'' 
-41° 38' 3''     
+Wandeln Sie um in Grad:</p>
 
-<button  onclick="window.open('Trigo_Aufgabe19.html');" >Lösung</button></p></pre>
+5° 36' 12''</p> 
+41° 38' 3''</p>     
+
+<button  onclick="window.open('Trigo_Aufgabe19.html');" >Lösung</button></p>
 
 <!--//Aufgabe 20-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 20
+  <h2>Aufgabe 20</h2><p>
 
-32,28° = 32°        '        ''  
-4,83° = 4° <input type="text" id="Eintrag20" maxlength="2" size="1" style= background-color:yellow ></input> '        ''    
+32,28° = 32°        '        ''</p>
 
-<button id="Pruef20" onclick="Aufgabe20()">Prüfen</button></p></pre>
+4,83° = 4° <input type="text" id="Eintrag20" maxlength="2"  ></input> ' 48 ''    
+
+<button id="Pruef20" onclick="Aufgabe20()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe20() { 
@@ -334,21 +430,23 @@ Wandeln Sie um in Grad:
                       
          <!--//Aufgabe 21--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 21
+    <h2>Aufgabe 21</h2><p>
 
 Rechnen Sie um in das Bogenmaß: 
-301° 17' ; 212° 39' ; 120°.   
+301° 17' ; 212° 39' ; 120°.</p>   
 
-<button  onclick="window.open('Trigo_Aufgabe21.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe21.html');" >Lösung</button></p>
 
 <!--//Aufgabe 22-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 22
+  <h2>Aufgabe 22</h2><p>
 
 Wie groß sind c und b, 
-wenn α = 36°27' und a = 29,63 cm?     
-<img src="Aufgabe1.jpg" > 
-b = <input type="text" id="Eintrag22" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button></p></pre>
+wenn α = 36°27' und a = 29,63 cm?</p>
+
+<img src="Aufgabe1.jpg" ></p>
+
+b = <input type="text" id="Eintrag22" maxlength="4" ></input> cm <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe22() { 
@@ -365,21 +463,25 @@ b = <input type="text" id="Eintrag22" maxlength="4" size="1" style= background-c
                       
              <!--//Aufgabe 23--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 23
+    <h2>Aufgabe 23</h2><p>
 
 Wie groß sind a und c, 
-wenn α = 67°38' und b = 25,42 cm?     
-<img src="Aufgabe1.jpg" > 
-<button  onclick="window.open('Trigo_Aufgabe23.html');" >Lösung</button></p></pre>
+wenn α = 67°38' und b = 25,42 cm?</p>
+
+<img src="Aufgabe1.jpg" ></p>
+
+<button  onclick="window.open('Trigo_Aufgabe23.html');" >Lösung</button></p>
 
 <!--//Aufgabe 24-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 24
+  <h2>Aufgabe 24</h2><p>
 
 Wie groß sind a und b, 
-wenn α = 48°12'15'' und c = 31,2 cm? 
-<img src="Aufgabe1.jpg" > 
-a = <input type="text" id="Eintrag24" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button></p></pre>
+wenn α = 48°12'15'' und c = 31,2 cm?</p>
+
+<img src="Aufgabe1.jpg" ></p>
+
+a = <input type="text" id="Eintrag24" maxlength="4" ></input> cm <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button></p>
     
  
                       <script>
@@ -397,22 +499,25 @@ a = <input type="text" id="Eintrag24" maxlength="4" size="1" style= background-c
 
    <!--//Aufgabe 25--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 25
+    <h2>Aufgabe 25</h2><p>
 
 Berechnen Sie die Fläche A des gleichschenkligen 
-Dreiecks.  
-<img src="Aufgabe25.jpg" > 
-<button  onclick="window.open('Trigo_Aufgabe25.html');" >Lösung</button></p></pre>
+Dreiecks.</p>
+
+<img src="Aufgabe25.jpg" ></p>
+
+<button  onclick="window.open('Trigo_Aufgabe25.html');" >Lösung</button></p>
 
 <!--//Aufgabe 26-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 26
+  <h2>Aufgabe 26</h2><p>
 
 Berechnen Sie die Fläche A des regelmäßigen 
-Neunecks. 
-<img src="Aufgabe26.jpg" > 
+Neunecks.</p>
 
-A = <input type="text" id="Eintrag26" maxlength="7" size="3" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p></pre>
+<img src="Aufgabe26.jpg" ></p>
+
+A = <input type="text" id="Eintrag26" maxlength="7" ></input> cm<sup>2</sup> <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p>
      
                       <script>
                         function Aufgabe26() { 
@@ -429,22 +534,23 @@ A = <input type="text" id="Eintrag26" maxlength="7" size="3" style= background-c
                       
      <!--//Aufgabe 27--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 27
+    <h2>Aufgabe 27</h2><p>
 
 Ein regelmäßiges 36-Eck hat eine Fläche von 
 7875 cm<sup>2</sup>.
-Wie groß ist der Radius r seines Umkreises?   
+Wie groß ist der Radius r seines Umkreises?</p>   
 
-<button  onclick="window.open('Trigo_Aufgabe27.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe27.html');" >Lösung</button></p>
 
 <!--//Aufgabe 28-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 28
+  <h2>Aufgabe 28</h2><p>
 
-Berechnen Sie p, wenn r = 20 m und α = 20°. 
+Berechnen Sie p, wenn r = 20 m und α = 20°.</p> 
 
-<img src="Aufgabe28.jpg" > 
-p = <input type="text" id="Eintrag28" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p></pre>
+<img src="Aufgabe28.jpg" ></p>
+
+p = <input type="text" id="Eintrag28" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe28() { 
@@ -461,21 +567,23 @@ p = <input type="text" id="Eintrag28" maxlength="3" size="1" style= background-c
                       
        <!--//Aufgabe 29--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 29
+    <h2>Aufgabe 29</h2><p>
 
-Berechnen Sie p. wenn r = 20 m und s = 15 m.    
+Berechnen Sie p. wenn r = 20 m und s = 15 m.</p>    
 
-<img src="Aufgabe28.jpg" > 
-<button  onclick="window.open('Trigo_Aufgabe29.html');" >Lösung</button></p></pre>
+<img src="Aufgabe28.jpg" ></p>
+
+<button  onclick="window.open('Trigo_Aufgabe29.html');" >Lösung</button></p>
 
 <!--//Aufgabe 30-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 30
+  <h2>Aufgabe 30</h2><p>
 
-Berechnen Sie p, wenn r = 20 m und b = 40 m.  
+Berechnen Sie p, wenn r = 20 m und b = 40 m.</p>  
 
-<img src="Aufgabe28.jpg" > 
-p = <input type="text" id="Eintrag30" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef30" onclick="Aufgabe30()">Prüfen</button></p></pre>
+<img src="Aufgabe28.jpg" > </p>
+
+p = <input type="text" id="Eintrag30" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef30" onclick="Aufgabe30()">Prüfen</button></p>
      
                       <script>
                         function Aufgabe30() { 
@@ -492,23 +600,24 @@ p = <input type="text" id="Eintrag30" maxlength="3" size="1" style= background-c
                       
        <!--//Aufgabe 31--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 31
+    <h2>Aufgabe 31</h2><p>
 
 Um wie viel cm ist der Bogen b länger als die 
-Sehne s? 
+Sehne s?</p> 
 
-<img src="Aufgabe31.jpg" > 
-<button  onclick="window.open('Trigo_Aufgabe31.html');" >Lösung</button></p></pre>
+<img src="Aufgabe31.jpg" ></p>
+
+<button  onclick="window.open('Trigo_Aufgabe31.html');" >Lösung</button></p>
 
 <!--//Aufgabe 32-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 32
+  <h2>Aufgabe 32</h2><p>
 
-Wie groß ist das schraffierte Kreissegment A? 
+Wie groß ist das schraffierte Kreissegment A?</p> 
 
-<img src="Aufgabe32.jpg" > 
+<img src="Aufgabe32.jpg" ></p> 
 
-A = <input type="text" id="Eintrag32" maxlength="4" size="1" style= background-color:yellow ></input> m<sup>2</sup> <button id="Pruef32" onclick="Aufgabe32()">Prüfen</button></p></pre>
+A = <input type="text" id="Eintrag32" maxlength="4"  ></input> m<sup>2</sup> <button id="Pruef32" onclick="Aufgabe32()">Prüfen</button></p>
     
  
                       <script>
@@ -526,24 +635,24 @@ A = <input type="text" id="Eintrag32" maxlength="4" size="1" style= background-c
                       
        <!--//Aufgabe 33--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 33
+    <h2>Aufgabe 33</h2><p>
 
 Wie groß sind der Inkreisradius r<sub>i</sub> und der 
-Umkreisradius r<sub>u</sub> des gleichschenkligen Dreiecks?      
+Umkreisradius r<sub>u</sub> des gleichschenkligen Dreiecks?</p>      
 
-<img src="Aufgabe33.jpg" > 
+<img src="Aufgabe33.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe33.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe33.html');" >Lösung</button></p>
 
 <!--//Aufgabe 34-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 34
+  <h2>Aufgabe 34</h2><p>
 
-Berechnen Sie a, b und c. 
+Berechnen Sie a, b und c.</p> 
 
-<img src="Aufgabe34.jpg" > 
+<img src="Aufgabe34.jpg" ></p> 
 
-b = <input type="text" id="Eintrag34" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef34" onclick="Aufgabe34()">Prüfen</button></p></pre>
+b = <input type="text" id="Eintrag34" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef34" onclick="Aufgabe34()">Prüfen</button></p>
      
                       <script>
                         function Aufgabe34() { 
@@ -560,23 +669,23 @@ b = <input type="text" id="Eintrag34" maxlength="4" size="1" style= background-c
                       
        <!--//Aufgabe 35--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 35
+    <h2>Aufgabe 35</h2><p>
 
-Berechnen Sie a, b und c.     
+Berechnen Sie a, b und c.</p>     
 
-<img src="Aufgabe35.jpg" > 
+<img src="Aufgabe35.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe35.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe35.html');" >Lösung</button></p>
 
 <!--//Aufgabe 36-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 36
+  <h2>Aufgabe 36</h2><p>
 
-Berechnen Sie a, b und c. 
+Berechnen Sie a, b und c.</p> 
 
-<img src="Aufgabe36.jpg" > 
+<img src="Aufgabe36.jpg" ></p> 
 
-a = <input type="text" id="Eintrag36" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef36" onclick="Aufgabe36()">Prüfen</button></p></pre>
+a = <input type="text" id="Eintrag36" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef36" onclick="Aufgabe36()">Prüfen</button></p>
     
  
                       <script>
@@ -594,23 +703,23 @@ a = <input type="text" id="Eintrag36" maxlength="4" size="1" style= background-c
                       
        <!--//Aufgabe 37--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 37
+    <h2>Aufgabe 37</h2><p>
 
-Berechnen Sie β, b und c.    
+Berechnen Sie β, b und c.</p>    
 
-<img src="Aufgabe37.jpg" >  
+<img src="Aufgabe37.jpg" ></p>  
 
-<button  onclick="window.open('Trigo_Aufgabe37.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe37.html');" >Lösung</button></p>
 
 <!--//Aufgabe 38-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 38
+  <h2>Aufgabe 38</h2><p>
 
-Berechnen Sie α, a und b.   
+Berechnen Sie α, a und b.</p>   
 
-<img src="Aufgabe38.jpg" > 
+<img src="Aufgabe38.jpg" ></p> 
 
-b = <input type="text" id="Eintrag38" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef38" onclick="Aufgabe38()">Prüfen</button></p></pre>
+b = <input type="text" id="Eintrag38" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef38" onclick="Aufgabe38()">Prüfen</button></p>
     
  
                       <script>
@@ -628,23 +737,23 @@ b = <input type="text" id="Eintrag38" maxlength="3" size="1" style= background-c
                       
        <!--//Aufgabe 39--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 39
+    <h2>Aufgabe 39</h2><p>
 
-Berechnen Sie α, a und c.     
+Berechnen Sie α, a und c.</p>     
 
-<img src="Aufgabe39.jpg" > 
+<img src="Aufgabe39.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe39.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe39.html');" >Lösung</button></p>
 
 <!--//Aufgabe 40-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 40
+  <h2>Aufgabe 40</h2><p>
 
-Wie groß ist α in dem gleichschenkligen Dreieck?    
+Wie groß ist α in dem gleichschenkligen Dreieck?</p>    
 
-<img src="Aufgabe40.jpg" > 
+<img src="Aufgabe40.jpg" ></p> 
 
-α = <input type="text" id="Eintrag40" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef40" onclick="Aufgabe40()">Prüfen</button></p></pre>
+α = <input type="text" id="Eintrag40" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef40" onclick="Aufgabe40()">Prüfen</button></p>
      
                       <script>
                         function Aufgabe40() { 
@@ -661,25 +770,25 @@ Wie groß ist α in dem gleichschenkligen Dreieck?
                       
        <!--//Aufgabe 41--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 41
+    <h2>Aufgabe 41</h2><p>
 
 Berechnen Sie den Schnittwinkel ε der beiden 
-Diagonalen.   
+Diagonalen.</p>   
 
-<img src="Aufgabe41.jpg" > 
+<img src="Aufgabe41.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe41.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe41.html');" >Lösung</button></p>
 
 <!--//Aufgabe 42-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 42
+  <h2>Aufgabe 42</h2><p>
 
 Berechnen Sie den Schnittwinkel ε der beiden 
-Diagonalen.   
+Diagonalen.</p>   
 
-<img src="Aufgabe42.jpg" > 
+<img src="Aufgabe42.jpg" ></p> 
 
-ε = <input type="text" id="Eintrag42" maxlength="4" size="1" style= background-color:yellow > ° <button id="Pruef42" onclick="Aufgabe42()">Prüfen</button></p></pre> 
+ε = <input type="text" id="Eintrag42" maxlength="4" size="1" style= background-color:yellow > ° <button id="Pruef42" onclick="Aufgabe42()">Prüfen</button></p>
     
  
                       <script>
@@ -697,23 +806,23 @@ Diagonalen.
                       
        <!--//Aufgabe 43--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 43
+    <h2>Aufgabe 43</h2><p>
 
-Wie groß sind die Seiten a und b des Rechtecks?
+Wie groß sind die Seiten a und b des Rechtecks?</p>
 
-<img src="Aufgabe43.jpg" >  
+<img src="Aufgabe43.jpg" ></p>  
 
-<button  onclick="window.open('Trigo_Aufgabe43.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe43.html');" >Lösung</button></p>
 
 <!--//Aufgabe 44-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 44
+  <h2>Aufgabe 44</h2><p>
 
-Wie groß sind die Seiten a und b des Rechtecks? 
+Wie groß sind die Seiten a und b des Rechtecks?</p> 
 
-<img src="Aufgabe44.jpg" > 
+<img src="Aufgabe44.jpg" ></p> 
 
-a = <input type="text" id="Eintrag44" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef44" onclick="Aufgabe44()">Prüfen</button></p></pre> 
+a = <input type="text" id="Eintrag44" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef44" onclick="Aufgabe44()">Prüfen</button></p>
     
  
                       <script>
@@ -731,23 +840,23 @@ a = <input type="text" id="Eintrag44" maxlength="3" size="1" style= background-c
                       
        <!--//Aufgabe 45--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 45
+    <h2>Aufgabe 45</h2><p>
 
-Wie groß sind die Seiten a und b des Rechtecks? 
+Wie groß sind die Seiten a und b des Rechtecks?</p> 
 
-<img src="Aufgabe45.jpg" > 
+<img src="Aufgabe45.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe45.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe45.html');" >Lösung</button></p>
 
 <!--//Aufgabe 46-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 46
+  <h2>Aufgabe 46</h2><p>
 
-Wie groß sind die Diagonalen e und f der Raute?  
+Wie groß sind die Diagonalen e und f der Raute?</p>  
 
-<img src="Aufgabe46.jpg" > 
+<img src="Aufgabe46.jpg" ></p> 
 
-e = <input type="text" id="Eintrag46" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef46" onclick="Aufgabe46()">Prüfen</button></p></pre> 
+e = <input type="text" id="Eintrag46" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef46" onclick="Aufgabe46()">Prüfen</button></p>
     
  
                       <script>
@@ -765,23 +874,23 @@ e = <input type="text" id="Eintrag46" maxlength="4" size="1" style= background-c
                       
        <!--//Aufgabe 47--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 47
+    <h2>Aufgabe 47</h2><p>
 
-Wie groß ist die Diagonale e der Raute?    
+Wie groß ist die Diagonale e der Raute?</p>    
 
-<img src="Aufgabe47.jpg" > 
+<img src="Aufgabe47.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe47.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe47.html');" >Lösung</button></p>
 
 <!--//Aufgabe 48-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 48
+  <h2>Aufgabe 48</h2><p>
 
-Wie groß ist die Diagonale e der Raute?   
+Wie groß ist die Diagonale e der Raute?</p>   
 
-<img src="Aufgabe48.jpg" > 
+<img src="Aufgabe48.jpg" ></p> 
 
-e = <input type="text" id="Eintrag48" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef48" onclick="Aufgabe48()">Prüfen</button></p></pre> 
+e = <input type="text" id="Eintrag48" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef48" onclick="Aufgabe48()">Prüfen</button></p>
     
  
                       <script>
@@ -799,24 +908,24 @@ e = <input type="text" id="Eintrag48" maxlength="2" size="1" style= background-c
                       
        <!--//Aufgabe 49--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 49
+    <h2>Aufgabe 49</h2><p>
 
 Wie groß sind die Diagonale f und die Seite a 
-der Raute? 
+der Raute?</p> 
 
-<img src="Aufgabe49.jpg" > 
+<img src="Aufgabe49.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe49.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe49.html');" >Lösung</button></p>
 
 <!--//Aufgabe 50-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 50
+  <h2>Aufgabe 50</h2><p>
 
-Wie groß ist die Seite a der Raute?    
+Wie groß ist die Seite a der Raute?</p>    
 
-<img src="Aufgabe50.jpg" > 
+<img src="Aufgabe50.jpg" ></p> 
 
-a = <input type="text" id="Eintrag50" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef50" onclick="Aufgabe50()">Prüfen</button></p></pre> 
+a = <input type="text" id="Eintrag50" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef50" onclick="Aufgabe50()">Prüfen</button></p>
     
  
                       <script>
@@ -834,24 +943,24 @@ a = <input type="text" id="Eintrag50" maxlength="3" size="1" style= background-c
                       
        <!--//Aufgabe 51--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 51
+    <h2>Aufgabe 51</h2><p>
 
-Wie groß ist die Diagonale f der Raute?   
+Wie groß ist die Diagonale f der Raute?</p>   
 
-<img src="Aufgabe51.jpg" > 
+<img src="Aufgabe51.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe51.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe51.html');" >Lösung</button></p>
 
 <!--//Aufgabe 52-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 52
+  <h2>Aufgabe 52</h2><p>
 
 Wie groß sind die Diagonalen e, f und der 
-Winkel β des Drachens?   
+Winkel β des Drachens?</p>   
 
-<img src="Aufgabe52.jpg" > 
+<img src="Aufgabe52.jpg" ></p> 
 
-β = <input type="text" id="Eintrag52" maxlength="5" size="2" style= background-color:yellow ></input> ° <button id="Pruef52" onclick="Aufgabe52()">Prüfen</button></p></pre> 
+β = <input type="text" id="Eintrag52" maxlength="5" size="2" style= background-color:yellow ></input> ° <button id="Pruef52" onclick="Aufgabe52()">Prüfen</button></p>
     
  
                       <script>
@@ -869,25 +978,25 @@ Winkel β des Drachens?
                       
        <!--//Aufgabe 53--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 53
+    <h2>Aufgabe 53</h2><p>
 
 Berechnen Sie die Länge der Seite b des 
-gleichschenkligen Trapezes.  
+gleichschenkligen Trapezes.</p>  
 
-<img src="Aufgabe53.jpg" > 
+<img src="Aufgabe53.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe53.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe53.html');" >Lösung</button></p>
 
 <!--//Aufgabe 54-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 54
+  <h2>Aufgabe 54</h2><p>
 
 Wie groß sind die Länge s der Sehne und deren 
-Abstand d vom Mittelpunkt.   
+Abstand d vom Mittelpunkt.</p>   
 
-<img src="Aufgabe54.jpg" > 
+<img src="Aufgabe54.jpg" ></p> 
 
-s = <input type="text" id="Eintrag54" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef54" onclick="Aufgabe54()">Prüfen</button></p></pre> 
+s = <input type="text" id="Eintrag54" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef54" onclick="Aufgabe54()">Prüfen</button></p>
     
  
                       <script>
@@ -905,25 +1014,25 @@ s = <input type="text" id="Eintrag54" maxlength="1" size="1" style= background-c
                       
        <!--//Aufgabe 55--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 55
+    <h2>Aufgabe 56</h2><p>
 
 Wie groß sind der Mittelpunktswinkel ε und der 
-Abstand d der Sehne s vom Mittelpunkt?    
+Abstand d der Sehne s vom Mittelpunkt?</p>    
 
-<img src="Aufgabe55.jpg" > 
+<img src="Aufgabe55.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe55.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe55.html');" >Lösung</button></p>
 
 <!--//Aufgabe 56-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 56
+  <h2>Aufgabe 56</h2><p>
 
 Wie groß sind der Mittelpunktswinkel ε und der 
-Radius r?    
+Radius r?</p>    
 
-<img src="Aufgabe56.jpg" > 
+<img src="Aufgabe56.jpg" ></p> 
 
-ε = <input type="text" id="Eintrag56" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef56" onclick="Aufgabe56()">Prüfen</button></p></pre> 
+ε = <input type="text" id="Eintrag56" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef56" onclick="Aufgabe56()">Prüfen</button></p>
     
  
                       <script>
@@ -941,23 +1050,23 @@ Radius r?
 
  <!--//Aufgabe 57-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 57
+    <h2>Aufgabe 57</h2><p>
 
-Wie groß sind die Winkel α und β in dem Würfel?     
+Wie groß sind die Winkel α und β in dem Würfel?</p>     
 
-<img src="Aufgabe57.jpg" > 
+<img src="Aufgabe57.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe57.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe57.html');" >Lösung</button></p>
 
 <!--//Aufgabe 58-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 58
+  <h2>Aufgabe 58</h2><p>
 
-Wie groß sind die Winkel α, β und γ?   
+Wie groß sind die Winkel α, β und γ?</p>   
 
-<img src="Aufgabe58.jpg" > 
+<img src="Aufgabe58.jpg" ></p> 
 
-γ = <input type="text" id="Eintrag58" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef58" onclick="Aufgabe58()">Prüfen</button></p></pre> 
+γ = <input type="text" id="Eintrag58" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef58" onclick="Aufgabe58()">Prüfen</button></p>
     
  
                       <script>
@@ -975,23 +1084,23 @@ Wie groß sind die Winkel α, β und γ?
                       
 <!--//Aufgabe 59-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 59
+    <h2>Aufgabe 59</h2><p>
 
-Wie groß sind s und α?   
+Wie groß sind s und α?</p>   
 
-<img src="Aufgabe59.jpg" > 
+<img src="Aufgabe59.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe59.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe59.html');" >Lösung</button></p>
 
 <!--//Aufgabe 60-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 60
+  <h2>Aufgabe 60</h2><p>
 
-Wie groß sind s und γ?     
+Wie groß sind s und γ?</p>     
 
-<img src="Aufgabe60.jpg" > 
+<img src="Aufgabe60.jpg" ></p> 
 
-γ = <input type="text" id="Eintrag60" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef60" onclick="Aufgabe60()">Prüfen</button></p></pre> 
+γ = <input type="text" id="Eintrag60" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef60" onclick="Aufgabe60()">Prüfen</button></p>
     
  
                       <script>
@@ -1009,26 +1118,24 @@ Wie groß sind s und γ?
                       
 <!--//Aufgabe 61-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 61
+    <h2>Aufgabe 61</h2><p>
 
-Wie groß sind von einer regelmäßigen sechs-
-seitigen Pyramide mit einer Grundseite a von 
-14 cm und einer Höhe h von 24 cm der Neigungs-
-winkel α der Seitenflächen, der Neigungswinkel β
+Wie groß sind von einer regelmäßigen sechsseitigen Pyramide mit einer Grundseite a von 
+14 cm und einer Höhe h von 24 cm der Neigungswinkel α der Seitenflächen, der Neigungswinkel β
 der Seitenkanten gegen die Grundfläche und der 
-Winkel γ an der Spitze eines Manteldreiecks?    
+Winkel γ an der Spitze eines Manteldreiecks?</p>    
 
-<button  onclick="window.open('Trigo_Aufgabe61.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe61.html');" >Lösung</button></p>
 
 <!--//Aufgabe 62-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 62
+  <h2>Aufgabe 62</h2><p>
 
-Wie groß sind h, β und γ? 
+Wie groß sind h, β und γ?</p> 
 
-<img src="Aufgabe62.jpg" > 
+<img src="Aufgabe62.jpg" ></p> 
 
-h = <input type="text" id="Eintrag62" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef62" onclick="Aufgabe62()">Prüfen</button></p></pre> 
+h = <input type="text" id="Eintrag62" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef62" onclick="Aufgabe62()">Prüfen</button></p>
     
  
                       <script>
@@ -1046,17 +1153,17 @@ h = <input type="text" id="Eintrag62" maxlength="3" size="1" style= background-c
                       
 <!--//Aufgabe 63-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 63
+    <h2>Aufgabe 63</h2><p>
 
 Wie groß ist der Winkel γ zwischen den 
-an den Kreis gelegten Tangenten?    
+an den Kreis gelegten Tangenten?</p>    
 
-<img src="Aufgabe63.jpg" > 
+<img src="Aufgabe63.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe63.html');" >Lösung</button></p></b></pre>
+<button  onclick="window.open('Trigo_Aufgabe63.html');" >Lösung</button></p>
 
 
-<a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a> 
+<a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a></div></main> 
                     
         <script>
             document.body.addEventListener("input", function(inputEvent) {
