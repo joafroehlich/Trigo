@@ -7,18 +7,76 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trigonometrie</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button {font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
+
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Trigonometrie</p> 
@@ -26,29 +84,31 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
+<div class="check">
+
 <!--//Aufgabe 181-->                     
                       
-    <pre><b><p class="Aufgabe">Aufgabe 181
+    <h2>Aufgabe 181</h2><p>
 
 Eine Brücke führt von A nach B über einen Fluss. 
 Von A aus stecken Vermesser eine 400 m lange 
 Standlinie am Ufer nach C ab. Sie messen die 
 Winkel CAB = 67,8° und BCA = 49,3°. 
-Berechnen Sie die Brückenlänge l.    
+Berechnen Sie die Brückenlänge l.</p>    
 
-<button  onclick="window.open('Trigo_Aufgabe181.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe181.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 182-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 182
+  <h2>Aufgabe 182</h2><p>
 
 Zwischen zwei Punkten A und B liegt ein Bach. 
 Ein Punkt C, der nicht auf AB liegt, ist von 
 A 86,4 m entfernt. B wird von A aus unter 47,6° 
 im Uhrzeigersinn und von C aus unter 97,2° gegen  
-den Uhrzeigersinn angepeilt. Wie groß ist AB?   
+den Uhrzeigersinn angepeilt. Wie groß ist AB?</p>   
 
-AB = <input type="text" id="Eintrag182" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef182" onclick="Aufgabe182()">Prüfen</button></p></pre> 
+AB = <input type="text" id="Eintrag182" maxlength="5"  ></input> m <button id="Pruef182" onclick="Aufgabe182()">Prüfen</button></p>
     
  
                       <script>
@@ -66,31 +126,31 @@ AB = <input type="text" id="Eintrag182" maxlength="5" size="2" style= background
                       
 <!--//Aufgabe 183-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 183
+    <h2>Aufgabe 183</h2><p>
 
 2 Punkte A und B sind unzugänglich. 
 Um ihre Entfernung zu bestimmen, legen die 
 Vermesser von einem Punkt C auf der 
-Verlängerung von AB auseine Standlinie von 
+Verlängerung von AB aus eine Standlinie von 
 182,3 m zum Punkt D fest. 
-Peilwinkel: ACD = 53,5°, ADC = 87,2° und 
+Peilwinkel: <br class="br-desk">ACD = 53,5°, ADC = 87,2° und 
 BDC = 23,3°. 
-Wie groß ist die Entfernung AB?     
+Wie groß ist die Entfernung AB?</p>     
 
-<button  onclick="window.open('Trigo_Aufgabe183.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe183.html');" >Lösung</button></p>
 
 <!--//Aufgabe 184-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 184
+ <h2>Aufgabe 184</h2><p>
 
 Die Punkte A und B sind unzugänglich. 
 Um ihre Entfernung zu bestimmen, hat ein 
 Vermesser eine Standlinie CD von 364,7 m Länge 
 abgesteckt und folgende Winkel gemessen 
 BCD = 34,8°. ACD = 68,2°, 
-ADC = 29,9° und BDC = 80,6°. Berechnen Sie AB.
+ADC = 29,9° und BDC = 80,6°. Berechnen Sie AB.</p>
 
-AB = <input type="text" id="Eintrag184" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef184" onclick="Aufgabe184()">Prüfen</button></p></pre>  
+AB = <input type="text" id="Eintrag184" maxlength="3"  ></input> m <button id="Pruef184" onclick="Aufgabe184()">Prüfen</button></p>  
 
 
  
@@ -109,7 +169,7 @@ AB = <input type="text" id="Eintrag184" maxlength="3" size="1" style= background
                       
 <!--//Aufgabe 185-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 185
+   <h2>Aufgabe 185</h2><p>
 
 2 Punkte A und B sind durch ein Hindernis 
 getrennt. Zur Bestimmung ihrer Entfernung hat 
@@ -120,24 +180,24 @@ entfernt. Die Peilwinkel sind ACD = 102,6° und
 BDC = 97,4°. Wie groß ist AB, wenn C und D auf 
 derselben Seite von AB liegen? 
 Wie groß ist AB, wenn C und D auf verschiedenen 
-Seiten von AB liegen? 
+Seiten von AB liegen?</p> 
 
-<button  onclick="window.open('Trigo_Aufgabe185.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe185.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 186-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 186
+  <h2>Aufgabe 186</h2><p>
 
 Die Punkte A und B sollen durch einen Tunnel 
 verbunden werden.Um dessen Länge l zu bestimmen, 
 sind die waagerechte Länge AC = 804,3 m und die 
 Horizontalwinkel α = 72,2°, β = 53,1°, γ = 31,9°, 
-δ = 42°, ε = 30,2° und ζ = 45,5° gemessen worden. 
-Berechnen Sie l.  
+δ = 42°, <br class="br-desk">ε = 30,2° und ζ = 45,5° gemessen worden. 
+Berechnen Sie l.</p>  
 
-<img src="Aufgabe186.jpg" >
+<img src="Aufgabe186.jpg" ></p>
 
-l = <input type="text" id="Eintrag186" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef186" onclick="Aufgabe186()">Prüfen</button> </p></pre> 
+l = <input type="text" id="Eintrag186" maxlength="5"  ></input> m <button id="Pruef186" onclick="Aufgabe186()">Prüfen</button> </p>
 
 
                       <script>
@@ -155,31 +215,31 @@ l = <input type="text" id="Eintrag186" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 187-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 187
+    <h2>Aufgabe 187</h2><p>
 
 Die Höhe h eines Berges soll bestimmt werden. 
 Dazu misst ein Vermesser von den Eckpunkten einer
 waagerechten Standlinie AB mit einer Länge von 
 326,75 m aus die Horizontalwinkel α = 83,1° und 
 β = 64,5° sowie den Höhenwinkel γ = 26°. 
-Wie hoch ist der Berg?   
+Wie hoch ist der Berg?</p>   
 
-<button  onclick="window.open('Trigo_Aufgabe187.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe187.html');" >Lösung</button></p>
 
 <!--//Aufgabe 188-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 188
+ <h2>Aufgabe 188</h2><p>
 
 Von einem Aussichtspunkt C aus erblickt man zwei
 gegenüberliegende Punkte A und B an den Ufern 
-eines Flusses unter den Tiefenwinkeln α = 18,5° 
+eines Flusses unter den Tiefenwinkeln <br class="br-desk">α = 18,5° 
 und β = 25,8°. Die Strecke AB erscheint 
 horizontal unter dem Winkel γ = 31,3°. 
 Berechnen Sie die Breite b des Flusses, wenn C 
 186,5 m über A liegt und den Sehwinkel δ, unter 
-dem AB von dem Aussichtspunkt aus erscheint.  
+dem AB von dem Aussichtspunkt aus erscheint.</p>  
 
-b = <input type="text" id="Eintrag188" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef188" onclick="Aufgabe188()">Prüfen</button></p></pre> 
+b = <input type="text" id="Eintrag188" maxlength="5"  ></input> m <button id="Pruef188" onclick="Aufgabe188()">Prüfen</button></p>
     
  
                       <script>
@@ -197,28 +257,28 @@ b = <input type="text" id="Eintrag188" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 189-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 189
+    <h2>Aufgabe 189</h2><p>
 
 Eine Brücke führt von A nach B über ein Tal. 
 Von einem Punkt C im Tal aus erscheinen A und B 
 unter den Höhenwinkeln α = 10,4° und β = 13,1° 
 und die Strecke AB unter dem Horizontalwinkel 
 γ = 78,8°. Berechnen Sie die Länge l der Brücke, 
-wenn A 53,6 mund B 88,7 m höher liegt als C.
+wenn A 53,6 mund B 88,7 m höher liegt als C.</p>
 
-<button  onclick="window.open('Trigo_Aufgabe189.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe189.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 190-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 190
+  <h2>Aufgabe 190</h2><p>
 
 Zwischen drei gleich hoch liegenden Aussicht-
 punkten A, B und C sind die Entfernungen bekannt.
 AB = 4,1 km, AC = 3,2 km und BC = 5,7 km. 
 Wie groß ist der Sehwinkel α, unter dem von A aus 
-die beiden anderen Punkte erscheinen?  
+die beiden anderen Punkte erscheinen?</p>  
 
-α = <input type="text" id="Eintrag190" maxlength="3" size="1" style= background-color:yellow ></input> ° <button id="Pruef190" onclick="Aufgabe190()">Prüfen</button></p></pre>  
+α = <input type="text" id="Eintrag190" maxlength="3"  ></input> ° <button id="Pruef190" onclick="Aufgabe190()">Prüfen</button></p>  
 
 
                       <script>
@@ -236,26 +296,26 @@ die beiden anderen Punkte erscheinen?
                       
 <!--//Aufgabe 191-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 191
+    <h2>Aufgabe 191</h2><p>
 
 Die Entfernung AB zwischen 2 Ortsmitten kann 
 nicht direkt gemessen werden. Von einem Punkt C
 aus beträgt die Entfernung AC = 290 m und 
 BC = 600 m und der ∡ BAC = 100,3°. 
-Wie groß ist AB?  
+Wie groß ist AB?</p>  
 
-<button  onclick="window.open('Trigo_Aufgabe191.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe191.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 192-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 192
+  <h2>Aufgabe 192</h2><p>
 
 Wie groß sind die Seiten DC und AB des 
-dargestellten Grundstücks?  
+dargestellten Grundstücks?</p>  
 
-<img src="Aufgabe192.jpg" >
+<img src="Aufgabe192.jpg" ></p>
 
-AB = <input type="text" id="Eintrag192" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef192" onclick="Aufgabe192()">Prüfen</button> </p></pre> 
+AB = <input type="text" id="Eintrag192" maxlength="5"  ></input> m <button id="Pruef192" onclick="Aufgabe192()">Prüfen</button> </p>
 
 
                       <script>
@@ -273,7 +333,7 @@ AB = <input type="text" id="Eintrag192" maxlength="5" size="2" style= background
                       
 <!--//Aufgabe 193-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 193
+    <h2>Aufgabe 193</h2><p>
 
 Ein rechteckiges Walmdach hat eine Länge von 16 m
 und eine Breite von 12 m. Die dreieckige 
@@ -281,21 +341,21 @@ Dachfläche hat eine Neigung von 60°, die
 trapezförmige eine von 45°. Wie groß sind der 
 Neigungswinkel α der schrägen Dachkanten und der
 Winkel β zwischen zweianeinanderstoßenden 
-Dachflächen?      
+Dachflächen?</p>      
 
-<button  onclick="window.open('Trigo_Aufgabe193.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe193.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 194-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 194
+  <h2>Aufgabe 194</h2><p>
 
 Die Entfernung e zwischen den beiden Punkten 
 P und P<sub>1</sub> wird bei einer Landesvermessung gebraucht. 
-Wie groß ist e?   
+Wie groß ist e?</p>   
 
-<img src="Aufgabe194.jpg" >
+<img src="Aufgabe194.jpg" ></p>
 
-e = <input type="text" id="Eintrag194" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef194" onclick="Aufgabe194()">Prüfen</button></p></pre> 
+e = <input type="text" id="Eintrag194" maxlength="5"  ></input> m <button id="Pruef194" onclick="Aufgabe194()">Prüfen</button></p>
     
  
                       <script>
@@ -313,7 +373,7 @@ e = <input type="text" id="Eintrag194" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 195-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 195
+    <h2>Aufgabe 195</h2><p>
 
 Durch einen Berg soll ein waagerechter Straßen-
 tunnel von A nach B gebohrt werden. Zur 
@@ -321,22 +381,22 @@ Ermittlung von dessen Länge l steckt man auf dem
 Berg eine waagerechte Standlinie CD mit einer 
 Länge von 485,7 m ab und misst die Winkel 
 DCB = 41,5°, ACD = 59,5°, CDA = 67,3° und 
-CDB = 70,7°. Wie groß ist l?     
+<br class="br-desk">CDB = 70,7°. Wie groß ist l?</p>     
 
-<button  onclick="window.open('Trigo_Aufgabe195.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe195.html');" >Lösung</button></p>  
                       
 <!--//Aufgabe 196-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 196
+  <h2>Aufgabe 196</h2><p>
 
 Von einem Aussichtspunkt aus sieht man 500 m 
 einer waagerechten Straße unter einem Sehwinkel
 von 54,5°. Die Endpunkte sieht man unter den 
 Tiefenwinkeln 26,7° und 18,2°. Berechnen Sie die
 Höhe h, die der Aussichtspunkt über den 
-Endpunkten liegt.  
+Endpunkten liegt.</p>  
 
-h = <input type="text" id="Eintrag196" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef196" onclick="Aufgabe196()">Prüfen</button></p></pre>  
+h = <input type="text" id="Eintrag196" maxlength="5"  ></input> m <button id="Pruef196" onclick="Aufgabe196()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe196() { 
@@ -353,7 +413,7 @@ h = <input type="text" id="Eintrag196" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 197-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 197
+    <h2>Aufgabe 197</h2><p>
 
 Vom Punkt A aus gehen in einem Bergwerk 2 
 waagerechte Stollen unter einem Winkel von 75° 
@@ -361,21 +421,21 @@ mit 325 m und 275 m Länge ab. Welche Länge l hat
 ein Verbindungsstollen zwischen den beiden 
 Endpunkten? 
 Unter welchem Winkel α muss er vom Endpunkt des
-längeren Stollen aus vorangetrieben werden?   
+längeren Stollen aus vorangetrieben werden?</p>   
 
-<button  onclick="window.open('Trigo_Aufgabe197.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe197.html');" >Lösung</button></p>
 
 <!--//Aufgabe 198-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 198
+  <h2>Aufgabe 198</h2><p>
 
 Mainz ist von Stuttgart 150 km und von Freiburg
 225 km entfernt. Freiburg von Stuttgart 130 km.
 Mainz liegt von Stuttgart aus in Richtung N 
 25° W. 
-In welcher Richtung liegt Freiburg von Mainz aus?  
+In welcher Richtung liegt Freiburg von Mainz aus?</p>  
 
-S = <input type="text" id="Eintrag198" maxlength="4" size="1" style= background-color:yellow ></input> ° O <button id="Pruef198" onclick="Aufgabe198()">Prüfen</button></p></pre>  
+S = <input type="text" id="Eintrag198" maxlength="4"  ></input> ° O <button id="Pruef198" onclick="Aufgabe198()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe198() { 
@@ -392,7 +452,7 @@ S = <input type="text" id="Eintrag198" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 199-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 199
+    <h2>Aufgabe 199</h2><p>
 
 Um die Höhe h eines Turmes über NN zu bestimmen 
 wurde eine geeignete horizontale Standlinie AB 
@@ -402,22 +462,22 @@ befindet sich auf einer Höhe von 168,8 m, B auf
 B 1,5 m. Der Horizontalwinkel α in A ist 41,2°, 
 β in B ist 68°. Von A aus wird die Turmspitze mit
 einem Höhenwinkel γ = 5,5°, von B aus mit δ = 6° 
-angepeilt. Wie groß ist h?   
+angepeilt. Wie groß ist h?</p>   
 
-<button  onclick="window.open('Trigo_Aufgabe199.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe199.html');" >Lösung</button></p>
                       
 <!--//Aufgabe 200-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 200
+  <h2>Aufgabe 200</h2><p>
 
 3 Punkte A, B und C sind durch die Entfernungen
-AC = 625,3 m, CB = 418,4 m und den Winkel 
+AC = 625,3 m, <br class="br-desk">CB = 418,4 m und den Winkel 
 ACB = 152,6° festgelegt. Um die Entfernungen 
 PA = x, PB = y und PC = z zu bestimmen, sind die
 Winkel CPA = 47,5° und CPB = 38,9° ermittelt 
-worden. Berechnen Sie x, y und z.   
+worden. Berechnen Sie x, y und z.</p>   
 
-z = <input type="text" id="Eintrag200" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef200" onclick="Aufgabe200()">Prüfen</button></p></pre>  
+z = <input type="text" id="Eintrag200" maxlength="5"  ></input> m <button id="Pruef200" onclick="Aufgabe200()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe200() { 
@@ -434,7 +494,7 @@ z = <input type="text" id="Eintrag200" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 201-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 201
+    <h2>Aufgabe 201</h2><p>
 
 Für die Projektierung einer Brücke über einen 
 Fluss braucht man den Abstand zwischen den 
@@ -444,22 +504,22 @@ legt man an einem Ufer wegen Sichtbehinderungen
 AD = 53,8 m und dem eingeschlossenen Winkel 
 CAD = 145,8° fest. Weiterhin werden die Winkel 
 BCA = 95,5° und ADB = 68,6° gemessen. 
-Wie groß ist AB?    
+Wie groß ist AB?</p>    
 
-<button  onclick="window.open('Trigo_Aufgabe201.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe201.html');" >Lösung</button></p> 
                       
 <!--//Aufgabe 202-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 202
+  <h2>Aufgabe 202</h2><p>
 
 Ein Ballon befindet sich auf der Höhe h und 
 spiegelt sich in einem See. Von einem Punkt A 
 aus, der sich auf einer Höhe von 28,3 m befindet,
 erscheint er unter dem Höhenwinkel α = 55,4°, 
 sein Spiegelbild unter dem Tiefenwinkel β = 58,2°.
-In welcher Höhe befindet sich der Ballon?   
+In welcher Höhe befindet sich der Ballon?</p>   
 
-h = <input type="text" id="Eintrag202" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef202" onclick="Aufgabe202()">Prüfen</button></p></pre>  
+h = <input type="text" id="Eintrag202" maxlength="3"  ></input> m <button id="Pruef202" onclick="Aufgabe202()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe202() { 
@@ -476,7 +536,7 @@ h = <input type="text" id="Eintrag202" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 203-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 203
+    <h2>Aufgabe 203</h2><p>
 
 Ein Vermessungsschiff ist dabei, eine Küste zu 
 vermessen. Der Abstand zwischen den Stationen 
@@ -487,22 +547,22 @@ Bezugspunkt gewählt und die Winkel MAB = 30,3°,
 ABM = 95,9°, MBC = 89,7° und BCM 51,4° gemessen. 
 Die Messung des Winkels BCM hat sich verzögert, 
 dabei ist das Schiff 13 m in die Verlängerung von
-BM abgetrieben worden. Wie groß ist BC?    
+BM abgetrieben worden. Wie groß ist BC?</p>    
 
-<button  onclick="window.open('Trigo_Aufgabe203.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe203.html');" >Lösung</button></p>  
                       
 <!--//Aufgabe 204-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 204
+  <h2>Aufgabe 204</h2><p>
 
 Eine Eisenbahnbrücke soll über ein Tal von A 
-nach B verlaufen. A liegt 61,3 m und B 52,3 m 
+nach B verlaufen. A liegt <br class="br-desk">61,3 m und B 52,3 m 
 über einem Talpunkt C. Der Horizontalwinkel bei
-C = 53,3°, der Höhenwinkel von C zu A = 10,8°, 
+<br class="br-desk">C = 53,3°, der Höhenwinkel von C zu A = 10,8°, 
 der zu B = 8,4°. 
-Wie groß ist die Länge l der Bahnstrecke?   
+Wie groß ist die Länge l der Bahnstrecke?</p>   
 
-l = <input type="text" id="Eintrag204" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef204" onclick="Aufgabe204()">Prüfen</button></p></pre>  
+l = <input type="text" id="Eintrag204" maxlength="5"  ></input> m <button id="Pruef204" onclick="Aufgabe204()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe204() { 
@@ -519,7 +579,7 @@ l = <input type="text" id="Eintrag204" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 205-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 205
+    <h2>Aufgabe 205</h2><p>
 
 Eine Kirchturmspitze C wird von 2 Punkten A und B
 aus angepeilt. A und B liegen in einer Vertikal-
@@ -528,14 +588,14 @@ A liegt auf einer Höhe von 378 m, B auf 376,1 m.
 Die Instrumentenhöhe zur Peilung beträgt in A 
 1,41 m, in B 1,39 m. Die Spitze wird von A aus 
 unter 11,9°, von B aus unter 15,6° angepeilt. 
-Auf welcher Höhe h liegt die Turmspitze?   
+Auf welcher Höhe h liegt die Turmspitze?</p>   
 
-<button  onclick="window.open('Trigo_Aufgabe205.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe205.html');" >Lösung</button></p>  
 
 
 <!--//Aufgabe 206-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 206
+  <h2>Aufgabe 206</h2><p>
 
 Um die Höhe h einer Skulptur an der Fassade eines
 Turms zu bestimmen, werden von einer 100,3 m 
@@ -544,9 +604,9 @@ ebene mit der Figur liegt und von A nach B um
 0,2% steigt, Peilungen vorgenommen. Zum Fuß der 
 Skulptur beträgt der Höhenwinkel von A aus 31,5°,
 von B aus 43°. Zum Kopf von A aus 32,4°. 
-Welche Höhe h hat die Skulptur?  
+Welche Höhe h hat die Skulptur?</p>  
 
-h = <input type="text" id="Eintrag206" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef206" onclick="Aufgabe206()">Prüfen</button></p></pre>  
+h = <input type="text" id="Eintrag206" maxlength="3"  ></input> m <button id="Pruef206" onclick="Aufgabe206()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe206() { 
@@ -563,23 +623,23 @@ h = <input type="text" id="Eintrag206" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 207-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 207
+    <h2>Aufgabe 207</h2><p>
 
 Um wie viel m liegt der Punkt A im Gelände höher
 als der Punkt B und unter welchem Höhenwinkel α 
 ist er von B aus zu sehen? Die Punkte A, B, C 
 und D liegen in einer Vertikalebene. C und D sind
 deswegen zur Peilung gewählt worden, weil A von B
-aus nicht einsehbar ist.   
+aus nicht einsehbar ist.</p>   
 
-<img src="Aufgabe207.jpg" > 
+<img src="Aufgabe207.jpg" ></p> 
 
-<button  onclick="window.open('Trigo_Aufgabe207.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe207.html');" >Lösung</button></p>  
 
 
 <!--//Aufgabe 208-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 208
+  <h2>Aufgabe 208</h2><p>
 
 Vor dem Bau eines Bergtunnels braucht man seine 
 Länge l und den Neigungswinkel α. Dazu werden am 
@@ -590,9 +650,9 @@ eingang 144,2 m entfernt, C vom Tunnelausgang
 anderen Punkten in einer Vertikalebene liegt, 
 erscheint von A aus unter dem Höhenwinkel 29°, 
 von B aus unter 40,5°, von C aus unter 58,8° und
-von D aus unter 32,3°. Wie groß sind l und α?  
+von D aus unter 32,3°. Wie groß sind l und α?</p>  
 
-α = <input type="text" id="Eintrag208" maxlength="3" size="1" style= background-color:yellow ></input> ° <button id="Pruef208" onclick="Aufgabe208()">Prüfen</button></p></pre>  
+α = <input type="text" id="Eintrag208" maxlength="3"  ></input> ° <button id="Pruef208" onclick="Aufgabe208()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe208() { 
@@ -609,19 +669,19 @@ von D aus unter 32,3°. Wie groß sind l und α?
                       
 <!--//Aufgabe 209-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 209
+    <h2>Aufgabe 209</h2><p>
 
 Der Damm soll als Lärmschutz entlang der Straße
 aufgeschüttet werden. Wie groß sind die Höhe h
-und die Längen AD und AB?  
+und die Längen AD und AB?</p>
 
-<img src="Aufgabe209.jpg" >
+<img src="Aufgabe209.jpg" ></p>
 
-<button  onclick="window.open('Trigo_Aufgabe209.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe209.html');" >Lösung</button></p>
 
 <!--//Aufgabe 210-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 210
+  <h2>Aufgabe 210</h2><p>
 
 Um seine Position genau zu bestimmen, peilt ein 
 Schiff einen Leuchtturm unter N 48,4° W und einen
@@ -631,11 +691,11 @@ Schornstein liegt in Richtung N 82,3° O vom
 Leuchtturm aus. Wie groß ist die Entfernung e des 
 Schiffes vom Leuchtturm, und welchen Kurs muss es 
 fahren, damit es an ihm im Abstand von 
-6,5 Seemeilen vorbeifährt? 1 sm = 1,852 km.  
+6,5 Seemeilen vorbeifährt? 1 sm = 1,852 km.</p>  
 
-<img src="Aufgabe210.jpg" >
+<img src="Aufgabe210.jpg" ></p>
 
-e = <input type="text" id="Eintrag210" maxlength="2" size="1" style= background-color:yellow ></input> km <button id="Pruef210" onclick="Aufgabe210()">Prüfen</button></p></pre>  
+e = <input type="text" id="Eintrag210" maxlength="2"  ></input> km <button id="Pruef210" onclick="Aufgabe210()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe210() { 
@@ -652,20 +712,20 @@ e = <input type="text" id="Eintrag210" maxlength="2" size="1" style= background-
                       
 <!--//Aufgabe 211-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 211
+    <h2>Aufgabe 211</h2><p>
 
 Ein Schiff fährt einen Kurs S 32,8° O und peilt 
-einen Leuchtturm in S 63,5° O an. Nach einer 
+einen Leuchtturm in <br class="br-desk">S 63,5° O an. Nach einer 
 Weiterfahrt von 1 h 15 min mit einer Geschwindig-
 keit von 8 sm/h peilt es ihn unter N 72,6° O an. 
 Wie groß ist die Entfernung e des Schiffes vom 
-Leuchtturm?   
+Leuchtturm?</p>   
 
-<button  onclick="window.open('Trigo_Aufgabe211.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Trigo_Aufgabe211.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 212-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 212
+  <h2>Aufgabe 212</h2><p>
 
 Ein Flugzeug startet um 10.20 Uhr in A mit einem
 Kurs N 42,5° O, um das 600 km entfernte C um 
@@ -677,11 +737,11 @@ zweite fliegen, wenn es mit einer Geschwindigkeit
 von 450 km/h unterwegs ist? 
 Zu welchem Zeitpunkt z treffen sie sich, und wie 
 groß ist die Entfernung e dieses Treffpunktes 
-von C? 
+von C?</p> 
 
-<img src="Aufgabe212.jpg" >
+<img src="Aufgabe212.jpg" ></p>
 
-z = <input type="text" id="Eintrag212" maxlength="2" size="1" style= background-color:yellow ></input> .12 Uhr <button id="Pruef212" onclick="Aufgabe212()">Prüfen</button></p></pre>  
+z = <input type="text" id="Eintrag212" maxlength="2"  ></input> .12 Uhr <button id="Pruef212" onclick="Aufgabe212()">Prüfen</button></p></pre>  
 
                       <script>
                         function Aufgabe212() { 
@@ -698,19 +758,19 @@ z = <input type="text" id="Eintrag212" maxlength="2" size="1" style= background-
                       
 <!--//Aufgabe 213-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 213
+    <h2>Aufgabe 210</h2><p>
 
 Ein Flugzeug fliegt mit einer Geschwindigkeit 
 von 350 km/h in Richtung N 24° O. Es weht ein 
 Wind aus Südwest mit 50 km/h. Wie groß ist die 
 wahre Fluggeschwindigkeit v, und welchen Kurs K 
-fliegt das Flugzeug wirklich?   
+fliegt das Flugzeug wirklich?</p>   
 
-<button  onclick="window.open('Trigo_Aufgabe213.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Trigo_Aufgabe213.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 214-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 214
+  <h2>Aufgabe 214</h2><p>
 
 Früher stellten die Luftschiffe ihre Höhe h mit 
 der Hilfe eines Echolotes fest. Wie hoch ist ein 
@@ -720,9 +780,9 @@ wird und es mit einer Geschwindigkeit von
 125 km/h fliegt, die Schall-geschwindigkeit 
 333 m/s beträgt und das Signal vom Aussenden bis 
 zum Empfang 6 s braucht? Unter welchem Winkel α 
-treffen die Schallwellen auf der Erde auf?  
+treffen die Schallwellen auf der Erde auf?</p>  
 
-α = <input type="text" id="Eintrag214" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef214" onclick="Aufgabe214()">Prüfen</button></p></pre>  
+α = <input type="text" id="Eintrag214" maxlength="4"  ></input> ° <button id="Pruef214" onclick="Aufgabe214()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe214() { 
@@ -739,24 +799,24 @@ treffen die Schallwellen auf der Erde auf?
                       
 <!--//Aufgabe 215-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 215
+    <h2>Aufgabe 215</h2><p>
 
 Zwei Kräfte  F<sub>1</sub> = 34,5 N und F<sub>2</sub> = 57,2 N greifen 
-unter einem Winkel α = 68,7° an einem Punkt eines 
+unter einem Winkel <br class="br-desk">α = 68,7° an einem Punkt eines 
 Körpers an. Wie groß ist die Resultierende R und 
-der Winkel β, den sie mit der Kraft F<sub>1</sub> bildet?
+der Winkel β, den sie mit der Kraft F<sub>1</sub> bildet?</p>
 
-<button  onclick="window.open('Trigo_Aufgabe215.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Trigo_Aufgabe215.html');" >Lösung</button></p>
 
 <!--//Aufgabe 216-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 216
+  <h2>Aufgabe 216</h2><p>
 
 Wie groß sind die Winkel α und β, die entstehen, 
-wenn eine Kraft R = 235 N in die zwei Teilkräfte 
-F<sub>1</sub> = 160 N und F<sub>2</sub> = 135 N zerlegt wird?
+wenn eine Kraft <br class="br-desk">R = 235 N in die zwei Teilkräfte 
+F<sub>1</sub> = 160 N und F<sub>2</sub> = 135 N zerlegt wird?</p>
 
-β = <input type="text" id="Eintrag216" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef216" onclick="Aufgabe216()">Prüfen</button></p></pre>  
+β = <input type="text" id="Eintrag216" maxlength="4"  ></input> ° <button id="Pruef216" onclick="Aufgabe216()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe216() { 
@@ -773,24 +833,24 @@ F<sub>1</sub> = 160 N und F<sub>2</sub> = 135 N zerlegt wird?
                       
 <!--//Aufgabe 217-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 217
+    <h2>Aufgabe 217</h2><p>
 
 Wie groß sind die Teilkräfte F<sub>1</sub> und F<sub>2</sub>, wenn sie 
-zur Resultierenden R = 6 375 N die Winkel 
-α = 48,4° und β = 26,6° bilden?
+zur Resultierenden <br class="br-desk">R = 6 375 N die Winkel 
+α = 48,4° und β = 26,6° bilden?</p>
 
-<button  onclick="window.open('Trigo_Aufgabe217.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Trigo_Aufgabe217.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 218-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 218
+  <h2>Aufgabe 218</h2><p>
 
 Welche Größe G und Richtung β zu F<sub>2</sub> hat die Kraft, 
-die den Kräften F<sub>1</sub> = 48,5 N und F<sub>2</sub> = 57,2 N, 
+die den Kräften <br class="br-desk">F<sub>1</sub> = 48,5 N und F<sub>2</sub> = 57,2 N, 
 die in einem Punkt unter einem Winkel von 102,4° 
-angreifen, das Gleichgewicht hält?
+angreifen, das Gleichgewicht hält?</p>
 
-β = <input type="text" id="Eintrag218" maxlength="5" size="2" style= background-color:yellow ></input> ° <button id="Pruef218" onclick="Aufgabe218()">Prüfen</button></p></pre>  
+β = <input type="text" id="Eintrag218" maxlength="5"  ></input> ° <button id="Pruef218" onclick="Aufgabe218()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe218() { 
@@ -807,27 +867,27 @@ angreifen, das Gleichgewicht hält?
                       
 <!--//Aufgabe 219-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 219
+    <h2>Aufgabe 219</h2><p>
 
 In einem Punkt greifen die Kräfte F<sub>1</sub> = 145 N, 
 F<sub>2</sub> = 230 N und F<sub>3</sub> = 204 N an. Wie groß ist die 
 Größe R der resultierenden Kraft und deren 
 Richtung γ zu F<sub>3</sub>, wenn die Winkel F<sub>1</sub>F<sub>2</sub> = 98° und 
-F<sub>2</sub>F<sub>3</sub> = 147°?  
+F<sub>2</sub>F<sub>3</sub> = 147°?</p>  
 
-<button  onclick="window.open('Trigo_Aufgabe219.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Trigo_Aufgabe219.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 220-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 220
+  <h2>Aufgabe 220</h2><p>
 
 Ein Flugzeug fliegt mit v = 280 km/h auf dem Kurs 
 rw. 255°. Es weht ein Wind aus WNW mit 8,5 m/s.
 Welchen Weg s legt das Flugzeug in einer Stunde 
 zurück, und um welchen Winkel α wird es 
-abgetrieben?    
+abgetrieben?</p>    
 
-α = <input type="text" id="Eintrag220" maxlength="3" size="1" style= background-color:yellow ></input> ° <button id="Pruef220" onclick="Aufgabe220()">Prüfen</button></p></pre>  
+α = <input type="text" id="Eintrag220" maxlength="3"  ></input> ° <button id="Pruef220" onclick="Aufgabe220()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe220() { 
@@ -844,26 +904,26 @@ abgetrieben?
                       
 <!--//Aufgabe 221-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 221
+    <h2>Aufgabe 221</h2><p>
 
 Welchen Kurs K muss ein Flugzeug mit einer
 Geschwindigkeit von 320 km/h fliegen, wenn 
 ein Wind aus SW mit 9 m/s weht und es genau
-nach Osten fliegen will?    
+nach Osten fliegen will?</p>    
 
-<button  onclick="window.open('Trigo_Aufgabe221.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Trigo_Aufgabe221.html');" >Lösung</button></p>
 
 
 <!--//Aufgabe 222-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 222
+  <h2>Aufgabe 222</h2><p>
 
 Ein Flugzeug fliegt mit 340 km/h auf dem Kurs
 rw. 105°. Es wird durch Wind aus SSO um 5° 
 abgetrieben. 
-Wie hoch ist die Windgeschwindigkeit w? 
+Wie hoch ist die Windgeschwindigkeit w?</p> 
 
-w = <input type="text" id="Eintrag222" maxlength="4" size="1" style= background-color:yellow ></input> m/s <button id="Pruef222" onclick="Aufgabe222()">Prüfen</button></p></pre>  
+w = <input type="text" id="Eintrag222" maxlength="4"  ></input> m/s <button id="Pruef222" onclick="Aufgabe222()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe222() { 
@@ -880,30 +940,30 @@ w = <input type="text" id="Eintrag222" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 223-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 223
+    <h2>Aufgabe 223</h2><p>
 
 Ein Punkt P soll im Gelände festgelegt werden. 
 Dazu peilt man von ihm aus 3 Punkte A, B und C 
 einer geraden Straße an und misst: AB = 540 m, 
 BC = 325 m, Winkel APB = 48,3° und BPC = 31,5°. 
-Wie groß sind AP, BP und CP? 
+Wie groß sind AP, BP und CP? </p>
 
-<button  onclick="window.open('Trigo_Aufgabe223.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Trigo_Aufgabe223.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 224-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 224
+  <h2>Aufgabe 224</h2><p>
 
 Eine Hausfront ist 20 m lang und soll von einem 
 22 m gegenüberliegenden Haus aus von einem 
 Scheinwerfer mit einem Öffnungswinkel von 45° so 
 angestrahlt werden, dass dessen Licht komplett 
 ausgenutzt wird. An welcher Stelle h muss man 
-den Scheinwerfer anbringen?   
+den Scheinwerfer anbringen?</p>   
 
-h liegt <input type="text" id="Eintrag224" maxlength="3" size="1" style= background-color:yellow ></input> m von der Mitte der Hausfront entfernt. 
+h liegt <input type="text" id="Eintrag224" maxlength="3"  ></input> m von der Mitte der Hausfront entfernt.</p> 
 
-<button id="Pruef224" onclick="Aufgabe224()">Prüfen</button></p></pre>  
+<button id="Pruef224" onclick="Aufgabe224()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe224() { 
@@ -920,30 +980,30 @@ h liegt <input type="text" id="Eintrag224" maxlength="3" size="1" style= backgro
                       
 <!--//Aufgabe 225-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 225
+    <h2>Aufgabe 225</h2><p>
 
 Eine Turmuhr hat einen Durchmesser von 1,6 m, 
-ihr Mittelpunkt liegt 22,5 m hoch. Aus welchem 
+ihr Mittelpunkt liegt <br class="br-desk">22,5 m hoch. Aus welchem 
 Abstand a erscheint sie unter einem Sehwinkel 
 von 2°, wenn die Augenhöhe des Betrachters 1,5 m 
-beträgt?   
+beträgt?</p>   
 
-<button  onclick="window.open('Trigo_Aufgabe225.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Trigo_Aufgabe225.html');" >Lösung</button></p>  
 
 
 <!--//Aufgabe 226-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 226
+  <h2>Aufgabe 226</h2><p>
 
 Zwei Punkte P und Q sind durch ein Hindernis 
 getrennt. Um ihre Entfernung e zu bestimmen, 
 verlängert man PQ über P hinaus um 155 m bis O 
 und über Q hinaus um 175 m bis R. Dann misst man 
 von einem Punkt S aus, der außerhalb von PQ liegt 
-die Winkel OSP = 21,7°,PSQ = 53,1° und 
-QSR = 16,9°. Wie groß ist e? 
+die Winkel OSP = 21,7°, <br class="br-desk">PSQ = 53,1° und 
+QSR = 16,9°. Wie groß ist e?</p> 
 
-e = <input type="text" id="Eintrag226" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef226" onclick="Aufgabe226()">Prüfen</button></p></pre>  
+e = <input type="text" id="Eintrag226" maxlength="5"  ></input> m <button id="Pruef226" onclick="Aufgabe226()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe226() { 
@@ -960,32 +1020,32 @@ e = <input type="text" id="Eintrag226" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 227-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 227
+    <h2>Aufgabe 227</h2><p>
 
 Um die Höhe h eines Berges zu bestimmen, 
 peilt man sie von drei Punkten A, B und C 
 einer geraden Straße aus unter den Winkeln 
-α = 9,3°,β = 14,4° und γ = 11,8° an. A und B 
+α = 9,3°, <br class="br-desk">β = 14,4° und γ = 11,8° an. A und B 
 liegen 687 m und B und C 458 m auseinander. 
-Wie groß ist h?     
+Wie groß ist h?</p>     
 
-<img src="Aufgabe227.jpg" >
+<img src="Aufgabe227.jpg" ></p>
 
-<button  onclick="window.open('Trigo_Aufgabe227.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Trigo_Aufgabe227.html');" >Lösung</button></p>
 
 <!--//Aufgabe 228-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 228
+  <h2>Aufgabe 228</h2><p>
 
 Um die Länge l eines Tunnels zu bestimmen, steckt 
 man auf dem Bergrücken eine waagerechte 
 Standlinie AB von 485,7 m Länge ab und misst die 
 Horizontalwinkel α = 59,4°, β = 41,5°, γ = 67,3° 
-und δ = 70,7°. Wie groß ist l?   
+und δ = 70,7°. Wie groß ist l?</p>   
 
-<img src="Aufgabe228.jpg" >
+<img src="Aufgabe228.jpg" ></p>
 
-l = <input type="text" id="Eintrag228" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef228" onclick="Aufgabe228()">Prüfen</button></p></b></pre>  
+l = <input type="text" id="Eintrag228" maxlength="5"  ></input> m <button id="Pruef228" onclick="Aufgabe228()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe228() { 
@@ -1001,7 +1061,7 @@ l = <input type="text" id="Eintrag228" maxlength="5" size="2" style= background-
                       </script>
                       
 
-<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a></div></main>
           
         <script>
             document.body.addEventListener("input", function(inputEvent) {
