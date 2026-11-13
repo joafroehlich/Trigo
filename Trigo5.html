@@ -7,18 +7,76 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trigonometrie</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.9em;background-color: white; font-family: monospace, monospace;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
+
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Trigonometrie</p> 
@@ -26,26 +84,27 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
-<pre><p class ="Aufgabe"><span style= "background-color:white;">Bestimmen Sie die Lösungen im Bereich 0 ≦ x ≦ 180°, 
+<h2>Bestimmen Sie die Lösungen im Bereich 0 ≦ x ≦ 180°, 
 wenn nicht anders angegeben. 
-Ordnen Sie sie der Größe nach.</span></p></pre>
+Ordnen Sie sie der Größe nach.</h2>
 
-<!--//Aufgabe 229-->
+<div class="check">
+
+<!--//Aufgabe 229-->                     
                       
-    <pre><b><p class="Aufgabe">Aufgabe 229
+    <h2>Aufgabe 229</h2><p>
 
-sin 2x = 2 sin x       
+sin 2x = 2 sin x</p>       
 
-<button  onclick="window.open('Trigo_Aufgabe229.html');" >Lösung</button></p></pre>  
-
+<button  onclick="window.open('Trigo_Aufgabe229.html');" >Lösung</button></p>
 
 <!--//Aufgabe 230-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 230
+  <h2>Aufgabe 230</h2><p>
 
-sin x = 1 + cos x     
+sin x = 1 + cos x</p>     
 
-x = 90° oder <input type="text" id="Eintrag230" maxlength="3" size="1" style= background-color:yellow ></input> ° <button id="Pruef230" onclick="Aufgabe230()">Prüfen</button></p></pre>  
+x = 90° oder <input type="text" id="Eintrag230" maxlength="3"  ></input> ° <button id="Pruef230" onclick="Aufgabe230()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe230() { 
@@ -62,20 +121,20 @@ x = 90° oder <input type="text" id="Eintrag230" maxlength="3" size="1" style= b
                       
 <!--//Aufgabe 231-->
                       
-    <pre><p class="Aufgabe">Aufgabe 231
+     <h2>Aufgabe 231</h2><p>
 
-√3 * cos x + sin x = 1     
+√3 * cos x + sin x = 1</p>     
 
-<button  onclick="window.open('Trigo_Aufgabe231.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Trigo_Aufgabe231.html');" >Lösung</button></p>
 
 
 <!--//Aufgabe 232-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 232
+   <h2>Aufgabe 232</h2><p>
 
-2 sin<sup>2</sup> x - sin x = 1
+2 sin<sup>2</sup> x - sin x = 1</p>
 
-x = <input type="text" id="Eintrag232" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef232" onclick="Aufgabe232()">Prüfen</button></p></pre>  
+x = <input type="text" id="Eintrag232" maxlength="2"  ></input> ° <button id="Pruef232" onclick="Aufgabe232()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe232() { 
@@ -92,19 +151,19 @@ x = <input type="text" id="Eintrag232" maxlength="2" size="1" style= background-
                       
 <!--//Aufgabe 233-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 233
+     <h2>Aufgabe 233</h2><p>
 
-4 sin x = 3 cos x        
+4 sin x = 3 cos x</p>        
 
-<button  onclick="window.open('Trigo_Aufgabe233.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe233.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 234-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 234
+   <h2>Aufgabe 234</h2><p>
 
-3 sin x - 2 cos x + 3 = 0    für x > 180°
+3 sin x - 2 cos x + 3 = 0    für x > 180°</p>
 
-x = <input type="text" id="Eintrag234" maxlength="3" size="1" style= background-color:yellow ></input> ° oder 337,4° <button id="Pruef234" onclick="Aufgabe234()">Prüfen</button></p></pre>  
+x = <input type="text" id="Eintrag234" maxlength="3"  ></input> ° oder 337,4° <button id="Pruef234" onclick="Aufgabe234()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe234() { 
@@ -121,20 +180,20 @@ x = <input type="text" id="Eintrag234" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 235-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 235
+     <h2>Aufgabe 235</h2><p>
 
 2 cos<sup>2</sup> x + cos x - 1 = 0
 
-<button  onclick="window.open('Trigo_Aufgabe235.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe235.html');" >Lösung</button></p>
 
 
 <!--//Aufgabe 236-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 236
+   <h2>Aufgabe 236</h2><p>
 
-3 sin x = √3 * cos x       
+3 sin x = √3 * cos x</p>       
 
-x = <input type="text" id="Eintrag236" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef236" onclick="Aufgabe236()">Prüfen</button></p></pre>  
+x = <input type="text" id="Eintrag236" maxlength="2"  ></input> ° <button id="Pruef236" onclick="Aufgabe236()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe236() { 
@@ -151,22 +210,22 @@ x = <input type="text" id="Eintrag236" maxlength="2" size="1" style= background-
                       
 <!--//Aufgabe 237-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 237
+     <h2>Aufgabe 237</h2><p>
 
-                        3     
+<pre>                        3     
 cos x + cos (x + 60) - --- = 0
-                        2  
+                        2</pre>  
                         
-<button  onclick="window.open('Trigo_Aufgabe237.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe237.html');" >Lösung</button></p>
 
 
 <!--//Aufgabe 238-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 238
+   <h2>Aufgabe 238</h2><p>
 
-cot x - sin 2x = 0      
+cot x - sin 2x = 0</p>      
 
-x = 45° oder 90° oder <input type="text" id="Eintrag238" maxlength="3" size="1" style= background-color:yellow ></input> ° <button id="Pruef238" onclick="Aufgabe238()">Prüfen</button></p></pre>  
+x = 45° oder 90° oder <input type="text" id="Eintrag238" maxlength="3"  ></input> ° <button id="Pruef238" onclick="Aufgabe238()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe238() { 
@@ -183,23 +242,23 @@ x = 45° oder 90° oder <input type="text" id="Eintrag238" maxlength="3" size="1
                       
 <!--//Aufgabe 239-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 239
+     <h2>Aufgabe 239</h2><p>
 
-     x         x       
+<pre>     x         x       
 cos --- = sin ---    
-     2         2    
+     2         2</pre>    
      
-<button  onclick="window.open('Trigo_Aufgabe239.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe239.html');" >Lösung</button></p>
 
 <!--//Aufgabe 240-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 240
+   <h2>Aufgabe 240</h2><p>
 
-         1       
+<pre>         1       
 cos x = --- tan x     
-         2            
+         2</pre>            
 
-x = <input type="text" id="Eintrag240" maxlength="4" size="1" style= background-color:yellow ></input> ° oder 128,7° <button id="Pruef240" onclick="Aufgabe240()">Prüfen</button></p></pre>  
+x = <input type="text" id="Eintrag240" maxlength="4"  ></input> ° oder 128,7° <button id="Pruef240" onclick="Aufgabe240()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe240() { 
@@ -216,21 +275,21 @@ x = <input type="text" id="Eintrag240" maxlength="4" size="1" style= background-
 
 <!--//Aufgabe 241-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 241
+    <h2>Aufgabe 241</h2><p>
 
-                 1 
+<pre>                 1 
 sin (x - 30°) = --- (3 -  2 cos x)
-                 4     
+                 4</pre>     
      
-<button  onclick="window.open('Trigo_Aufgabe241.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe241.html');" >Lösung</button></p>
 
 <!--//Aufgabe 242-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 242
+  <h2>Aufgabe 242</h2><p>
 
-2 cos (x + 30°) - √2 sin (x + 45°) = 2
+2 cos (x + 30°) - √2 sin (x + 45°) = 2</p>
 
-x = <input type="text" id="Eintrag242" maxlength="4" size="1" style= background-color:yellow ></input> ° <button id="Pruef242" onclick="Aufgabe242()">Prüfen</button></p></pre>  
+x = <input type="text" id="Eintrag242" maxlength="4"  ></input> ° <button id="Pruef242" onclick="Aufgabe242()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe242() { 
@@ -247,19 +306,19 @@ x = <input type="text" id="Eintrag242" maxlength="4" size="1" style= background-
 
 <!--//Aufgabe 243-->
                       
-    <pre><p class="Aufgabe">Aufgabe 243
+    <h2>Aufgabe 243</h2><p>
 
-tan x - sin 2x = 0      
+tan x - sin 2x = 0</p>      
      
-<button  onclick="window.open('Trigo_Aufgabe243.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe243.html');" >Lösung</button></p>
 
 <!--//Aufgabe 244-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 244
+  <h2>Aufgabe 244</h2><p>
 
-sin 2x + 3 cos x = 0      
+sin 2x + 3 cos x = 0 </p>     
 
-x = <input type="text" id="Eintrag244" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef244" onclick="Aufgabe244()">Prüfen</button></p></pre>  
+x = <input type="text" id="Eintrag244" maxlength="2"  ></input> ° <button id="Pruef244" onclick="Aufgabe244()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe244() { 
@@ -276,21 +335,21 @@ x = <input type="text" id="Eintrag244" maxlength="2" size="1" style= background-
 
 <!--//Aufgabe 245-->
                       
-    <pre><p class="Aufgabe">Aufgabe 245
+    <h2>Aufgabe 245</h2><p>
 
-sin (x - 30°) = cos x       
+sin (x - 30°) = cos x </p>      
      
-<button  onclick="window.open('Trigo_Aufgabe245.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe245.html');" >Lösung</button></p>
 
 <!--//Aufgabe 246-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 246
+  <h2>Aufgabe 246</h2><p>
 
-                 1 
+<pre>                 1 
 sin x * tan x = --- √2
-                 2     
+                 2</pre>     
 
-x = <input type="text" id="Eintrag246" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef246" onclick="Aufgabe246()">Prüfen</button></p></pre>  
+x = <input type="text" id="Eintrag246" maxlength="2"  ></input> ° <button id="Pruef246" onclick="Aufgabe246()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe246() { 
@@ -307,19 +366,19 @@ x = <input type="text" id="Eintrag246" maxlength="2" size="1" style= background-
 
 <!--//Aufgabe 247-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 247
+    <h2>Aufgabe 247</h2><p>
 
-2 sin x = √2 tan x          
+2 sin x = √2 tan x</p>          
      
-<button  onclick="window.open('Trigo_Aufgabe247.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe247.html');" >Lösung</button></p>
 
 <!--//Aufgabe 248-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 248
+  <h2>Aufgabe 248</h2><p>
 
-tan<sup>2</sup> x + 2 tan x = 1         
+tan<sup>2</sup> x + 2 tan x = 1</p>         
 
-x = 22,5° oder <input type="text" id="Eintrag248" maxlength="5" size="2" style= background-color:yellow ></input> ° <button id="Pruef248" onclick="Aufgabe248()">Prüfen</button></p></pre>  
+x = 22,5° oder <input type="text" id="Eintrag248" maxlength="5"  ></input> ° <button id="Pruef248" onclick="Aufgabe248()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe248() { 
@@ -336,19 +395,19 @@ x = 22,5° oder <input type="text" id="Eintrag248" maxlength="5" size="2" style=
 
 <!--//Aufgabe 249-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 249
+    <h2>Aufgabe 249</h2><p>
 
-cos (x + 11,5°) = 2 cos (x - 48,5°)
+cos (x + 11,5°) = 2 cos (x - 48,5°)</p>
      
-<button  onclick="window.open('Trigo_Aufgabe249.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe249.html');" >Lösung</button></p>
 
 <!--//Aufgabe 250-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 250
+  <h2>Aufgabe 250</h2><p>
 
-cos<sup>2</sup> x - 4 sin x + 5 sin<sup>2</sup> x = 0
+cos<sup>2</sup> x - 4 sin x + 5 sin<sup>2</sup> x = 0</p>
 
-x = <input type="text" id="Eintrag250" maxlength="2" size="1" style= background-color:yellow ></input> ° oder 150°. <button id="Pruef250" onclick="Aufgabe250()">Prüfen</button></p></pre>  
+x = <input type="text" id="Eintrag250" maxlength="2"  ></input> ° oder 150°. <button id="Pruef250" onclick="Aufgabe250()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe250() { 
@@ -365,19 +424,19 @@ x = <input type="text" id="Eintrag250" maxlength="2" size="1" style= background-
 
 <!--//Aufgabe 251-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 251
+    <h2>Aufgabe 251</h2><p>
 
-sin (x - 30°) * cos x = 0,25
+sin (x - 30°) * cos x = 0,25</p>
      
-<button  onclick="window.open('Trigo_Aufgabe251.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe251.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 252-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 252
+  <h2>Aufgabe 252</h2><p>
 
-sin x * cos x = 0,25
+sin x * cos x = 0,25</p>
 
-x = 15° oder <input type="text" id="Eintrag252" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef252" onclick="Aufgabe252()">Prüfen</button></p></pre>  
+x = 15° oder <input type="text" id="Eintrag252" maxlength="2"  ></input> ° <button id="Pruef252" onclick="Aufgabe252()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe252() { 
@@ -394,19 +453,19 @@ x = 15° oder <input type="text" id="Eintrag252" maxlength="2" size="1" style= b
 
 <!--//Aufgabe 253-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 253
+    <h2>Aufgabe 253</h2><p>
 
-sin x * cos x = - 0,5      
+sin x * cos x = -0,5</p>      
      
-<button  onclick="window.open('Trigo_Aufgabe253.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe253.html');" >Lösung</button></p>
 
 <!--//Aufgabe 254-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 254
+  <h2>Aufgabe 254</h2><p>
 
-cot x - sin 2x = 0       
+cot x - sin 2x = 0</p>       
 
-x = 45° oder 90° oder <input type="text" id="Eintrag254" maxlength="3" size="1" style= background-color:yellow ></input> ° <button id="Pruef254" onclick="Aufgabe254()">Prüfen</button></p></pre>  
+x = 45° oder 90° oder <input type="text" id="Eintrag254" maxlength="3"  ></input> ° <button id="Pruef254" onclick="Aufgabe254()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe254() { 
@@ -423,19 +482,19 @@ x = 45° oder 90° oder <input type="text" id="Eintrag254" maxlength="3" size="1
 
 <!--//Aufgabe 255-->
                       
-    <pre><p class="Aufgabe">Aufgabe 255
+    <h2>Aufgabe 255</h2><p>
 
-cos x - tan x = 0       
+cos x - tan x = 0</p>       
      
-<button  onclick="window.open('Trigo_Aufgabe255.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe255.html');" >Lösung</button></p>
 
 <!--//Aufgabe 256-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 256
+  <h2>Aufgabe 256</h2><p>
 
-5 sin x + 3 tan x = 0    
+5 sin x + 3 tan x = 0</p>    
 
-x = 0° oder <input type="text" id="Eintrag256" maxlength="5" size="2" style= background-color:yellow ></input> ° oder 180° <button id="Pruef256" onclick="Aufgabe256()">Prüfen</button></p></pre>  
+x = 0° oder <input type="text" id="Eintrag256" maxlength="5"  ></input> ° oder 180° <button id="Pruef256" onclick="Aufgabe256()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe256() { 
@@ -452,19 +511,19 @@ x = 0° oder <input type="text" id="Eintrag256" maxlength="5" size="2" style= ba
 
 <!--//Aufgabe 257-->
                       
-    <pre><p class="Aufgabe">Aufgabe 257
+    <h2>Aufgabe 257</h2><p>
 
-sin x - cot x  = 0      
+sin x - cot x  = 0</p>      
      
-<button  onclick="window.open('Trigo_Aufgabe257.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe257.html');" >Lösung</button></p>
 
 <!--//Aufgabe 258-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 258
+  <h2>Aufgabe 258</h2><p>
 
-2 sin<sup>2</sup> x = 3 cos x
+2 sin<sup>2</sup> x = 3 cos x</p>
 
-x = <input type="text" id="Eintrag258" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef258" onclick="Aufgabe258()">Prüfen</button></p></pre>  
+x = <input type="text" id="Eintrag258" maxlength="2"  ></input> ° <button id="Pruef258" onclick="Aufgabe258()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe258() { 
@@ -481,19 +540,19 @@ x = <input type="text" id="Eintrag258" maxlength="2" size="1" style= background-
 
 <!--//Aufgabe 259-->
                       
-    <pre><p class="Aufgabe">Aufgabe 259
+    <h2>Aufgabe 259</h2><p>
 
-2 cos x = - 5 sin x
+2 cos x = - 5 sin x</p>
      
-<button  onclick="window.open('Trigo_Aufgabe259.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe259.html');" >Lösung</button></p>
 
 <!--//Aufgabe 260-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 260
+  <h2>Aufgabe 260</h2><p>
 
-sin 2x = cos x            
+sin 2x = cos x</p>            
 
-x = 30° oder 90° oder <input type="text" id="Eintrag260" maxlength="3" size="1" style= background-color:yellow ></input> ° <button id="Pruef260" onclick="Aufgabe260()">Prüfen</button></p></pre>  
+x = 30° oder 90° oder <input type="text" id="Eintrag260" maxlength="3"  ></input> ° <button id="Pruef260" onclick="Aufgabe260()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe260() { 
@@ -510,19 +569,19 @@ x = 30° oder 90° oder <input type="text" id="Eintrag260" maxlength="3" size="1
 
  <!--//Aufgabe 261-->
                       
-    <pre><p class="Aufgabe">Aufgabe 261
+    <h2>Aufgabe 261</h2><p>
 
-3 cos 2x + 7 cos x = 0      
+3 cos 2x + 7 cos x = 0</p>      
      
-<button  onclick="window.open('Trigo_Aufgabe261.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe261.html');" >Lösung</button></p>
 
 <!--//Aufgabe 262-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 262
+  <h2>Aufgabe 262</h2><p>
 
-6 cos 2x - sin x = 0     
+6 cos 2x - sin x = 0</p>     
 
-x = <input type="text" id="Eintrag262" maxlength="4" size="1" style= background-color:yellow ></input> ° oder 138,2° <button id="Pruef262" onclick="Aufgabe262()">Prüfen</button></p></pre>  
+x = <input type="text" id="Eintrag262" maxlength="4"  ></input> ° oder 138,2° <button id="Pruef262" onclick="Aufgabe262()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe262() { 
@@ -539,19 +598,19 @@ x = <input type="text" id="Eintrag262" maxlength="4" size="1" style= background-
                       
  <!--//Aufgabe 263-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 263
+    <h2>Aufgabe 263</h2><p>
 
-sin 2x * sin x = 0       
+sin 2x * sin x = 0</p>       
      
-<button  onclick="window.open('Trigo_Aufgabe263.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe263.html');" >Lösung</button></p>
 
 <!--//Aufgabe 264-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 264
+  <h2>Aufgabe 264</h2><p>
 
-tan x =  3 cot x     
+tan x =  3 cot x </p>    
 
-x = <input type="text" id="Eintrag264" maxlength="2" size="1" style= background-color:yellow ></input> ° oder 120° <button id="Pruef264" onclick="Aufgabe264()">Prüfen</button></p></pre>  
+x = <input type="text" id="Eintrag264" maxlength="2"  ></input> ° oder 120° <button id="Pruef264" onclick="Aufgabe264()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe264() { 
@@ -568,21 +627,21 @@ x = <input type="text" id="Eintrag264" maxlength="2" size="1" style= background-
                       
  <!--//Aufgabe 265-->
                       
-    <pre><p class="Aufgabe">Aufgabe 265
+    <h2>Aufgabe 265</h2><p>
 
-       x  
+<pre>       x  
 2 cos --- - 1 = 0,5 cos x    
-       2                   
+       2</pre>                   
      
-<button  onclick="window.open('Trigo_Aufgabe265.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Trigo_Aufgabe265.html');" >Lösung</button></p>
 
 <!--//Aufgabe 266-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 266
+  <h2>Aufgabe 266</h2><p>
 
-cot x - 1,3729 cos x = 0     
+cot x - 1,3729 cos x = 0</p>     
 
-x = 46,8° oder <input type="text" id="Eintrag266" maxlength="2" size="1" style= background-color:yellow ></input> ° oder 133,2° <button id="Pruef266" onclick="Aufgabe266()">Prüfen</button></p></pre>  
+x = 46,8° oder <input type="text" id="Eintrag266" maxlength="2"  ></input> ° oder 133,2° <button id="Pruef266" onclick="Aufgabe266()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe266() { 
@@ -599,14 +658,14 @@ x = 46,8° oder <input type="text" id="Eintrag266" maxlength="2" size="1" style=
                       
  <!--//Aufgabe 267-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 267
+    <h2>Aufgabe 260</h2><p>
 
-sin<sup>2</sup> x + 2,14 cos<sup>2</sup> x = 1,96
+sin<sup>2</sup> x + 2,14 cos<sup>2</sup> x = 1,96</p>
      
-<button  onclick="window.open('Trigo_Aufgabe267.html');" >Lösung</button></p></b></pre> 
+<button  onclick="window.open('Trigo_Aufgabe267.html');" >Lösung</button></p>
 
 
-<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a></div></main>
           
         <script>
             document.body.addEventListener("input", function(inputEvent) {
